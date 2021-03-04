@@ -1,0 +1,63 @@
+<main role="main">
+  <div class="sidebar">
+    <div class="sidebar-inner-index">
+      <ul class="main-menu">
+        <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+      </ul>
+    </div>
+  </div>
+
+
+</main>
+
+<footer id="footer" role="contentinfo">
+  <p>
+    <a class="social-icon" href="https://github.com/vuejs/vue" target="_blank" rel="noopener">
+      <%- partial('icons/github') %>
+    </a>
+    <a class="social-icon" href="https://twitter.com/vuejs" target="_blank" rel="noopener">
+      <%- partial('icons/twitter') %>
+    </a>
+    <a class="social-icon" href="https://medium.com/the-vue-point" target="_blank" rel="noopener">
+      <%- partial('icons/medium') %>
+    </a>
+  </p>
+  <p>遵循 <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT 开源协议</a><br>
+  Copyright &copy; 2014-<%- new Date().getFullYear() %> Evan You</p>
+</footer>
+
+
+
+<script>
+(function () {
+  var topScrolled = false
+  var sponsors = document.getElementById('sponsors')
+  var sponsorTop = sponsors.offsetTop
+  var sponsorActive = false
+
+  window.addEventListener('resize', function () {
+    sponsorTop = sponsors.offsetTop
+  })
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 165 && !topScrolled) {
+      topScrolled = true
+      document.getElementById('mobile-bar').classList.remove('top')
+    } else if (window.pageYOffset <= 165 && topScrolled) {
+      topScrolled = false
+      document.getElementById('mobile-bar').classList.add('top')
+    }
+    if (window.pageYOffset > sponsorTop - 100) {
+      if (!sponsorActive) {
+        sponsorActive = true
+        sponsors.classList.add('active')
+      }
+    } else {
+      if (sponsorActive) {
+        sponsorActive = false
+        sponsors.classList.remove('active')
+      }
+    }
+  })
+})()
+</script>
