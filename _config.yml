@@ -100,7 +100,8 @@ ignore:
 # Extensions[主题]
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-quiet
+# theme: hexo-theme-quiet
+theme: vue
 
 # [搜索]
 search:
