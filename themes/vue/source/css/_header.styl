@@ -16,6 +16,15 @@ red-dot-before(leftPos = -8px)
   padding: $heading-padding-vertical 60px
   position: relative
   z-index: $z-header
+  .title-name
+    background-image: -webkit-linear-gradient(left, #30459c, #a95151 25%, #245067 50%, #fff 75%, #3499cd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 2s infinite linear;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Comic Sans MS";
 
 body.docs
   #header
