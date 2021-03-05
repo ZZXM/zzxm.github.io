@@ -1,0 +1,15 @@
+<li class="nav-dropdown-container learn">
+    <a class="nav-link">总结</a><span class="arrow"></span>
+    <ul class="nav-dropdown">
+      <li><h4>前端</h4></li>
+      <li>
+        <ul>
+          <li><a href="<%- url_for("/web/http/") %>" class="nav-link<%- page.path.match(/\/http(\/|$)/) ? ' current' : '' %>">http</a></li>
+          <li><a href="<%- url_for("/web/es6/") %>" class="nav-link<%- page.path.match(/\/es6(\/|$)/) ? ' current' : '' %>">es6</a></li>
+          <li><a href="<%- url_for("/web/js/") %>" class="nav-link<%- page.path.match(/\/js(\/|$)/) ? ' current' : '' %>">js</a></li>
+          <li><a href="<%- url_for("/web/vue/") %>" class="nav-link<%- page.path.match(/\/js(\/|$)/) ? ' current' : '' %>">vue</a></li>
+        </ul>
+      </li>
+    </ul>
+</li>
+  
