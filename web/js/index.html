@@ -1,0 +1,243 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>庄生晓梦的个人博客</title>
+    <meta charset="utf-8">
+    <meta name="description" content="庄生晓梦的个人博客">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+    <link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1097451&size=32" type="image/x-icon">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+
+    <link href="//code.bdstatic.com/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- main page styles -->
+    
+<link rel="stylesheet" href="/css/page.css">
+
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/vue.js"></script>
+
+    
+
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "js"
+    </script>
+
+    <!-- ga -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '', '');
+      ga('send', 'pageview');
+    </script>
+  <meta name="generator" content="Hexo 5.4.0"></head>
+  <body class="docs">
+    <div id="mobile-bar" >
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <header id="header">
+  <a id="logo" href="/">
+    <img src="/images/logo.png" alt="vue logo">
+    <span class="title-name">庄生晓梦</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input" aria-label="搜索">
+  </form>
+</li>
+<li class="nav-dropdown-container learn">
+    <a class="nav-link">总结</a><span class="arrow"></span>
+    <ul class="nav-dropdown">
+      <li><h4>前端</h4></li>
+      <li>
+        <ul>
+          <li><a href="/web/http/" class="nav-link">HTTP</a></li>
+          <li><a href="/web/js/" class="nav-link current">JS</a></li>
+          <li><a href="/web/es6/" class="nav-link">ES6</a></li>
+          <li><a href="/web/vue/" class="nav-link">VUE</a></li>
+          <li><a href="/web/sql/" class="nav-link">SQL</a></li>
+        </ul>
+      </li>
+    </ul>
+</li>
+  
+<li class="nav-dropdown-container learn">
+    <a class="nav-link">兴趣收藏</a><span class="arrow"></span>
+    <ul class="nav-dropdown">
+      <li><h4>技术</h4></li>
+      <li>
+        <ul>
+          <li><a href="/web/http/" class="nav-link">http</a></li>
+        </ul>
+      </li>
+    </ul>
+</li>
+  
+<li class="nav-dropdown-container learn">
+    <a class="nav-link">工作历程</a><span class="arrow"></span>
+    <ul class="nav-dropdown">
+      <li>
+        <ul>
+          <li><a href="/company/" class="nav-link">简介</a></li>
+        </ul>
+      </li>
+    </ul>
+</li>
+  
+
+  </ul>
+</header>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+  
+
+<div class="sidebar">
+  <div class="sidebar-inner">
+    
+    <div class="list">
+      
+        <h2>
+          
+          
+        </h2>
+        <ul class="menu-root">
+  
+    
+    
+    <li>
+      <a href="/web/js/index.html" class="sidebar-link current">js基础</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/web/js/js%E8%BF%9B%E9%98%B62.html" class="sidebar-link">js进阶2</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/web/js/js%E8%BF%9B%E9%98%B63.html" class="sidebar-link">js进阶3</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/web/js/js%E6%9C%BA%E5%88%B6.html" class="sidebar-link">js机制</a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="content js with-sidebar ">
+  
+    
+  
+  
+    <h1>js基础</h1>
+  
+
+  
+    <h3 id="执行上下文-作用域链-闭包"><a href="#执行上下文-作用域链-闭包" class="headerlink" title="执行上下文/作用域链/闭包"></a>执行上下文/作用域链/闭包</h3><h4 id="JavaScript中的执行上下文和执行栈"><a href="#JavaScript中的执行上下文和执行栈" class="headerlink" title="JavaScript中的执行上下文和执行栈"></a>JavaScript中的执行上下文和执行栈</h4><p>1.执行上下文</p>
+<ul>
+<li>变量对象(Variable object，VO)</li>
+<li>作用域链(Scope chain)</li>
+<li>this</li>
+</ul>
+<h4 id="JavaScript中的作用域链"><a href="#JavaScript中的作用域链" class="headerlink" title="JavaScript中的作用域链"></a>JavaScript中的作用域链</h4><h4 id="JavaScript中的闭包"><a href="#JavaScript中的闭包" class="headerlink" title="JavaScript中的闭包"></a>JavaScript中的闭包</h4><ul>
+<li>闭包是指有权访问另外一个函数作用域中的变量的函数.可以理解为(能够读取其他函数内部变量的函数)</li>
+<li>闭包的作用: 正常函数执行完毕后,里面声明的变量被垃圾回收处理掉,但是闭包可以让作用域里的变量,在函数执行完之后依旧保持没有被垃圾回收处理掉</li>
+<li>闭包的缺陷:<br>闭包会导致内存占用过高,因为变量都没有释放内存</li>
+<li>函数创建的作用域在函数定义时就已经确定了</li>
+</ul>
+<h3 id="原型和继承-推荐文章"><a href="#原型和继承-推荐文章" class="headerlink" title="原型和继承   推荐文章"></a>原型和继承   <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/1UDILezroK5wrcK-Z5bHOg">推荐文章</a></h3><h4 id="原型prototype"><a href="#原型prototype" class="headerlink" title="原型prototype"></a>原型prototype</h4><p>总结：JS 原型是指为其它对象提供共享属性访问的对象。</p>
+<p>在创建对象时，每个对象都包含一个隐式引用指向它的原型对象或者 null。</p>
+<p>每个函数都有一个显性引用prototype<br>每个对线都有一个隐性引用__proto__</p>
+<h4 id="原型链是什么"><a href="#原型链是什么" class="headerlink" title="原型链是什么"></a>原型链是什么</h4><p>总结：原型也是对象，因此它也有自己的原型。这样构成一个原型链。</p>
+<p>当我们去访问一个对象属性时,先在自身属性中查找,如果没有,在沿着__proto__这条链向上查找，直到找到null/unfindefid</p>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4>
+  
+  
+  <div class="footer">
+      <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<div id="bsa-native"></div>
+<script>
+_bsa.init('custom', 'CKYD62QM', 'placement:vuejsorg',
+  {
+    target: '#bsa-native',
+    template: '<a class="native-box" href="##statlink##"><div class="native-sponsor">Sponsor</div><div class="native-text"><strong>##company##</strong> — ##description##</div></a>'
+  }
+);
+</script>
+
+
+    发现错误？
+    <!-- <a href="https://github.com/vuejs/cn.vuejs.org/blob/master/src/web/js/index.md" rel="noopener" target="_blank">
+      在 GitHub 上编辑此页！
+    </a> -->
+  </div>
+</div>
+
+      </div>
+      <script src="/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/js/css.escape.js"></script>
+    <script src="/js/common.js"></script>
+
+    <!-- search -->
+    <link href="//code.bdstatic.com/npm/docsearch.js@1.5.0/dist/cdn/docsearch.min.css" rel='stylesheet' type='text/css'>
+    
+<link rel="stylesheet" href="/css/search.css">
+
+    <script src="//code.bdstatic.com/npm/docsearch.js@1.5.0/dist/cdn/docsearch.min.js"></script>
+    <script>
+    [
+      '#search-query-nav',
+      '#search-query-sidebar',
+      '#search-query-menu'
+    ].forEach(function (selector) {
+      if (!document.querySelector(selector)) return
+      // search index defaults to v2
+      var match = window.location.pathname.match(/^\/(v\d+)/)
+      var version = match ? match[1] : 'v2'
+      docsearch({
+      appId: 'BH4D9OD16A',
+      apiKey: '5638280abff9d207417bb03be05f0b25',
+      indexName: 'vuejs_cn2',
+      inputSelector: selector,
+      algoliaOptions: { facetFilters: ["version:" + version] },
+      autocompleteOptions: { hint: false, appendTo: 'body'}
+      })
+    })
+    </script>
+  </body>
+</html>
