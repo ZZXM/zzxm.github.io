@@ -25,7 +25,7 @@
 
     <!-- main page styles -->
     
-<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/page.css">
 
 
     <!-- this needs to be loaded before guide's inline scripts -->
@@ -49,8 +49,8 @@
       ga('send', 'pageview');
     </script>
   <meta name="generator" content="Hexo 5.4.0"></head>
-  <body class="">
-    <div id="mobile-bar" class="top">
+  <body class="docs">
+    <div id="mobile-bar" >
       <a class="menu-button"></a>
       <a class="logo" href="/"></a>
     </div>
@@ -109,11 +109,11 @@
 </header>
 
     
-      <main role="main">
+      <div id="main" class="fix-sidebar">
+        
   <div class="sidebar">
-    <div class="sidebar-inner-index">
-      <ul class="main-menu">
-        <li>
+    <ul class="main-menu">
+      <li>
   <!-- <form id="search-form">
     <input type="text" id="search-query-sidebar" class="search-query st-default-search-input" aria-label="搜索">
   </form> -->
@@ -158,81 +158,116 @@
 </li>
   
 
-      </ul>
-    </div>
+    </ul>
   </div>
 
-  <div class="content-index">
-    <p>让别人因为我的存在而感到幸福.</p>
-  </div>
-</main>
+<div class="content  ">
+  
+  
 
-<footer id="footer" role="contentinfo">
-  <p>
-    <a class="social-icon" href="https://github.com/ZZXM" target="_blank" rel="noopener">
-      <svg aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon" lang="en">GitHub icon</title><path fill="#FFFFFF" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+  
+    <h2 id="前端知识总结"><a href="#前端知识总结" class="headerlink" title="前端知识总结"></a>前端知识总结</h2><h3 id="前端基础知识（必学）"><a href="#前端基础知识（必学）" class="headerlink" title="前端基础知识（必学）"></a>前端基础知识（必学）</h3><p>html html5 css css3 js</p>
+<ul>
+<li>尽可能熟练掌握常用的dom元素,css属性和js方法<br>了解他们的功能</li>
+</ul>
+<h4 id="html5与html-√"><a href="#html5与html-√" class="headerlink" title="html5与html[√]"></a>html5与html[√]</h4><ul>
+<li>元素</li>
+<li>dom</li>
+<li>语义化</li>
+</ul>
+<h4 id="css与css3-√"><a href="#css与css3-√" class="headerlink" title="css与css3[√]"></a>css与css3[√]</h4><ul>
+<li>cssom</li>
+<li>选择器</li>
+<li>布局</li>
+<li>交互</li>
+<li>动画</li>
+</ul>
+<h4 id="Javascript-√"><a href="#Javascript-√" class="headerlink" title="Javascript[√]"></a>Javascript[√]</h4><ul>
+<li>类型</li>
+<li>原型链</li>
+<li>作用域</li>
+<li>闭包</li>
+<li>事件</li>
+<li>异步</li>
+<li>正则</li>
+</ul>
+<h4 id="http和https-√"><a href="#http和https-√" class="headerlink" title="http和https[√]"></a>http和https[√]</h4><h3 id="进阶知识"><a href="#进阶知识" class="headerlink" title="进阶知识"></a>进阶知识</h3><ul>
+<li>es6 ts sass scss stylus </li>
+<li>es6和sass推荐学习[√]</li>
+<li>sass scss stylus 同为css预处理语言选一个就可以</li>
+</ul>
+<h3 id="编辑器-IDE"><a href="#编辑器-IDE" class="headerlink" title="编辑器[IDE]"></a>编辑器[IDE]</h3><ul>
+<li>sublime text3[高可配置，拥有多元化插件]</li>
+<li>vscode[高可配置，拥有多元化插件]</li>
+<li>webstom[功能齐全不用配任何东西，稍微重了一点,电脑不好可能会卡]<br>这3个选一个使用就行，我选的vscode</li>
+</ul>
+<h3 id="调试工具"><a href="#调试工具" class="headerlink" title="调试工具"></a>调试工具</h3><ul>
+<li>chrome dev tools【即谷歌后台F12】[√]</li>
+<li>postman【接口调试用具】[√]</li>
+<li>fidder</li>
+<li>jmeter</li>
+</ul>
+<h3 id="常用插件库"><a href="#常用插件库" class="headerlink" title="常用插件库"></a>常用插件库</h3><ul>
+<li>jquery [轻量级js库,大量操作dom推荐使用][√]</li>
+<li>zepto [类似jq更贴合移动端]</li>
+<li>bootstrap [常用ui库]</li>
+<li>lodash [针对数据的js库] </li>
+</ul>
+<h3 id="开发库或者框架"><a href="#开发库或者框架" class="headerlink" title="开发库或者框架"></a>开发库或者框架</h3><ul>
+<li>vue<ul>
+<li>vue-cli</li>
+<li>vue-router</li>
+<li>element-ui</li>
+<li>vuex</li>
+</ul>
+</li>
+<li>react<ul>
+<li>redux</li>
+<li>react-router</li>
+<li>ant-design</li>
+</ul>
+</li>
+<li>angluar</li>
+<li>nuxt(基于vue)</li>
+<li>quasarchs</li>
+</ul>
+<p>建议 vue和react 2选1先学,建议选择vue</p>
+<h3 id="构建工具（前端自动化）"><a href="#构建工具（前端自动化）" class="headerlink" title="构建工具（前端自动化）"></a>构建工具（前端自动化）</h3><ul>
+<li>webpack[√]</li>
+<li>gulp</li>
+<li>grunt</li>
+</ul>
+<h3 id="前端学习地址"><a href="#前端学习地址" class="headerlink" title="前端学习地址"></a>前端学习地址</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/">https://developer.mozilla.org/zh-CN/</a> [官方网站]</li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/js/js-tutorial.html">https://www.runoob.com/js/js-tutorial.html</a> [菜鸟教程]</li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yx12138/p/10989187.html">https://www.cnblogs.com/yx12138/p/10989187.html</a> [随便找的感觉还行]</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904116339261447">https://juejin.cn/post/6844904116339261447</a> [前端面试总结，前期看不懂不要深入]</li>
+</ul>
 
-    </a>
-    <a class="social-icon" href="https://blog.csdn.net/zzxm_l/article/details/103926967" target="_blank" rel="noopener">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">  <image id="image0" width="32" height="32" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABMlBMVEX8VTH8dFf9pZL9xLf+
-0cf+zsP9uar8knv8Xjz8g2n+29P////+9vX9rpz8Wzj8Wjf9vrD+/v7+4tz8ZUX8XTv+187+5+L9
-sJ/9wLL+7er9vK78VjP9zsT+6+f8iG/8VzT9mYT+9fP+z8X9pJD+4dv8ZEP8b1H+6+b8jnb8ZkX+
-+Pf+9PH8aUr8Xz38cFL9sqL9nYj+8u/+7+z8WTb8f2T9taX8h239v7H8Z0f+zsT+/f3+0sn++/v9
-y7/9tqb8eVz9q5r8YUD++/r8Y0L8bE38iXH8VjL+1s78YT/8gGX+9PL8Zkb+8/D9m4b8YkD8WDX9
-w7b+9vT8hGr++vr+6OP+2dH+1Mv+4Nr++ff+7+v8fmP9sKD+8/H+7ur9qpn9qpj9wrb+zMH9u639
-oY38el78VzOb/PDuAAAAAWJLR0QLH9fEwAAAAAd0SU1FB+UDCA04BWdkqYkAAAEASURBVDjLY2AY
-dICRiZmFlY2dA4c0Jxc3BPDw8mGR5hcQ5IYDIWEMeRFRkISYgLiEJIghhS4vLQMUlZUDMeUVFLm5
-ldAVKAPlVVShHDV1QQ00eU0tbm5tHThXVw/dAH2gAQZ4/C9vyM1tZIxHgQnQAFN8IcgEVGCGT4E5
-UIEFPgWW3NxW0vgUWHNz2+CTZ7AFWiGCT4EdUIE9PgXsQAUO+BQ4OnFzGzojCbi4uqGqEAAa4e4B
-53p6cYujKvD2AcW2rx+I7W8SYMXNHYhmSVAwKJkIhoSGhUeA01QIujM8I7mRgVEUhkM9omPg0rFx
-utj8wh8Un6BknZiUnJLKMJgAAK9gG/sHs2daAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIxLTAzLTA4
-VDEzOjU2OjA1KzAzOjAw1/DKIAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMS0wMy0wOFQxMzo1Njow
-NSswMzowMKatcpwAAAAASUVORK5CYII=" />
-    </a>
-  </p>
-  <p>&copy; 2017-2021 </p>
-</footer>
-
-<div id="video-modal" class="modal">
-  <div class="video-space" style="padding: 56.25% 0 0 0; position: relative;"></div>
-</div>
-
+  
+  
+  <div class="footer">
+      <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<div id="bsa-native"></div>
 <script>
-(function () {
-  var topScrolled = false
-  var sponsors = document.getElementById('sponsors')
-  var sponsorTop = sponsors.offsetTop
-  var sponsorActive = false
-
-  window.addEventListener('resize', function () {
-    sponsorTop = sponsors.offsetTop
-  })
-
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 165 && !topScrolled) {
-      topScrolled = true
-      document.getElementById('mobile-bar').classList.remove('top')
-    } else if (window.pageYOffset <= 165 && topScrolled) {
-      topScrolled = false
-      document.getElementById('mobile-bar').classList.add('top')
-    }
-    if (window.pageYOffset > sponsorTop - 100) {
-      if (!sponsorActive) {
-        sponsorActive = true
-        sponsors.classList.add('active')
-      }
-    } else {
-      if (sponsorActive) {
-        sponsorActive = false
-        sponsors.classList.remove('active')
-      }
-    }
-  })
-})()
+_bsa.init('custom', 'CKYD62QM', 'placement:vuejsorg',
+  {
+    target: '#bsa-native',
+    template: '<a class="native-box" href="##statlink##"><div class="native-sponsor">Sponsor</div><div class="native-text"><strong>##company##</strong> — ##description##</div></a>'
+  }
+);
 </script>
 
+
+    发现错误？
+    <!-- <a href="https://github.com/vuejs/cn.vuejs.org/blob/master/src/web/前端知识学习.md" rel="noopener" target="_blank">
+      在 GitHub 上编辑此页！
+    </a> -->
+  </div>
+</div>
+
+      </div>
+      <script src="/js/smooth-scroll.min.js"></script>
     
 
     <!-- main custom script for sidebars, version selects etc. -->

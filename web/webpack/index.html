@@ -35,7 +35,7 @@
 
     <script>
       Vue.config.productionTip = false
-      window.PAGE_TYPE = "js"
+      window.PAGE_TYPE = "webpack"
     </script>
 
     <!-- ga -->
@@ -72,7 +72,7 @@
       <li>
         <ul>
           <li><a href="/web/http/" class="nav-link">HTTP</a></li>
-          <li><a href="/web/js/" class="nav-link current">JS</a></li>
+          <li><a href="/web/js/" class="nav-link">JS</a></li>
           <li><a href="/web/es6/" class="nav-link">ES6</a></li>
           <li><a href="/web/vue/" class="nav-link">VUE</a></li>
           <li><a href="/web/sql/" class="nav-link">SQL</a></li>
@@ -127,25 +127,7 @@
     
     
     <li>
-      <a href="/web/js/index.html" class="sidebar-link current">js基础</a>
-    </li>
-  
-    
-    
-    <li>
-      <a href="/web/js/js%E8%BF%9B%E9%98%B62.html" class="sidebar-link">js进阶2</a>
-    </li>
-  
-    
-    
-    <li>
-      <a href="/web/js/js%E8%BF%9B%E9%98%B63.html" class="sidebar-link">js进阶3</a>
-    </li>
-  
-    
-    
-    <li>
-      <a href="/web/js/js%E6%9C%BA%E5%88%B6.html" class="sidebar-link">js机制</a>
+      <a href="/web/webpack/index.html" class="sidebar-link current">webpack</a>
     </li>
   
 </ul>
@@ -156,33 +138,20 @@
 </div>
 
 
-<div class="content js with-sidebar ">
+<div class="content webpack with-sidebar ">
   
     
   
   
-    <h1>js基础</h1>
+    <h1>webpack</h1>
   
 
   
-    <h3 id="执行上下文-作用域链-闭包"><a href="#执行上下文-作用域链-闭包" class="headerlink" title="执行上下文/作用域链/闭包"></a>执行上下文/作用域链/闭包</h3><h4 id="JavaScript中的执行上下文和执行栈"><a href="#JavaScript中的执行上下文和执行栈" class="headerlink" title="JavaScript中的执行上下文和执行栈"></a>JavaScript中的执行上下文和执行栈</h4><p>1.执行上下文</p>
-<ul>
-<li>变量对象(Variable object，VO)</li>
-<li>作用域链(Scope chain)</li>
-<li>this</li>
-</ul>
-<h4 id="JavaScript中的作用域链"><a href="#JavaScript中的作用域链" class="headerlink" title="JavaScript中的作用域链"></a>JavaScript中的作用域链</h4><h4 id="JavaScript中的闭包"><a href="#JavaScript中的闭包" class="headerlink" title="JavaScript中的闭包"></a>JavaScript中的闭包</h4><ul>
-<li>闭包是指有权访问另外一个函数作用域中的变量的函数.可以理解为(能够读取其他函数内部变量的函数)</li>
-<li>闭包的作用: 正常函数执行完毕后,里面声明的变量被垃圾回收处理掉,但是闭包可以让作用域里的变量,在函数执行完之后依旧保持没有被垃圾回收处理掉</li>
-<li>闭包的缺陷:<br>闭包会导致内存占用过高,因为变量都没有释放内存</li>
-<li>函数创建的作用域在函数定义时就已经确定了</li>
-</ul>
-<h3 id="原型和继承-推荐文章"><a href="#原型和继承-推荐文章" class="headerlink" title="原型和继承   推荐文章"></a>原型和继承   <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/1UDILezroK5wrcK-Z5bHOg">推荐文章</a></h3><h4 id="原型prototype"><a href="#原型prototype" class="headerlink" title="原型prototype"></a>原型prototype</h4><p>总结：JS 原型是指为其它对象提供共享属性访问的对象。</p>
-<p>在创建对象时，每个对象都包含一个隐式引用指向它的原型对象或者 null。</p>
-<p>每个函数都有一个显性引用prototype<br>每个对线都有一个隐性引用__proto__</p>
-<h4 id="原型链是什么"><a href="#原型链是什么" class="headerlink" title="原型链是什么"></a>原型链是什么</h4><p>总结：原型也是对象，因此它也有自己的原型。这样构成一个原型链。</p>
-<p>当我们去访问一个对象属性时,先在自身属性中查找,如果没有,在沿着__proto__这条链向上查找，直到找到null/unfindefid</p>
-<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4>
+    <h3 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h3><p>webpack通过自执行函数启动，然后通过webpack自定义的exports和require实现模块化。在webpack万物皆模块。</p>
+<h3 id="webpack流程"><a href="#webpack流程" class="headerlink" title="webpack流程"></a>webpack流程</h3><p>entry<br>output<br>loader<br>plugins</p>
+<h3 id="loader和plugins"><a href="#loader和plugins" class="headerlink" title="loader和plugins"></a>loader和plugins</h3><p>loader是模块加载器,用于加载某些资源文件<br>plugins用于扩展webpack的功能，提供更为强大的插件入口</p>
+<h3 id="常用的插件"><a href="#常用的插件" class="headerlink" title="常用的插件"></a>常用的插件</h3><p>http-proxy-middleware:利用代理进行跨域处理<br>CommonsChunkPlugin：提高打包效率，将第三方库和业务代码分开打包。<br>ProvidePlugin：自动加载模块<br>html-webpack-plugin：根据模板自动生成html代码，并自动引用css和js文件<br>HotModuleReplacementPlugin ：热更新<br>happypack：通过多进程模型，来加速代码构建<br>CleanWebpackPlugin：删除文件</p>
+
   
   
   <div class="footer">
@@ -199,7 +168,7 @@ _bsa.init('custom', 'CKYD62QM', 'placement:vuejsorg',
 
 
     发现错误？
-    <!-- <a href="https://github.com/vuejs/cn.vuejs.org/blob/master/src/web/js/index.md" rel="noopener" target="_blank">
+    <!-- <a href="https://github.com/vuejs/cn.vuejs.org/blob/master/src/web/webpack/index.md" rel="noopener" target="_blank">
       在 GitHub 上编辑此页！
     </a> -->
   </div>
