@@ -1,0 +1,3 @@
+Sitemap: https://www.sd2n.xyz/sitemap.xml
+
+User-agent: *

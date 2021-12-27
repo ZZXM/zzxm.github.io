@@ -1,0 +1,67 @@
+├─docs
+│  │  11.md
+│  │  index.md
+│  │  README.md
+│  │  介绍.md
+│  │
+│  ├─.vuepress
+│  │  │  config.js
+│  │  │  enhanceApp.js
+│  │  │  manifest.json
+│  │  │  nav.js
+│  │  │  sidebar.js
+│  │  │  themeConfig.js
+│  │  │
+│  │  └─public
+│  │      │  robots.txt
+│  │      │
+│  │      ├─css
+│  │      │      style.css
+│  │      │
+│  │      └─img
+│  │              avatar.png
+│  │              icon.ico
+│  │              logo.png
+│  │              time_lover.jpg
+│  │
+│  └─thought
+│      │  README.md
+│      │  sidebar.js
+│      │
+│      └─blogs
+│          ├─ideas
+│          │      2021-03-28.md
+│          │      2021-05-08.md
+│          │
+│          ├─movie
+│          │      about_time.md
+│          │      Benjamin.md
+│          │      Manchester_by_the_Sea.md
+│          │
+│          └─reading
+│                  like_a_bird.md
+│                  mini_habits.md
+│
+└─node_modules
+    └─@vuepress
+        └─core
+            └─.temp
+                │  palette.styl
+                │  style.styl
+                │
+                ├─app-enhancers
+                │      0.js
+                │      data-block.js
+                │      global-components-10.js
+                │      global-components-11.js
+                │      global-components-12.js
+                │      global-components-5.js
+                │      global-components-6.js
+                │      global-components-7.js
+                │      global-components-8.js
+                │      global-components-9.js
+                │
+                └─internal
+                        app-enhancers.js
+                        global-ui.js
+
