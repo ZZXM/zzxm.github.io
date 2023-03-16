@@ -5,13 +5,13 @@
   "author": {
     "name": "gaoyi(Evan) Xu"
   },
-  "homepage": "https://github.com/zzxm/vuepress-theme-vdoing#readme",
+  "homepage": "https://github.com/ZZXM/zzxm.github.io#readme",
   "bugs": {
-    "url": "https://github.com/zzxm/vuepress-theme-vdoing/issues"
+    "url": "https://github.com/ZZXM/zzxm.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zzxm/vuepress-theme-vdoing.git"
+    "url": "git+https://github.com/ZZXM/zzxm.github.io.git"
   },
   "keywords": [
     "documentation",
