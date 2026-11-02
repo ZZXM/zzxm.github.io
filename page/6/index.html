@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zzxm.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:type" content="website">
+<meta property="og:title" content="庄生晓梦">
+<meta property="og:url" content="https://zzxm.github.io/page/6/">
+<meta property="og:site_name" content="庄生晓梦">
+<meta property="og:description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="zzxm">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zzxm.github.io/page/6/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/6/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>庄生晓梦</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="搜索" role="button">
+      <i class="fa fa-search fa-fw fa-lg"></i>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">庄生晓梦</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Web 前端技术博客，积跬步以至千里</p>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="切换导航栏" role="button">
+      <i class="fa fa-ellipsis fa-fw fa-lg"></i>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  
+  <template id="search-popup-template"><div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div></template>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zzxm</p>
+  <div class="site-description" itemprop="description">前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">222</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/note/js/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/note/js/" class="post-title-link" itemprop="url">《JavaScript高级程序设计》笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-06-12 12:39:01" itemprop="dateCreated datePublished" datetime="2020-06-12T12:39:01+08:00">2020-06-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="第1章-JavaScript简介"><a href="#第1章-JavaScript简介" class="headerlink" title="第1章  JavaScript简介"></a>第1章  JavaScript简介</h2><ul>
+<li><p>JavaScript诞生于<strong>1995</strong>年</p>
+</li>
+<li><p>一个完整的JavaScript由这三部分组成：</p>
+<ul>
+<li><strong>ECMAScript</strong> (核心)</li>
+<li><strong>DOM</strong> (文档对象模型)</li>
+<li><strong>BOM</strong> (浏览器对象模型)</li>
+</ul>
+</li>
+<li><p>ECMAScript的 <strong>宿主环境</strong> 包含 ：</p>
+<ul>
+<li>浏览器</li>
+<li>Node</li>
+<li>flash</li>
+</ul>
+</li>
+<li><p>ECMAScript大致规定了下列组成部分：</p>
+<ul>
+<li>语法</li>
+<li>类型</li>
+<li>语句</li>
+<li>关键字</li>
+<li>保留字</li>
+<li>操作符</li>
+<li>对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="第2章-在HTML中使用JavaScript"><a href="#第2章-在HTML中使用JavaScript" class="headerlink" title="第2章 在HTML中使用JavaScript"></a>第2章 在HTML中使用JavaScript</h2><ul>
+<li><code>&lt;script&gt;</code> 标签有下列常见属性：<ul>
+<li>async 表示立即下载脚本，不妨碍页面的其他操作（异步下载）<ul>
+<li>无法保证每个js的顺序</li>
+<li>用于互不依赖的js</li>
+<li>主要目的是不让页面等js</li>
+</ul>
+</li>
+<li>defer 延迟到文档完全解析和显示之后在执行<ul>
+<li>在<code>&lt;/html&gt;</code>标签之后执行</li>
+</ul>
+</li>
+<li>src 外部文件链接</li>
+<li>type 表示编写代码使用的脚本语言的内容类型<ul>
+<li><code>text/javascript</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="第3章-基本概念"><a href="#第3章-基本概念" class="headerlink" title="第3章 基本概念"></a>第3章 基本概念</h2><ul>
+<li><p>语法，借鉴了C语言</p>
+<ul>
+<li><strong>区分大小写</strong></li>
+<li><strong>标识符</strong>，指的是<strong>变量、函数、属性</strong>的名字<ul>
+<li>第一个字符必须是 字母、下划线、或美元符号</li>
+<li>其他字符可以是字母、下划线、美元符号或数字</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>严格模式 </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据类型</p>
+<ul>
+<li>基本数据类型<ul>
+<li>Undefined、Null、Boolean、Number、String</li>
+<li><code>typeof</code>操作符，一般用于基本类型的检测，返回相应类型的字符串<ul>
+<li>“undefined”,&quot;boolean&quot;,&quot;string&quot;,&quot;number&quot;,&quot;object&quot;,&quot;function&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>复杂数据类型 <ul>
+<li>Object</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>Null</code>类型</p>
+<ul>
+<li>表示<strong>空对象指针</strong></li>
+<li>只要意在保存对象的变量还没有真正保证对象，则保存<code>null</code></li>
+<li><code>undefined</code>派生自<code>null</code>，因此用<code>==</code>比较返回<code>true</code></li>
+</ul>
+</li>
+<li><p>浮点数，指的是数值中包含一个小数点，并且小数点后面至少有一位数字</p>
+</li>
+<li><p>NaN </p>
+<ul>
+<li>任何涉及NaN的操作都返回<code>NaN</code></li>
+<li><code>NaN</code>与任何值都不相等，包括<code>NaN</code>本身</li>
+</ul>
+</li>
+<li><p>数值转换</p>
+<ul>
+<li>有3个函数可以把非数值转换为数值<ul>
+<li>Number() 可以用于任何数据类型</li>
+<li>parseInt() 专门用于字符串转数值，用于解析整数</li>
+<li>parseFloat() 专门用于字符串转数值，用于解析浮点数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>字符串</p>
+<ul>
+<li>数值、布尔值、对象、字符串值本身 都有toString()方法，用于转为字符串</li>
+<li>undefined和null没有toString()方法，但可以使用String()方法</li>
+</ul>
+</li>
+<li><p>Object类型</p>
+<ul>
+<li><p>对象其实就是一组数据与功能的集合</p>
+</li>
+<li><p>使用Object()构造函数创建对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Object</span>(); <span class="comment">// 同 obj = &#123;&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>每个对象实例都有下列属性和方法</p>
+<ul>
+<li><code>constructor</code> 指向用于创建当前对象的构造函数 。（对于上面例子而言，就是<code>Object()</code>）</li>
+<li><code>hasOwnProperty(propertyName)</code> 用于检查给定属性是否在当前对象实例中</li>
+<li><code>isPrototypeOf(Object)</code> 用于检查传入的对象是否是当前对象的原型</li>
+<li><code>propertyIsEnumerable(propertyName)</code> 用于检查给定的属性是否能够使用<code>for-in</code>来枚举</li>
+<li><code>toLocaleString()</code> 返回对象的字符串表示，该字符串与执行环境的地区对应</li>
+<li><code>toString()</code> 返回对象的字符串表示</li>
+<li><code>valueOf()</code> 返回对象的字符串、数值、布尔值表示。通常与<code>toString()</code>返回值相同</li>
+</ul>
+<p><strong>所有对象都有以上属性和方法</strong></p>
+</li>
+</ul>
+</li>
+<li><p><strong>操作符</strong></p>
+<ul>
+<li>一元操作符<ul>
+<li>++</li>
+<li>--</li>
+<li>前置与后置的区别是与其他数运算时，前置会先执行递增（减）再与其他数运算，后置会先与其他数运算再对自身执行递增(减)</li>
+</ul>
+</li>
+<li>布尔操作符<ul>
+<li>与 (&amp;&amp;)<ul>
+<li>短路操作，即如果第一个操作数能决定结果，就不会对第二个操作数求值</li>
+</ul>
+</li>
+<li>或 (||)<ul>
+<li>短路操作，即如果第一个操作数能决定结果，就不会对第二个操作数求值</li>
+</ul>
+</li>
+<li>非 (!)<ul>
+<li>先使用Boolean()转成布尔值再取反</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>语句</strong>（也称流控制语句）</p>
+<ul>
+<li><p>if-else</p>
+</li>
+<li><p>do-while</p>
+<ul>
+<li><p>后测试循环语句，在对表达式求值之前，循环体内的代码至少会被执行一次</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">0</span></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    i += <span class="number">2</span></span><br><span class="line">&#125; <span class="keyword">while</span> (i &lt; <span class="number">10</span>)  <span class="comment">// 只要i小于10就会一直循环</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>while</p>
+<ul>
+<li><p>前测试语句</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> (i &lt; <span class="number">10</span>) &#123;</span><br><span class="line">    i += <span class="number">2</span></span><br><span class="line">&#125; <span class="comment">// 只要i小于10就会一直循环</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>for </p>
+<ul>
+<li><p>使用while循环做不到的，使用for循环同样做不到。就是说，for循环只是把与循环有关的代码集合在一个位置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化;条件;循环后执行)&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>break 立即退出循环</p>
+</li>
+<li><p>continue 退出当前单次循环</p>
+</li>
+</ul>
+</li>
+<li></li>
+<li><p>for- in 用来枚举对象的属性</p>
+</li>
+</ul>
+</li>
+<li><p>函数</p>
+<ul>
+<li>任何函数都可以在任何时候返回任何值</li>
+<li>未指定返回值的函数会返回一个undefined</li>
+<li>通过arguments访问参数，它是一个类数组</li>
+</ul>
+</li>
+</ul>
+<h2 id="第4章-变量、作用域和内存问题"><a href="#第4章-变量、作用域和内存问题" class="headerlink" title="第4章 变量、作用域和内存问题"></a>第4章 变量、作用域和内存问题</h2><ul>
+<li><p>变量包含两种类型的值：</p>
+<ul>
+<li>基本类型值，指的是简单的数据段</li>
+<li>引用类型值，指的是那些可能由多个值构成的<strong>对象</strong></li>
+</ul>
+</li>
+<li><p>复制变量值</p>
+<ul>
+<li>复制基本类型的变量值只是复制了该值的副本</li>
+<li>复制引用类型的变量值时，同样也会将存储在变量对象的值复制一份放到新变量的空间中，不同的是，这个值的副本实际上是一个指针，而这个指针指向存储在堆中的一个对象。两个变量指向同一个对象。</li>
+</ul>
+</li>
+<li><p>传递参数</p>
+<ul>
+<li>所有函数的参数都是按值传递的</li>
+</ul>
+</li>
+<li><p>检测类型</p>
+<ul>
+<li><code>typeof</code> 检测基础类型</li>
+<li><code>instanceof</code>检测引用类型<ul>
+<li>变量 instanceof 构造函数（例：obj instanceof Object）</li>
+<li>所有引用类型的值都是Object的实例</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>执行环境</p>
+<ul>
+<li>在浏览器中，全局执行环境是<code>window</code>对象</li>
+<li>每个函数都有自己的<strong>执行环境</strong></li>
+</ul>
+</li>
+<li><p>作用域链</p>
+<ul>
+<li>当代码在一个环境中执行时，会创建变量对象的一个<strong>作用域链</strong></li>
+<li>作用域链的前端，始终是当前执行的代码所在环境的变量对象。</li>
+<li>作用域链中的下一个变量对象来自包含（外部）环境，而再下一个变量对象则来自下一个包含对象。这样一直延续到全局执行环境。</li>
+<li>全局执行环境的变量对象始终都是作用域链中的最后一个对象。</li>
+</ul>
+</li>
+<li><p>垃圾收集</p>
+<ul>
+<li>JavaScript具有自动垃圾收集机制<ul>
+<li>对于不再使用的变量打上标记，被打上标记的变量将在执行回收时被清除，释放内存空间。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="第5章-引用类型"><a href="#第5章-引用类型" class="headerlink" title="第5章 引用类型"></a>第5章 引用类型</h2><ul>
+<li><p>引用类型的值是引用类型的一个实例</p>
+</li>
+<li><p>引用类型就是一种数据结构，描述了一类对象所具有的属性和方法</p>
+</li>
+<li><p>创建Object实例的方式有两种：</p>
+<ul>
+<li><pre><code class="language-js">var obj = new Object()
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* ```js</span><br><span class="line">  var obj = &#123;&#125; // 与 new Object() 相同，但实际不会调用Object构造函数</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>访问对象的属性有两种：</p>
+<ul>
+<li>点表示法 和 方括号表示法</li>
+</ul>
+</li>
+</ul>
+<h3 id="Array类型"><a href="#Array类型" class="headerlink" title="Array类型"></a>Array类型</h3><ul>
+<li><p>length属性不是只读的</p>
+</li>
+<li><p>检测数组</p>
+<ul>
+<li><pre><code class="language-js">value instanceof Array
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* ```js</span><br><span class="line">  Array.isArray(value)</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>转换方法</p>
+<ul>
+<li>toLocaleString() 与toString()相同</li>
+<li>toString() 返回数组中每个值的字符串形式用逗号分隔拼接而成的字符串</li>
+<li>valueOf() 返回数组本身</li>
+</ul>
+</li>
+</ul>
+<h4 id="join-转换方法-不改原数组"><a href="#join-转换方法-不改原数组" class="headerlink" title="join() 转换方法 (不改原数组)"></a>join() 转换方法 (不改原数组)</h4><p>接收一个参数，用作分隔符的字符串，然后返回包含所有数组项的字符串。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;blue&#x27;</span>,<span class="string">&#x27;green&#x27;</span>]</span><br><span class="line"><span class="keyword">var</span> arrStr = arr.<span class="title function_">join</span>(<span class="string">&#x27;|&#x27;</span>) <span class="comment">// &quot;red|blue|green&quot;</span></span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">join</span>() <span class="comment">// &quot;red,blue,green&quot;</span></span><br><span class="line">arr.<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>) <span class="comment">// &quot;redbluegreen&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="栈方法，后进先出-push-、pop-改变原数组"><a href="#栈方法，后进先出-push-、pop-改变原数组" class="headerlink" title="栈方法，后进先出 push() 、pop()      (改变原数组)"></a>栈方法，后进先出 push() 、pop()      (改变原数组)</h4><ul>
+<li>push() 向数组末尾添加成员，返回总长</li>
+<li>pop() 移除数组末尾一个成员，返回该成员</li>
+</ul>
+<h4 id="队列方法，先进先出-push-、shift-、unshift-改变原数组"><a href="#队列方法，先进先出-push-、shift-、unshift-改变原数组" class="headerlink" title="队列方法，先进先出  push()、shift()   、unshift() (改变原数组)"></a>队列方法，先进先出  push()、shift()   、unshift() (改变原数组)</h4><ul>
+<li><p>shift() 移除数组首个成员，返回该成员</p>
+</li>
+<li><p>unshift() 在数组前面添加成员，返回总长</p>
+</li>
+</ul>
+<p>push()和shift() 形成队列方法</p>
+<p>unshift和pop() 形成反方向队列方法</p>
+<h4 id="重排序方法-reverse-反转-sort-排序-（改变原数组）"><a href="#重排序方法-reverse-反转-sort-排序-（改变原数组）" class="headerlink" title="重排序方法 reverse() 反转  sort() 排序   （改变原数组）"></a>重排序方法 reverse() 反转  sort() 排序   （改变原数组）</h4><ul>
+<li>reverse() 反转数组项的顺序</li>
+<li>sort() 接收一个函数作为参数，函数接收两个参数。<ul>
+<li>自定义排序：函数内，如果第一个参数应该位于第二个之前，则手动返回一个负数，如果两个参数相等，手动返回0，如果第一个参数应该位于第二个参数之后，则手动返回一个正数。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 升序</span></span><br><span class="line">arr.<span class="title function_">sort</span>(<span class="keyword">function</span>(<span class="params">a,b</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(a &lt; b) &#123;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        retunr <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>简写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr.<span class="title function_">sort</span>(<span class="function">(<span class="params">a,b</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a-b <span class="comment">// 升序， b-a 降序</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="操作方法-concat-拼接，slice-切片，splice-移接"><a href="#操作方法-concat-拼接，slice-切片，splice-移接" class="headerlink" title="操作方法 concat() 拼接，slice() 切片，splice() 移接"></a>操作方法 concat() 拼接，slice() 切片，splice() 移接</h4><ul>
+<li><p>concat() 拼接数组 （<strong>不改原数组</strong>）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>]</span><br><span class="line"><span class="keyword">var</span> arr2 = arr1.<span class="title function_">concat</span>(<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;d&#x27;</span>) <span class="comment">// [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;,&#x27;d&#x27;]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>slice() 切片（<strong>不改原数组</strong>）</p>
+<ul>
+<li>slice(起始位置 [, 结束位置])  返回起始位置到结束位置的成员，不包含结束位置。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> arr2 = arr1.<span class="title function_">slice</span>(<span class="number">1</span>,<span class="number">3</span>) <span class="comment">// [2,3]</span></span><br><span class="line"><span class="keyword">var</span> arr3 = arr1.<span class="title function_">slice</span>(<span class="number">2</span>) <span class="comment">// [3,4,5]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>splice() 移接 （<strong>改变原数组</strong>）</p>
+<ul>
+<li>splice(起始位置, 要删除的个数，要插入的项)<ul>
+<li>要插入的项 可以有0个或多个</li>
+</ul>
+</li>
+<li>splice() 始终返回一个数组，该数组成员中包含原始数组中被删除的项，如果没有则返回空数组。</li>
+<li>数组最强大的方法，可用于删除、插入、替换操作</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">1</span>,<span class="number">1</span>) <span class="comment">// [2]</span></span><br><span class="line">arr <span class="comment">// [1,3,4]</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">2</span>,<span class="number">0</span>,<span class="string">&#x27;a&#x27;</span>) <span class="comment">// []</span></span><br><span class="line">arr <span class="comment">// [1,2,&#x27;a&#x27;,3,4]</span></span><br><span class="line"></span><br><span class="line">arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">3</span>,<span class="number">1</span>,<span class="string">&#x27;a&#x27;</span>) <span class="comment">// [4]</span></span><br><span class="line">arr <span class="comment">// [1,2,3,&#x27;a&#x27;]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="位置方法-indexOf-、lastIndexOf"><a href="#位置方法-indexOf-、lastIndexOf" class="headerlink" title="位置方法 indexOf()、lastIndexOf()"></a>位置方法 indexOf()、lastIndexOf()</h4><ul>
+<li>查找项的位置，没有则返回-1</li>
+<li>indexOf() 从前面开始找，lastIndexOf() 从后面开始找</li>
+</ul>
+<h4 id="迭代方法-every-、some-、filter-、map-、forEach-（都不会改变原数组）"><a href="#迭代方法-every-、some-、filter-、map-、forEach-（都不会改变原数组）" class="headerlink" title="迭代方法 every()、some() 、filter()、map() 、forEach()  （都不会改变原数组）"></a>迭代方法 every()、some() 、filter()、map() 、forEach()  （都不会改变原数组）</h4><ul>
+<li><p>5个迭代方法，每个方法都接收两个参数： </p>
+<ul>
+<li>在每项上运行的函数</li>
+<li>运行函数的作用域对象</li>
+</ul>
+</li>
+<li><p>函数接收三个参数：</p>
+<ul>
+<li>数组项的值</li>
+<li>该项的索引</li>
+<li>数组本身</li>
+</ul>
+</li>
+<li><p>every()  如果函数对每项都返回true，则返回true</p>
+<ul>
+<li><p>例：判断数组每一项是否都大于2</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="keyword">var</span> result = numbers.<span class="title function_">every</span>(<span class="function">(<span class="params">item,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> item &gt; <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line">result <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>some() 如果函数对任一项返回true，则返回true</p>
+<ul>
+<li><p>例：判断数组是否包含大于2的值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]</span><br><span class="line"><span class="keyword">var</span> result = numbers.<span class="title function_">some</span>(<span class="function">(<span class="params">item,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> item &gt; <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line">result <span class="comment">// true</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>filter() 返回函数会返回true的项组成的数组</p>
+<ul>
+<li><p>例：过滤掉数组中小于等于2的数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> result = numbers.<span class="title function_">filter</span>(<span class="function">(<span class="params">item,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> item &gt;<span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line">result <span class="comment">// [3,4,5]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>map() 返回每次函数调用的结果组成的数组</p>
+<ul>
+<li><p>例：给数组每一项乘以2</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> result = numbers.<span class="title function_">map</span>(<span class="function">(<span class="params">item,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> item * <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line">result <span class="comment">// [2,4,6,8,10]</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>forEach() 循环数组每一项，没有返回值</p>
+<ul>
+<li><p>例：循环每一项</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">numbers.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 做一些操作</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="归并方法-reduce-reduceRight"><a href="#归并方法-reduce-reduceRight" class="headerlink" title="归并方法 reduce()  reduceRight()"></a>归并方法 reduce()  reduceRight()</h4><ul>
+<li><p>reduce() 归并为</p>
+</li>
+<li><p>reduceRight() 从右边归并</p>
+</li>
+<li><p>这两个方法都会迭代数组所有项，然后构建一个最终结果并返回</p>
+</li>
+<li><p>方法接收两个参数： 每一项上调用的函数，归并基础的初始值</p>
+</li>
+<li><p>函数接收4个参数：前一个的值、当前值、当前值的索引、数组对象</p>
+</li>
+<li><p>例：求数组每一项之和</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> result = number.<span class="title function_">reduce</span>(<span class="function">(<span class="params">prev,cur,index,arr</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> prev + cur</span><br><span class="line">&#125;)</span><br><span class="line">result <span class="comment">// 15</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>reduce()方法，第一次执行函数时，prev是数组的第一项，cur是数组的第二项</p>
+</li>
+</ul>
+<h2 id="第6章-面向对象的程序设计"><a href="#第6章-面向对象的程序设计" class="headerlink" title="第6章 面向对象的程序设计"></a>第6章 面向对象的程序设计</h2><h3 id="6-1-理解对象"><a href="#6-1-理解对象" class="headerlink" title="6.1 理解对象"></a>6.1 理解对象</h3><ul>
+<li>对象的定义：无序属性的集合，其属性可以包含基本值、对象或者函数。<ul>
+<li>一组键值对，其中值可以是数据或函数</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-1-1-对象的属性"><a href="#6-1-1-对象的属性" class="headerlink" title="6.1.1 对象的属性"></a>6.1.1 对象的属性</h4><p>​	包含两种：<strong>数据属性</strong> 和 <strong>访问器属性</strong></p>
+<h5 id="1-数据属性"><a href="#1-数据属性" class="headerlink" title="1.数据属性"></a>1.数据属性</h5><ul>
+<li>configurable 可配置性（限制 delete删除属性和<code>Object.defineProperty()</code>方法是否起效。），默认true</li>
+<li>enumerable 可列举性，默认true</li>
+<li>writable 可写性，默认true</li>
+<li>value 值，默认undefined</li>
+</ul>
+<p>使用<code>Object.defineProperty()</code>方法修改这些默认属性。接收三个值：<strong>属性所在的对象、属性名、描述符对象</strong>。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;&#125;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(person,<span class="string">&#x27;name&#x27;</span>,&#123;</span><br><span class="line">    <span class="attr">writable</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">value</span>: <span class="string">&#x27;xu&#x27;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">name</span>) <span class="comment">// xu</span></span><br><span class="line">person.<span class="property">name</span> = <span class="string">&#x27;gao&#x27;</span> <span class="comment">// 修改无效</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">name</span>) <span class="comment">// xu</span></span><br></pre></td></tr></table></figure>
+
+<p>使用此方法定义属性如未指定<code>configurable</code>、<code>enumerable</code>、<code>writable</code> 将默认<code>false</code>。</p>
+<h5 id="2-访问器属性"><a href="#2-访问器属性" class="headerlink" title="2.访问器属性"></a>2.访问器属性</h5><p>包含两个函数：getter函数和setter函数（这两个函数都是非必需）。读取时调用getter，访问时调用setter。</p>
+<p>使用<code>Object.defineProperty()</code>方法定义访问器属性。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> book = &#123;</span><br><span class="line">    <span class="attr">_year</span>: <span class="number">2020</span>,</span><br><span class="line">    <span class="attr">edition</span>: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(book, <span class="string">&#x27;year&#x27;</span>, &#123;</span><br><span class="line">    <span class="attr">get</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">_year</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">set</span>: <span class="keyword">function</span>(<span class="params">newValue</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(newValue &gt; <span class="number">2020</span>) &#123;</span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">_year</span> = newValue</span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">edition</span> += newValue - <span class="number">2020</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">book.<span class="property">year</span> = <span class="number">2021</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(book.<span class="property">edition</span>) <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<p>当getter函数和setter函数只指定其中一个时，另外一个将不能用。</p>
+<h4 id="6-1-2-定义多个属性"><a href="#6-1-2-定义多个属性" class="headerlink" title="6.1.2 定义多个属性"></a>6.1.2 定义多个属性</h4><p><code>Object.defineProperties()</code>方法定义多个属性。接收两个参数: 要添加或修改属性的对象 、第二个参数是一个对象，其属性与第一个参数中的属性一一对应。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> book = &#123;&#125;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperties</span>(book, &#123;</span><br><span class="line">    <span class="attr">_year</span>: &#123; <span class="comment">// 数据属性</span></span><br><span class="line">        <span class="attr">writable</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">value</span>: <span class="number">2004</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">edition</span>: &#123; <span class="comment">// 数据属性</span></span><br><span class="line">        <span class="attr">writable</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">value</span>: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">year</span>: &#123; <span class="comment">// 访问器属性</span></span><br><span class="line">        <span class="attr">get</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">_year</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">set</span>: <span class="keyword">function</span>(<span class="params">newValue</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(newValue &gt; <span class="number">2004</span>)&#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">_year</span> = newValue</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">edition</span> += newValue - <span class="number">2004</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义了三个属性，每个属性有不同的描述符</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="6-1-3-读取属性的特性（描述符对象）"><a href="#6-1-3-读取属性的特性（描述符对象）" class="headerlink" title="6.1.3 读取属性的特性（描述符对象）"></a>6.1.3 读取属性的特性（描述符对象）</h4><p><code>Object.getOwnPropertyDescriptor()</code>方法获取描述符，接收两个参数： 属性所在的对象、属性名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> book = &#123;&#125;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperties</span>(book, &#123;</span><br><span class="line">    <span class="attr">_year</span>: &#123; <span class="comment">// 数据属性</span></span><br><span class="line">        <span class="attr">writable</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">value</span>: <span class="number">2004</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">edition</span>: &#123; <span class="comment">// 数据属性</span></span><br><span class="line">        <span class="attr">writable</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">value</span>: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">year</span>: &#123; <span class="comment">// 访问器属性</span></span><br><span class="line">        <span class="attr">get</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">_year</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">set</span>: <span class="keyword">function</span>(<span class="params">newValue</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(newValue &gt; <span class="number">2004</span>)&#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">_year</span> = newValue</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">edition</span> += newValue - <span class="number">2004</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> descriptor = <span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptor</span>(book, <span class="string">&quot;_year&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(descriptor) <span class="comment">// &#123;value: 2020, writable: true, enumerable: false, configurable: false&#125;</span></span><br><span class="line"><span class="keyword">var</span> descriptor = <span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptor</span>(book, <span class="string">&quot;year&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(descriptor) <span class="comment">// &#123;enumerable: false, configurable: false, get: ƒ, set: ƒ&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-创建对象"><a href="#6-2-创建对象" class="headerlink" title="6.2 创建对象"></a>6.2 创建对象</h3><p>使用Object构造函数或对象字面量方式创建对象。缺点：使用同一个接口创建很多对象时，会产生大量重复代码。解决方案：使用工厂模式的一种变体。</p>
+<h4 id="6-2-1-工厂模式"><a href="#6-2-1-工厂模式" class="headerlink" title="6.2.1 工厂模式"></a>6.2.1 工厂模式</h4><h2 id="第7章-函数表达式"><a href="#第7章-函数表达式" class="headerlink" title="第7章 函数表达式"></a>第7章 函数表达式</h2><h2 id="第8章-BOM"><a href="#第8章-BOM" class="headerlink" title="第8章 BOM"></a>第8章 BOM</h2><h2 id="第9章-客户端检测"><a href="#第9章-客户端检测" class="headerlink" title="第9章 客户端检测"></a>第9章 客户端检测</h2><h2 id="第10章-DOM"><a href="#第10章-DOM" class="headerlink" title="第10章 DOM"></a>第10章 DOM</h2><h2 id="第11章-DOM扩展"><a href="#第11章-DOM扩展" class="headerlink" title="第11章 DOM扩展"></a>第11章 DOM扩展</h2><h2 id="第12章-DOM2和DOM3"><a href="#第12章-DOM2和DOM3" class="headerlink" title="第12章 DOM2和DOM3"></a>第12章 DOM2和DOM3</h2><h2 id="第13章-事件"><a href="#第13章-事件" class="headerlink" title="第13章 事件"></a>第13章 事件</h2><h2 id="第14章-表单脚本"><a href="#第14章-表单脚本" class="headerlink" title="第14章 表单脚本"></a>第14章 表单脚本</h2><h2 id="第15章-使用Canvas绘图"><a href="#第15章-使用Canvas绘图" class="headerlink" title="第15章 使用Canvas绘图"></a>第15章 使用Canvas绘图</h2><h2 id="第16章-HTML5脚本编程"><a href="#第16章-HTML5脚本编程" class="headerlink" title="第16章 HTML5脚本编程"></a>第16章 HTML5脚本编程</h2><h2 id="第17章-错误处理与调试"><a href="#第17章-错误处理与调试" class="headerlink" title="第17章 错误处理与调试"></a>第17章 错误处理与调试</h2><h2 id="第18章-JavaScript与XML"><a href="#第18章-JavaScript与XML" class="headerlink" title="第18章 JavaScript与XML"></a>第18章 JavaScript与XML</h2><h2 id="第19章-E4X"><a href="#第19章-E4X" class="headerlink" title="第19章 E4X"></a>第19章 E4X</h2><h2 id="第20章-JSON"><a href="#第20章-JSON" class="headerlink" title="第20章 JSON"></a>第20章 JSON</h2><h2 id="第21章-Ajax与Comet"><a href="#第21章-Ajax与Comet" class="headerlink" title="第21章 Ajax与Comet"></a>第21章 Ajax与Comet</h2><h2 id="第22章-高级技巧"><a href="#第22章-高级技巧" class="headerlink" title="第22章 高级技巧"></a>第22章 高级技巧</h2><h2 id="第23章-离线应用与客户端存储"><a href="#第23章-离线应用与客户端存储" class="headerlink" title="第23章 离线应用与客户端存储"></a>第23章 离线应用与客户端存储</h2><h2 id="第24章-最佳实践"><a href="#第24章-最佳实践" class="headerlink" title="第24章 最佳实践"></a>第24章 最佳实践</h2><h2 id="第25章-新兴的API"><a href="#第25章-新兴的API" class="headerlink" title="第25章 新兴的API"></a>第25章 新兴的API</h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/ce818a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/ce818a/" class="post-title-link" itemprop="url">搜索引擎使用技巧</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-05-24 11:44:19" itemprop="dateCreated datePublished" datetime="2020-05-24T11:44:19+08:00">2020-05-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9B%B4%E5%A4%9A/" itemprop="url" rel="index"><span itemprop="name">更多</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9B%B4%E5%A4%9A/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>搜索引擎相信大家经常在使用，但是有时候想搜某个信息时却搜出来一大堆不相关的（百度：你们都在看我干什么？）。下面我们来介绍几种搜索技巧，可以提升搜索效率，助你快速查资料，妈妈再也不担心我的学习了（&#39;妈~我真的是在找学习资料&#39;）</p>
+<h3 id="技巧1：排除干扰项"><a href="#技巧1：排除干扰项" class="headerlink" title="技巧1：排除干扰项"></a>技巧1：排除干扰项</h3><p><strong>方式</strong>：关键词1+空格+减号+关键词2，即 <code>关键词1 -关键词2</code></p>
+<p><strong>功能</strong>：排除一些不想要的关键词</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">锤子 -锤子手机</span><br></pre></td></tr></table></figure>
+<p>示例中将在搜索结果排除与<code>锤子手机</code>相关的，只显示<code>锤子</code>本来的样子。</p>
+<blockquote>
+<p>经过百度搜索的测试，有的关键词能排除掉，有的并不好使</p>
+</blockquote>
+<h3 id="技巧2：精确搜索"><a href="#技巧2：精确搜索" class="headerlink" title="技巧2：精确搜索"></a>技巧2：精确搜索</h3><p><strong>方式</strong>：给关键词加双引号，<code>&quot;关键词&quot;</code></p>
+<p><strong>功能</strong>：只搜索引号里的字，少一个字或者把字拆开都不行</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;达拉不崩吧&quot;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意是英文的双引号</p>
+</blockquote>
+<h3 id="技巧3：指定网站内搜索"><a href="#技巧3：指定网站内搜索" class="headerlink" title="技巧3：指定网站内搜索"></a>技巧3：指定网站内搜索</h3><p><strong>方式</strong>：<code>site:域名 关键词</code></p>
+<p><strong>功能</strong>：只搜索指定域名的内容</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:zhihu.com 前端</span><br></pre></td></tr></table></figure>
+<p>有一些站内自带的搜索并不好用，可以尝试这个搜索技巧。</p>
+<h3 id="技巧4：指定文件格式"><a href="#技巧4：指定文件格式" class="headerlink" title="技巧4：指定文件格式"></a>技巧4：指定文件格式</h3><p><strong>方式</strong>：<code>filetype:文件格式 关键词</code></p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">filetype:avi 你懂的</span><br></pre></td></tr></table></figure>
+<p>常见文件格式有<code>doc</code>、<code>pdf</code>、<code>ppt</code>等</p>
+<h3 id="技巧5：指定在标题搜索"><a href="#技巧5：指定在标题搜索" class="headerlink" title="技巧5：指定在标题搜索"></a>技巧5：指定在标题搜索</h3><p><strong>方式</strong>：<code>intitle:关键词</code></p>
+<p><strong>功能</strong>：搜索的关键词要出现在标题当中</p>
+<h3 id="技巧6：指定在内容中搜索"><a href="#技巧6：指定在内容中搜索" class="headerlink" title="技巧6：指定在内容中搜索"></a>技巧6：指定在内容中搜索</h3><p><strong>方式</strong>：<code>intext:关键词</code>、<code>allintext:关键词1 关键词2</code>、<code>inurl:关键词2</code></p>
+<h3 id="技巧7：多种搜索技巧叠加使用"><a href="#技巧7：多种搜索技巧叠加使用" class="headerlink" title="技巧7：多种搜索技巧叠加使用"></a>技巧7：多种搜索技巧叠加使用</h3><p><strong>示例</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:zhihu.com 前端 intitle:js</span><br></pre></td></tr></table></figure>
+<p>多种技巧和关键词叠加使用，中间空格隔开。</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>以上搜索技巧使用的符号均是英文符号。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/3da0d7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/3da0d7/" class="post-title-link" itemprop="url">CSS-function汇总</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-05-12 09:36:44" itemprop="dateCreated datePublished" datetime="2020-05-12T09:36:44+08:00">2020-05-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200512161232.jpg"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/f2e63f/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/f2e63f/" class="post-title-link" itemprop="url">你知道的越多，不知道的也就越多</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-05-06 15:52:40" itemprop="dateCreated datePublished" datetime="2020-05-06T15:52:40+08:00">2020-05-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>不知道大家有没有发现，我们身边经常有这样的人，他们越是有能力的，越是有知识的，越是低调，越是谦逊，因为他们深知，知道的越多，不知道的也就越多。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/f2e63f/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/beb6c0bd8a66cea6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/beb6c0bd8a66cea6/" class="post-title-link" itemprop="url">网站</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-04-19 11:33:04" itemprop="dateCreated datePublished" datetime="2020-04-19T11:33:04+08:00">2020-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="个人收藏夹"><a href="#个人收藏夹" class="headerlink" title="个人收藏夹"></a>个人收藏夹</h1><h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://panjiachen.github.io/awesome-bookmarks/">panjiachen</a> by 花裤衩</li>
+<li><a target="_blank" rel="noopener" href="https://www.code-nav.cn/">编程导航</a> by 程序员鱼皮</li>
+<li><a target="_blank" rel="noopener" href="https://gitee.com/jishupang/web_atlas">前端知识图谱+B站资源整合</a> by 技术胖</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xugaoyi">编程自学之路</a> by 程序羊</li>
+<li><a target="_blank" rel="noopener" href="https://www.code-nav.cn/">vdoing</a> by 庄生晓梦</li>
+<li><a target="_blank" rel="noopener" href="https://shengxinjing.cn/">大圣编程自学网</a> by 大圣</li>
+<li><a target="_blank" rel="noopener" href="https://devtool.tech/">开发者武器库</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.fly63.com/tool/home.html">工具大全</a></li>
+</ul>
+<p align="center">
+<img src="https://fastly.jsdelivr.net/gh/xugaoyi/image_store@master/blog/qrcode.zdqv9mlfc0g.jpg" width="200">
+</p>
+
+<p>关注公众号[有趣研究社]，回复<code>前端资源</code>，获取 <a target="_blank" rel="noopener" href="https://github.com/zzxm/blog-gitalk-comment/wiki/Front-end-Study">前端学习资料</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/beb6c0bd8a66cea6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/941581927b4a38f8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/941581927b4a38f8/" class="post-title-link" itemprop="url">「css技巧」使用hover和attr()定制悬浮提示</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-04-18 12:14:09" itemprop="dateCreated datePublished" datetime="2020-04-18T12:14:09+08:00">2020-04-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="「css技巧」使用hover和attr-定制悬浮提示-demo"><a href="#「css技巧」使用hover和attr-定制悬浮提示-demo" class="headerlink" title="「css技巧」使用hover和attr()定制悬浮提示-demo"></a>「css技巧」使用hover和attr()定制悬浮提示-demo</h1><iframe height="400" style="width: 100%;" scrolling="no" title="【CSS：行为】使用:hover和attr()定制悬浮提示" src="https://codepen.io/xugaoyi/embed/vYNKNaq?height=400&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a target="_blank" rel="noopener" href='https://codepen.io/xugaoyi/pen/vYNKNaq'>【CSS：行为】使用:hover和attr()定制悬浮提示</a> by xugaoyi
+  (<a target="_blank" rel="noopener" href='https://codepen.io/xugaoyi'>@xugaoyi</a>) on <a target="_blank" rel="noopener" href='https://codepen.io'>CodePen</a>.
+</iframe>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/941581927b4a38f8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/fd4a16d56b83c1bc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/fd4a16d56b83c1bc/" class="post-title-link" itemprop="url">比typeof运算符更准确的类型判断</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-04-13 15:56:54" itemprop="dateCreated datePublished" datetime="2020-04-13T15:56:54+08:00">2020-04-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript%E6%96%87%E7%AB%A0/" itemprop="url" rel="index"><span itemprop="name">JavaScript文章</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>不同数据类型的<code>Object.prototype.toString</code>方法返回值如下。</p>
+<ul>
+<li>数值：返回<code>[object Number]</code>。</li>
+<li>字符串：返回<code>[object String]</code>。</li>
+<li>布尔值：返回<code>[object Boolean]</code>。</li>
+<li>undefined：返回<code>[object Undefined]</code>。</li>
+<li>null：返回<code>[object Null]</code>。</li>
+<li>数组：返回<code>[object Array]</code>。</li>
+<li>arguments 对象：返回<code>[object Arguments]</code>。</li>
+<li>函数：返回<code>[object Function]</code>。</li>
+<li>Error 对象：返回<code>[object Error]</code>。</li>
+<li>Date 对象：返回<code>[object Date]</code>。</li>
+<li>RegExp 对象：返回<code>[object RegExp]</code>。</li>
+<li>其他对象：返回<code>[object Object]</code>。</li>
+</ul>
+<p>这就是说，<code>Object.prototype.toString</code>可以看出一个值到底是什么类型。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(<span class="number">2</span>) <span class="comment">// &quot;[object Number]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(<span class="string">&#x27;&#x27;</span>) <span class="comment">// &quot;[object String]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(<span class="literal">true</span>) <span class="comment">// &quot;[object Boolean]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(<span class="literal">undefined</span>) <span class="comment">// &quot;[object Undefined]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(<span class="literal">null</span>) <span class="comment">// &quot;[object Null]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(<span class="title class_">Math</span>) <span class="comment">// &quot;[object Math]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(&#123;&#125;) <span class="comment">// &quot;[object Object]&quot;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>([]) <span class="comment">// &quot;[object Array]&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>利用这个特性，可以写出一个比<code>typeof</code>运算符更准确的类型判断函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> type = <span class="keyword">function</span> (<span class="params">o</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> s = <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(o)</span><br><span class="line">    <span class="keyword">return</span> s.<span class="title function_">match</span>(<span class="regexp">/\[object (.*?)\]/</span>)[<span class="number">1</span>].<span class="title function_">toLowerCase</span>()</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">type</span>(&#123;&#125;); <span class="comment">// &quot;object&quot;</span></span><br><span class="line"><span class="title function_">type</span>([]); <span class="comment">// &quot;array&quot;</span></span><br><span class="line"><span class="title function_">type</span>(<span class="number">5</span>); <span class="comment">// &quot;number&quot;</span></span><br><span class="line"><span class="title function_">type</span>(<span class="literal">null</span>); <span class="comment">// &quot;null&quot;</span></span><br><span class="line"><span class="title function_">type</span>(); <span class="comment">// &quot;undefined&quot;</span></span><br><span class="line"><span class="title function_">type</span>(<span class="regexp">/abcd/</span>); <span class="comment">// &quot;regex&quot;</span></span><br><span class="line"><span class="title function_">type</span>(<span class="keyword">new</span> <span class="title class_">Date</span>()); <span class="comment">// &quot;date&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>在上面这个<code>type</code>函数的基础上，还可以加上专门判断某种类型数据的方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> type = <span class="keyword">function</span> (<span class="params">o</span>)&#123;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(o);</span><br><span class="line">  <span class="keyword">return</span> s.<span class="title function_">match</span>(<span class="regexp">/\[object (.*?)\]/</span>)[<span class="number">1</span>].<span class="title function_">toLowerCase</span>();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">[<span class="string">&#x27;Null&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Undefined&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Object&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Array&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;String&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Number&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Boolean&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Function&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;RegExp&#x27;</span></span><br><span class="line">].<span class="title function_">forEach</span>(<span class="keyword">function</span> (<span class="params">t</span>) &#123;</span><br><span class="line">  type[<span class="string">&#x27;is&#x27;</span> + t] = <span class="keyword">function</span> (<span class="params">o</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">type</span>(o) === t.<span class="title function_">toLowerCase</span>();</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">type.<span class="title function_">isObject</span>(&#123;&#125;) <span class="comment">// true</span></span><br><span class="line">type.<span class="title function_">isNumber</span>(<span class="title class_">NaN</span>) <span class="comment">// true</span></span><br><span class="line">type.<span class="title function_">isRegExp</span>(<span class="regexp">/abc/</span>) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/dec4f3f00e71a312/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/dec4f3f00e71a312/" class="post-title-link" itemprop="url">npm packageJson属性详解</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-04-08 17:16:38" itemprop="dateCreated datePublished" datetime="2020-04-08T17:16:38+08:00">2020-04-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="npm-package-json属性详解"><a href="#npm-package-json属性详解" class="headerlink" title="npm package.json属性详解"></a>npm package.json属性详解</h1><blockquote>
+<p>本文转自<a target="_blank" rel="noopener" href="https://www.cnblogs.com/tzyy/p/5193811.html">https://www.cnblogs.com/tzyy/p/5193811.html</a>，作者：TZYY</p>
+</blockquote>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>package.json</code>必须是一个严格的json文件，而不仅仅是js里边的一个对象。其中很多属性可以通过<code>npm-config</code>来生成</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/dec4f3f00e71a312/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/d557b9a89a215d2e/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/d557b9a89a215d2e/" class="post-title-link" itemprop="url">vdoing主题效果图</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-04-08 11:27:22" itemprop="dateCreated datePublished" datetime="2020-04-08T11:27:22+08:00">2020-04-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="PC端"><a href="#PC端" class="headerlink" title="PC端"></a>PC端</h2><br/>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408125410.png" style="width:48%;"/>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120138.png"  style="width:48%;" />
+<p align="center">首页 & 目录页△</p>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120144.png"  style="width:48%;" />
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120145.png"  style="width:48%;" />
+<p align="center">文章详情页 & 时间轴页△</p>
+
+<h2 id="首页个性化大图"><a href="#首页个性化大图" class="headerlink" title="首页个性化大图"></a>首页个性化大图</h2><br/>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408125412.png" />
+<p align="center">首页个性化大图△</p>
+
+<h2 id="深色模式和阅读模式"><a href="#深色模式和阅读模式" class="headerlink" title="深色模式和阅读模式"></a>深色模式和阅读模式</h2><br/>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408125408.png"  style="width:48%;" />
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120139.png"  style="width:48%;" />
+<p align="center">深色模式△</p>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408125409.png"  style="width:48%;" />
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120143.png"  style="width:48%;" />
+<p align="center">阅读模式△</p>
+
+<h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><br/>
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120606.png" style="width:24%;" />
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120147.png" style="width:24%;" />
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408120148.png" style="width:24%;" />
+<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200408130831.png" style="width:24%;" />
+<p align="center">移动端效果△</p>
+
+<style scoped>
+    /* .content__default img{border: 1px solid #ccc;} */
+</style>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/5dde351274f1e39d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/5dde351274f1e39d/" class="post-title-link" itemprop="url">如何根据系统主题自动响应CSS深色模式</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-31 14:06:26" itemprop="dateCreated datePublished" datetime="2020-03-31T14:06:26+08:00">2020-03-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200427163531.jpg" width="500">
+</p>
+
+<p>很多人喜欢选择APP或网站中的深色模式，也许他们更喜欢这样的外观，或者他们想让自己的眼睛免受疲劳。这篇文章将告诉你如何在网站中实现一个自动的CSS深色模式，根据访客的系统主题来自动响应。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/5dde351274f1e39d/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">true</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zzxm.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:type" content="website">
+<meta property="og:title" content="庄生晓梦">
+<meta property="og:url" content="https://zzxm.github.io/page/21/">
+<meta property="og:site_name" content="庄生晓梦">
+<meta property="og:description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="zzxm">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zzxm.github.io/page/21/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/21/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>庄生晓梦</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="搜索" role="button">
+      <i class="fa fa-search fa-fw fa-lg"></i>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">庄生晓梦</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Web 前端技术博客，积跬步以至千里</p>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="切换导航栏" role="button">
+      <i class="fa fa-ellipsis fa-fw fa-lg"></i>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  
+  <template id="search-popup-template"><div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div></template>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zzxm</p>
+  <div class="site-description" itemprop="description">前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">222</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/117708e0af7f0bd9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/117708e0af7f0bd9/" class="post-title-link" itemprop="url">nodejs递归读取所有文件</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-26 15:57:32" itemprop="dateCreated datePublished" datetime="2019-12-26T15:57:32+08:00">2019-12-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/Nodejs/" itemprop="url" rel="index"><span itemprop="name">Nodejs</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">function</span> <span class="title function_">readFileList</span>(<span class="params">dir, filesList = []</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> files = fs.<span class="title function_">readdirSync</span>(dir);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(files);</span><br><span class="line">    files.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">var</span> fullPath = path.<span class="title function_">join</span>(dir, item);</span><br><span class="line">        <span class="keyword">const</span> stat = fs.<span class="title function_">statSync</span>(fullPath);</span><br><span class="line">        <span class="keyword">if</span> (stat.<span class="title function_">isDirectory</span>()) &#123;      </span><br><span class="line">            <span class="title function_">readFileList</span>(path.<span class="title function_">join</span>(dir, item), filesList);  <span class="comment">//递归读取文件</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;                </span><br><span class="line">            filesList.<span class="title function_">push</span>(fullPath);                     </span><br><span class="line">        &#125;        </span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> filesList;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> filesList = [];</span><br><span class="line"><span class="title function_">readFileList</span>(__dirname,filesList);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/c2c0432138f6e042/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/c2c0432138f6e042/" class="post-title-link" itemprop="url">CSS3之animation动画</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>可用<kbd>F12</kbd>开发者工具查看元素及样式，可打开codepen在线编辑代码。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;animationBox&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;rotate&quot;</span>&gt;</span>旋转动画1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;play&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;img&quot;</span>&gt;</span>旋转动画2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;p2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;p2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;elasticity&quot;</span>&gt;</span>弹性动画<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;elasticity2&quot;</span>&gt;</span>曲线弹性<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.animationBox</span>&#123;<span class="attribute">overflow</span>: hidden;&#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.animationBox</span>&gt;<span class="selector-tag">div</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">width</span>: <span class="number">100px</span>;<span class="attribute">height</span>: <span class="number">100px</span>;<span class="attribute">background</span>: <span class="number">#eee</span>;<span class="attribute">border-radius</span>: <span class="number">50%</span>;<span class="attribute">text-align</span>: center;<span class="attribute">line-height</span>: <span class="number">100px</span>;<span class="attribute">margin</span>: <span class="number">30px</span>;<span class="attribute">float</span><span class="selector-pseudo">:left</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.rotate</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation</span>: rotate <span class="number">5s</span> linear infinite</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.rotate</span><span class="selector-pseudo">:hover</span>&#123; <span class="attribute">animation-play-state</span>: paused&#125;</span></span><br><span class="line"><span class="language-css">  <span class="keyword">@keyframes</span> rotate &#123;</span></span><br><span class="line"><span class="language-css">    <span class="number">0%</span>&#123;<span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">0</span>);&#125;</span></span><br><span class="line"><span class="language-css">  <span class="number">100%</span>&#123;<span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">360deg</span>);&#125;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.animationBox</span>&gt;<span class="selector-class">.play</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">position</span>: relative;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">margin</span>: <span class="number">50px</span> <span class="number">30px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>:none;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span> <span class="selector-class">.img</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">top</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">left</span>:<span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">z-index</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">width</span>: <span class="number">100px</span>;<span class="attribute">height</span>: <span class="number">100px</span>; <span class="attribute">background</span>: <span class="number">#eee</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation</span>: rotate <span class="number">5s</span> linear infinite</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span> <span class="selector-tag">span</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">top</span>: <span class="number">1px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">left</span>:<span class="number">1px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">z-index</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: block;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">width</span>: <span class="number">96px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">96px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#999</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span> <span class="selector-tag">span</span> <span class="selector-tag">p</span>&#123;<span class="attribute">display</span>: block;<span class="attribute">width</span>: <span class="number">4px</span>;<span class="attribute">height</span>: <span class="number">4px</span>;<span class="attribute">background</span>: <span class="number">#000</span>;<span class="attribute">margin</span>: -<span class="number">2px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">50%</span>;<span class="attribute">border-radius</span>: <span class="number">50%</span>;<span class="attribute">opacity</span>: <span class="number">0.5</span>;&#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span> <span class="selector-tag">span</span> <span class="selector-class">.p2</span>&#123;<span class="attribute">margin</span>: <span class="number">50%</span> <span class="number">0</span> <span class="number">0</span> -<span class="number">2px</span>;&#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span> <span class="selector-tag">span</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation</span>: wave <span class="number">5s</span> linear infinite</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span>&gt;<span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>)&#123;</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* 延迟时间 */</span></span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation-delay</span>:<span class="number">1s</span>; </span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span>&gt;<span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">4</span>)&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation-delay</span>:<span class="number">2.2s</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.play</span>&gt;<span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">5</span>)&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation-delay</span>:<span class="number">3.8s</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  </span></span><br><span class="line"><span class="language-css">  <span class="keyword">@keyframes</span> wave &#123;</span></span><br><span class="line"><span class="language-css">    <span class="number">0%</span></span></span><br><span class="line"><span class="language-css">    &#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>:<span class="built_in">scale</span>(<span class="number">1</span>) <span class="built_in">rotate</span>(<span class="number">360deg</span>);</span></span><br><span class="line"><span class="language-css">      <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  <span class="number">100%</span></span></span><br><span class="line"><span class="language-css">    &#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>:<span class="built_in">scale</span>(<span class="number">1.8</span>) <span class="built_in">rotate</span>(<span class="number">0deg</span>);</span></span><br><span class="line"><span class="language-css">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.elasticity</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* 参数说明</span></span></span><br><span class="line"><span class="comment"><span class="language-css">      动画名称 花费时间 贝塞尔曲线 延迟开始时间 播放次数n|infinite  是否反向播放动画</span></span></span><br><span class="line"><span class="comment"><span class="language-css">    */</span></span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation</span>: elasticity <span class="number">1s</span> linear <span class="number">2s</span> infinite</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  </span></span><br><span class="line"><span class="language-css">  <span class="keyword">@keyframes</span> elasticity&#123;</span></span><br><span class="line"><span class="language-css">    <span class="number">0%</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">0</span>);</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">    <span class="number">60%</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.1</span>);</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">    <span class="number">90%</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1</span>);</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  </span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.elasticity2</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="comment">/**</span></span></span><br><span class="line"><span class="comment"><span class="language-css">    贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)</span></span></span><br><span class="line"><span class="comment"><span class="language-css"></span></span></span><br><span class="line"><span class="comment"><span class="language-css">    通过调整贝塞尔曲线可以设置出多种动画效果，比如反弹效果等</span></span></span><br><span class="line"><span class="comment"><span class="language-css">    X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大</span></span></span><br><span class="line"><span class="comment"><span class="language-css">    直线：linear，即cubic-bezier(0,0,1,1)</span></span></span><br><span class="line"><span class="comment"><span class="language-css"></span></span></span><br><span class="line"><span class="comment"><span class="language-css">    贝塞尔曲线在线工具：https://cubic-bezier.com/#.17,.67,.83,.67</span></span></span><br><span class="line"><span class="comment"><span class="language-css">      */</span></span></span><br><span class="line"><span class="language-css">    <span class="attribute">animation</span>: elasticity2 <span class="number">1s</span> <span class="built_in">cubic-bezier</span>(.<span class="number">39</span>,.<span class="number">62</span>,.<span class="number">74</span>,<span class="number">1.39</span>) <span class="number">2s</span> infinite</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="keyword">@keyframes</span> elasticity2&#123;</span></span><br><span class="line"><span class="language-css">    <span class="number">0%</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">0</span>);</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">    <span class="number">90%</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1</span>);</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="贝塞尔曲线-cubic-bezier-x1-y1-x2-y2"><a href="#贝塞尔曲线-cubic-bezier-x1-y1-x2-y2" class="headerlink" title="贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)"></a>贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)</h3><p>通过调整贝塞尔曲线可以设置出多种动画效果，比如反弹效果等 X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。 如：直线linear，即cubic-bezier(0,0,1,1)</p>
+<p>贝塞尔曲线在线工具：<a target="_blank" rel="noopener" href="https://cubic-bezier.com/#.17,.67,.83,.67">https://cubic-bezier.com/#.17,.67,.83,.67</a></p>
+<blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css3/index.asp">https://www.w3school.com.cn/css3/index.asp</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/02d7f59d98d87409/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/02d7f59d98d87409/" class="post-title-link" itemprop="url">CSS3之transition过渡</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>html结构</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div3&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>先给元素设置transition过渡，指定样式和时间，这里设置all全部样式都采用0.3s的过渡</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&gt;<span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="comment">/* 给元素所有变化都添加过渡动画, 也可以指定唯一的过渡样式属性*/</span></span><br><span class="line">  <span class="attribute">transition</span>: all .<span class="number">3s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>鼠标经过元素测试效果</p>
+</blockquote>
+<div class="box1">
+  <b>宽度过渡</b>
+  <div class="div1"></div>
+
+  <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.div1:hover</span><span class="token punctuation">{</span><span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div>
+
+<p>  <b>背景色过渡</b><br>  <div class="div2"></div><br>  <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.div2:hover</span><span class="token punctuation">{</span><span class="token property">background</span><span class="token punctuation">:</span> #999<span class="token punctuation">;</span><span class="token punctuation">}</span><br></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></p>
+<p>  <b>按贝塞尔曲线设置的过渡</b><br>  <div class="div3"></div><br>  <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token comment">/<em>贝塞尔曲线过渡</em>/</span><br><span class="token selector">.div3</span><span class="token punctuation">{</span><span class="token property">transition-timing-function</span><span class="token punctuation">:</span> <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>.39<span class="token punctuation">,</span>.62<span class="token punctuation">,</span>.74<span class="token punctuation">,</span>1.39<span class="token punctuation">)</span><span class="token punctuation">}</span><br><span class="token selector">.div3:hover</span><span class="token punctuation">{</span><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate3d</span><span class="token punctuation">(</span>-25px<span class="token punctuation">,</span> -25px<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">}</span><br></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></p>
+<h3 id="贝塞尔曲线-cubic-bezier-x1-y1-x2-y2"><a href="#贝塞尔曲线-cubic-bezier-x1-y1-x2-y2" class="header-anchor">#</a> 贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)</h3><p>通过调整贝塞尔曲线可以设置出多种动画效果，比如反弹效果等
+X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大。
+如：直线linear，即cubic-bezier(0,0,1,1)</p><p>贝塞尔曲线在线工具：<a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank" rel="noopener noreferrer">https://cubic-bezier.com/#.17,.67,.83,.67<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p>
+
+</div>
+
+<style>
+  /*
+  css3参考
+  https://www.w3school.com.cn/css3/index.asp
+  */
+
+  .box1 .div1,.box1 .div2,.box1 .div3{width: 100px;height: 100px; margin: 30px;background: #eee;
+    /* 所有变化添加过渡动画, 也可以指定唯一改变的属性，*/
+    transition: all .3s;  
+    /* 前缀：
+    -moz-
+    -webkit-
+    -0-
+    */
+  }
+
+  .div1:hover{width: 150px;}
+  .div2:hover{background: #999;}
+
+  .div3{
+    /**
+    贝塞尔曲线 cubic-bezier(x1,y1,x2,y2)
+
+    通过调整贝塞尔曲线可以设置出多种动画效果，比如反弹效果等
+    X轴的范围是0~1，Y轴的取值没有规定，但是也不宜过大
+    直线：linear，即cubic-bezier(0,0,1,1)
+    
+    贝塞尔曲线在线工具：https://cubic-bezier.com/#.17,.67,.83,.67
+      */
+    transition-timing-function: cubic-bezier(0,1.36,.83,1.41)
+  }
+  .div3:hover{ width: 150px; height: 150px;background: yellow;
+    /* 3d转换 */
+    transform: translate3d(-25px, -25px, 0)
+  }
+</style>
+
+<p>参考：<a href="https://www.w3school.com.cn/css3/index.asp" target="_blank" rel="noopener noreferrer">https://www.w3school.com.cn/css3/index.asp<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/1f4123be6f45abcd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/1f4123be6f45abcd/" class="post-title-link" itemprop="url">ES6面向对象</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript%E6%96%87%E7%AB%A0/" itemprop="url" rel="index"><span itemprop="name">JavaScript文章</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//面向对象封装</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>&#123; <span class="comment">//定义类 (尊从首字母大写的约定)</span></span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">props</span>)&#123;  <span class="comment">// 构造函数 （构造函数内定于属性）</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">name</span> = props.<span class="property">name</span> || <span class="string">&#x27;匿名&#x27;</span>; <span class="comment">// 默认&#x27;匿名&#x27;</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">grade</span> = props.<span class="property">grade</span> || <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">hello</span>(<span class="params"></span>)&#123; <span class="comment">// 在构造函数的原型上定义方法</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`你好,<span class="subst">$&#123;<span class="variable language_">this</span>.name&#125;</span>同学，你在<span class="subst">$&#123;<span class="variable language_">this</span>.grade&#125;</span>年级`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">createStudent</span>(<span class="params">props</span>) &#123; <span class="comment">// 对于new构造函数的封装，其优点：一是不需要new来调用，二是参数灵活</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Student</span>(props || &#123;&#125;) <span class="comment">// 通过new创建构造函数，并传入参数/属性</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> niming = <span class="title function_">createStudent</span>(); </span><br><span class="line">niming.<span class="title function_">hello</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> xiaoming = <span class="title function_">createStudent</span>(&#123;</span><br><span class="line">  <span class="attr">name</span>:<span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">  <span class="attr">grade</span>:<span class="number">2</span></span><br><span class="line">&#125;);</span><br><span class="line">xiaoming.<span class="title function_">hello</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">//继承</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">PrimaryStudent</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Student</span> &#123; <span class="comment">//class 子类 extends 父类</span></span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">        <span class="variable language_">super</span>(props); <span class="comment">// 用super调用父类的构造方法实现属性继承</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">age</span> = props.<span class="property">age</span> || <span class="number">8</span>; <span class="comment">//新增子类属性</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">getAge</span>(<span class="params"></span>) &#123; <span class="comment">//对子类添加方法</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`<span class="subst">$&#123;<span class="variable language_">this</span>.name&#125;</span>同学，你今年<span class="subst">$&#123;<span class="variable language_">this</span>.age&#125;</span>岁`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用继承后的</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">createPrimaryStudent</span>(<span class="params">props</span>) &#123; <span class="comment">// 对于new构造函数的封装，其优点：一是不需要再new来调用，二是参数灵活</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">PrimaryStudent</span>(props || &#123;&#125;) <span class="comment">// 通过new创建构造函数，并传入参数/属性</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> xiaohong = <span class="title function_">createPrimaryStudent</span>(&#123;</span><br><span class="line">  <span class="attr">name</span>:<span class="string">&#x27;小红&#x27;</span>,</span><br><span class="line">  <span class="attr">grade</span>:<span class="number">3</span>,</span><br><span class="line">  <span class="attr">age</span>:<span class="number">10</span></span><br><span class="line">&#125;);</span><br><span class="line">xiaohong.<span class="title function_">hello</span>();</span><br><span class="line">xiaohong.<span class="title function_">getAge</span>();</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/4c778760be26d8b3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/4c778760be26d8b3/" class="post-title-link" itemprop="url">GitHub高级搜索技巧</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/GitHub%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">GitHub技巧</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><code>in:name &lt;关键字&gt;</code><br> 仓库名称带关键字查询</p>
+<p><code>in:description &lt;关键字&gt;</code><br> 仓库描述带关键字查询</p>
+<p><code>in:readme &lt;关键字&gt;</code><br> README文件带关键字查询</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/4c778760be26d8b3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/9a7ee40fc232253e/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/9a7ee40fc232253e/" class="post-title-link" itemprop="url">Git使用手册</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>官网下载：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> 下载完成后使用默认进行安装。</p>
+<p>安装完成后，在开始菜单里找到 <code>Git</code> -&gt; <code>Git Bash</code>，蹦出一个类似命令行窗口的东西，就说明Git安装成功！<br>还需要最后一步设置，在命令行输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;email@example.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/9a7ee40fc232253e/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/ad247c4332211551/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/ad247c4332211551/" class="post-title-link" itemprop="url">Markdown使用教程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="一、Markdown"><a href="#一、Markdown" class="headerlink" title="一、Markdown"></a>一、Markdown</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><img src="https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png" alt="logo"></p>
+<p><code>Markdown</code> 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/ad247c4332211551/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/df9e7c7214fa5046/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/df9e7c7214fa5046/" class="post-title-link" itemprop="url">flex布局案例-圣杯布局</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>可用<kbd>F12</kbd>开发者工具查看元素及样式，可打开codepen在线编辑代码。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;HolyGrail&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span>#header<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;wrap&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;left&quot;</span>&gt;</span>left 宽度固定200px<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span>center 宽度自适应<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">aside</span> <span class="attr">class</span>=<span class="string">&quot;right&quot;</span>&gt;</span>right 宽度固定200px<span class="tag">&lt;/<span class="name">aside</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">footer</span>&gt;</span>#footer<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.HolyGrail</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">min-height</span>: <span class="number">40vh</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex-direction</span>: column;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.HolyGrail</span> <span class="selector-class">.wrap</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.HolyGrail</span> <span class="selector-class">.content</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: <span class="number">#eee</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.HolyGrail</span> <span class="selector-class">.left</span>,<span class="selector-class">.HolyGrail</span> <span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>:lightgreen;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">200px</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.HolyGrail</span> <span class="selector-tag">header</span>,<span class="selector-class">.HolyGrail</span> <span class="selector-tag">footer</span>&#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>:<span class="number">#999</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">50px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">line-height</span>: <span class="number">50px</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.HolyGrail</span> <span class="selector-class">.left</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>:salmon;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html">http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/ea6db1530c42ad51/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/ea6db1530c42ad51/" class="post-title-link" itemprop="url">flex布局案例-基础</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>可用<kbd>F12</kbd>开发者工具查看元素及样式，可打开codepen在线编辑代码。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>2<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>3<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>4<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>5<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>6<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>7<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="comment">/* 父元素上定义弹性盒模型，称之为 “容器” */</span></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.box</span>&#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">width</span>: <span class="number">350px</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">height</span>: <span class="number">300px</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">background</span>: <span class="number">#eee</span>;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* 基本概念：.box为容器，.box下的span为项目；.box的x轴为主轴，y轴为交叉轴 */</span></span></span><br><span class="line"><span class="language-css">  <span class="comment">/* flex 定义为弹性盒模型 */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/*flex-direction 排列方向： row 行（默认） | row-reverse 行-反转  | column 列 | column-reverse 列-反转 */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex-direction</span>: row; </span></span><br><span class="line"><span class="language-css">  <span class="comment">/*flex-wrap 是否换行： nowrap 不换行（默认，可能会压缩项目宽度） | wrap 换行 | wrap-reverse 换行-反转，第一行在下方 */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex-wrap</span>: wrap;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* flex-flow  方向和换行的简写：默认值为row nowrap，方向 和 是否换行 的取值 */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex-flow</span>: row wrap;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* justify-content 项目在主轴上的对齐方式: flex-start 左对齐（默认） | flex-end 右对齐 | center 居中 | space-between 两端对齐 | space-around 项目两侧的间隔相等*/</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">justify-content</span>: space-around;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* align-items 项目在交叉轴上的对齐方式：stretch（默认）伸展，如果项目未设置高度或设为auto，将占满整个容器的高度 | </span></span></span><br><span class="line"><span class="comment"><span class="language-css">  flex-start 交叉轴的起点对齐 | flex-end 交叉轴的终点对齐 | center 交叉轴的中心点对齐 | baseline 项目的第一行文字的基线对齐（适用于每个项目高度不一致，以项目中的文字为基准对齐） */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">align-items</span>: center</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* align-content 多根轴线的对齐方式（一排项目为一根轴线，只有一根轴线时此样式不起作用）: </span></span></span><br><span class="line"><span class="comment"><span class="language-css">  stretch（默认）伸展，轴线占满整个交叉轴 | flex-start 容器顶部对齐 | flex-end 容器底部对齐 | center 与交叉轴的中点对齐 |</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  space-between 与交叉轴两端对齐，轴线之间的间隔平均分布| space-around 每根轴线两侧的间隔都相等*/</span></span></span><br><span class="line"><span class="language-css">  align-content：flex-start</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* 代码单词中文含义 ：</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  flex 弹性； direction 方向； wrap 外套、包； flow 流动</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  justify 对齐； content 内容；space 空间、距离；between 在...之间；around 周围的</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  align 排列；stretch 伸展；</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  */</span></span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"><span class="comment">/* 子元素称之为 “项目” */</span></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.box</span> <span class="selector-tag">span</span>&#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">display</span>:block;<span class="attribute">width</span>: <span class="number">50px</span>;<span class="attribute">height</span>: <span class="number">50px</span>;<span class="attribute">background</span>: mediumspringgreen;<span class="attribute">margin</span>: <span class="number">10px</span>;<span class="attribute">text-align</span>: center;<span class="attribute">line-height</span>: <span class="number">50px</span>;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* flex-grow 项目的放大比例，默认为0，即如果存在剩余空间，也不放大;</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  如果所有为1时，则它们将等分剩余空间（如果有的话）。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  如果其中一个项目为2，其他项目都为1，则为2的占据的剩余空间将比其他项多一倍。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex-grow</span>: <span class="number">0</span>; <span class="comment">/* grow 扩大 */</span></span></span><br><span class="line"><span class="language-css">  <span class="comment">/* flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。 </span></span></span><br><span class="line"><span class="comment"><span class="language-css">  如果所有项目都为1，当空间不足时，都将等比例缩小。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  如果其中一个项目为0，其他项目都为1，则空间不足时，为0的不缩小*/</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex-shrink</span>: <span class="number">1</span>; <span class="comment">/* shrink 缩小 */</span></span></span><br><span class="line"><span class="language-css">  <span class="comment">/* flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（宽度）。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为`auto`，即项目的本来大小。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  它可以设为跟`width`或`height`属性一样的值（比如50px），则项目将占据固定空间*/</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex-basis</span>: auto; <span class="comment">/* basis 基础 */</span></span></span><br><span class="line"><span class="language-css">  <span class="comment">/* flex属性是flex-grow,flex-shrink 和 flex-basis的简写，默认值为`0 1 auto`。后两个属性可选。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  该属性有两个快捷值：auto (1 1 auto)，即放大 和 none (0 0 auto)，即缩小。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。*/</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">flex</span>:<span class="number">0</span> <span class="number">1</span> auto; <span class="comment">/* flex: 0放大 1缩小 auto原本宽度*/</span></span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"><span class="selector-class">.box</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>)&#123;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* order 项目的排列顺序。数值越小，排列越靠前，默认为0 ; 取值：正负整数。*/</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">order</span>: -<span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">background</span>: red;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"><span class="selector-class">.box</span> <span class="selector-tag">span</span><span class="selector-pseudo">:nth-child</span>(<span class="number">7</span>)&#123;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  取值：auto（默认） | flex-start | flex-end | center | baseline | stretch。</span></span></span><br><span class="line"><span class="comment"><span class="language-css">  */</span></span></span><br><span class="line"><span class="language-css">  <span class="attribute">align-self</span>: flex-end;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">background</span>: blue;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/85b5a3fe218a34b7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/85b5a3fe218a34b7/" class="post-title-link" itemprop="url">flex布局案例-网格布局</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-25 14:27:01" itemprop="dateCreated datePublished" datetime="2019-12-25T14:27:01+08:00">2019-12-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>可用<kbd>F12</kbd>开发者工具查看元素及样式，可打开codepen在线编辑代码。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>1/4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid text&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span></span><br><span class="line">      高度会跟随右侧元素变化</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span></span><br><span class="line">      内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">h4</span>&gt;</span>某个网格设置百分比宽度<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell u-full&quot;</span>&gt;</span>100%<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell u-1of2&quot;</span>&gt;</span>50%<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell u-1of3&quot;</span>&gt;</span>33.33%<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell u-1of4&quot;</span>&gt;</span>25%<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;grid-cell&quot;</span>&gt;</span>auto<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid-cell</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid-cell</span><span class="selector-class">.u-full</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">100%</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid-cell</span><span class="selector-class">.u-1of2</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">50%</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid-cell</span><span class="selector-class">.u-1of3</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">33.3333%</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid-cell</span><span class="selector-class">.u-1of4</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">25%</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="comment">/* 基础样式 */</span></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.grid-cell</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: <span class="number">#eee</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">margin</span>: <span class="number">5px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.text</span> <span class="selector-class">.grid-cell</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">text-align</span>: left</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html">http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/20/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><span class="page-number current">21</span><a class="page-number" href="/page/22/">22</a><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/22/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">true</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

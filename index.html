@@ -1,88 +1,1388 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>庄生晓梦</title>
-    <meta name="generator" content="VuePress 1.9.5">
-    <link rel="icon" href="/img/favicon.ico">
-    <meta name="description" content="web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。">
-    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
-    <meta name="baidu-site-verification" content="7F55weZDDc">
-    <meta name="theme-color" content="#11a8cd">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zzxm.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:type" content="website">
+<meta property="og:title" content="庄生晓梦">
+<meta property="og:url" content="https://zzxm.github.io/">
+<meta property="og:site_name" content="庄生晓梦">
+<meta property="og:description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="zzxm">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zzxm.github.io/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>庄生晓梦</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="搜索" role="button">
+      <i class="fa fa-search fa-fw fa-lg"></i>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">庄生晓梦</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Web 前端技术博客，积跬步以至千里</p>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="切换导航栏" role="button">
+      <i class="fa fa-ellipsis fa-fw fa-lg"></i>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  
+  <template id="search-popup-template"><div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div></template>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zzxm</p>
+  <div class="site-description" itemprop="description">前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">222</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
     
-    <link rel="preload" href="/assets/css/0.styles.76d9f797.css" as="style"><link rel="preload" href="/assets/js/app.c26acd8a.js" as="script"><link rel="preload" href="/assets/js/2.c31fd2a3.js" as="script"><link rel="preload" href="/assets/js/86.72458698.js" as="script"><link rel="prefetch" href="/assets/js/10.75318b46.js"><link rel="prefetch" href="/assets/js/100.d6810f5f.js"><link rel="prefetch" href="/assets/js/101.9af29644.js"><link rel="prefetch" href="/assets/js/102.f5f0f84e.js"><link rel="prefetch" href="/assets/js/103.5d2a5c9f.js"><link rel="prefetch" href="/assets/js/104.1b8956b0.js"><link rel="prefetch" href="/assets/js/105.14595362.js"><link rel="prefetch" href="/assets/js/106.370391b9.js"><link rel="prefetch" href="/assets/js/107.9b0935ed.js"><link rel="prefetch" href="/assets/js/108.994e9815.js"><link rel="prefetch" href="/assets/js/109.e3cd1bff.js"><link rel="prefetch" href="/assets/js/11.c6778564.js"><link rel="prefetch" href="/assets/js/110.05696e77.js"><link rel="prefetch" href="/assets/js/111.33bbfeaf.js"><link rel="prefetch" href="/assets/js/112.102b0c2d.js"><link rel="prefetch" href="/assets/js/113.f8ecef1a.js"><link rel="prefetch" href="/assets/js/114.870db131.js"><link rel="prefetch" href="/assets/js/115.035a54c0.js"><link rel="prefetch" href="/assets/js/116.3c246774.js"><link rel="prefetch" href="/assets/js/117.e119063f.js"><link rel="prefetch" href="/assets/js/118.b51c3ef1.js"><link rel="prefetch" href="/assets/js/119.da6e315d.js"><link rel="prefetch" href="/assets/js/12.8ad90f65.js"><link rel="prefetch" href="/assets/js/120.4d0d2da5.js"><link rel="prefetch" href="/assets/js/121.921b7c27.js"><link rel="prefetch" href="/assets/js/122.0e892f37.js"><link rel="prefetch" href="/assets/js/123.9c12e399.js"><link rel="prefetch" href="/assets/js/124.e265d82a.js"><link rel="prefetch" href="/assets/js/125.07ad81ea.js"><link rel="prefetch" href="/assets/js/126.30be0256.js"><link rel="prefetch" href="/assets/js/127.daf6f659.js"><link rel="prefetch" href="/assets/js/128.c3aa5522.js"><link rel="prefetch" href="/assets/js/129.60c2ac70.js"><link rel="prefetch" href="/assets/js/13.700eb5a0.js"><link rel="prefetch" href="/assets/js/130.283b36c2.js"><link rel="prefetch" href="/assets/js/131.36fd29f9.js"><link rel="prefetch" href="/assets/js/132.4bc0d26d.js"><link rel="prefetch" href="/assets/js/133.c20f67f7.js"><link rel="prefetch" href="/assets/js/134.20f0538c.js"><link rel="prefetch" href="/assets/js/135.efe5189e.js"><link rel="prefetch" href="/assets/js/136.fbe0f749.js"><link rel="prefetch" href="/assets/js/137.370df47c.js"><link rel="prefetch" href="/assets/js/138.137747d7.js"><link rel="prefetch" href="/assets/js/139.f6bbee91.js"><link rel="prefetch" href="/assets/js/14.1aaccdde.js"><link rel="prefetch" href="/assets/js/140.bc32a870.js"><link rel="prefetch" href="/assets/js/141.a496ad80.js"><link rel="prefetch" href="/assets/js/142.523c7fd1.js"><link rel="prefetch" href="/assets/js/143.8182807e.js"><link rel="prefetch" href="/assets/js/144.20a6c974.js"><link rel="prefetch" href="/assets/js/145.f3a9911c.js"><link rel="prefetch" href="/assets/js/146.f9e199aa.js"><link rel="prefetch" href="/assets/js/147.6f54955a.js"><link rel="prefetch" href="/assets/js/148.3fc28812.js"><link rel="prefetch" href="/assets/js/149.defa145a.js"><link rel="prefetch" href="/assets/js/15.c32eb5e6.js"><link rel="prefetch" href="/assets/js/150.59443a85.js"><link rel="prefetch" href="/assets/js/151.209606cc.js"><link rel="prefetch" href="/assets/js/152.778a630a.js"><link rel="prefetch" href="/assets/js/153.de327894.js"><link rel="prefetch" href="/assets/js/154.46b3a2b3.js"><link rel="prefetch" href="/assets/js/155.f16ed794.js"><link rel="prefetch" href="/assets/js/156.7004ac8c.js"><link rel="prefetch" href="/assets/js/157.83e2224c.js"><link rel="prefetch" href="/assets/js/158.8834b7ed.js"><link rel="prefetch" href="/assets/js/159.e3aba89f.js"><link rel="prefetch" href="/assets/js/16.ce96f674.js"><link rel="prefetch" href="/assets/js/160.da511416.js"><link rel="prefetch" href="/assets/js/161.e4fc79bf.js"><link rel="prefetch" href="/assets/js/162.f214074e.js"><link rel="prefetch" href="/assets/js/163.4bf1ce2d.js"><link rel="prefetch" href="/assets/js/164.50c2a26a.js"><link rel="prefetch" href="/assets/js/165.b2f5e29c.js"><link rel="prefetch" href="/assets/js/166.89e8ac17.js"><link rel="prefetch" href="/assets/js/167.341b88bd.js"><link rel="prefetch" href="/assets/js/168.87ccce63.js"><link rel="prefetch" href="/assets/js/169.e1e1c58b.js"><link rel="prefetch" href="/assets/js/17.a693fe7f.js"><link rel="prefetch" href="/assets/js/170.755abdff.js"><link rel="prefetch" href="/assets/js/171.a6b69067.js"><link rel="prefetch" href="/assets/js/172.52c10d67.js"><link rel="prefetch" href="/assets/js/173.568ec26d.js"><link rel="prefetch" href="/assets/js/174.f6ff5c51.js"><link rel="prefetch" href="/assets/js/175.f2d646a9.js"><link rel="prefetch" href="/assets/js/176.2fd93f9c.js"><link rel="prefetch" href="/assets/js/177.fc5683f6.js"><link rel="prefetch" href="/assets/js/178.432e7e1f.js"><link rel="prefetch" href="/assets/js/179.e63b01b0.js"><link rel="prefetch" href="/assets/js/18.6df3c873.js"><link rel="prefetch" href="/assets/js/180.7a136172.js"><link rel="prefetch" href="/assets/js/181.6e78e56b.js"><link rel="prefetch" href="/assets/js/182.73d2f94a.js"><link rel="prefetch" href="/assets/js/183.dce8f42f.js"><link rel="prefetch" href="/assets/js/184.94ec7685.js"><link rel="prefetch" href="/assets/js/185.c3561080.js"><link rel="prefetch" href="/assets/js/186.63b6c4b4.js"><link rel="prefetch" href="/assets/js/187.b1ca4046.js"><link rel="prefetch" href="/assets/js/188.6525cd10.js"><link rel="prefetch" href="/assets/js/189.fdd57a16.js"><link rel="prefetch" href="/assets/js/19.6ffd68ce.js"><link rel="prefetch" href="/assets/js/190.8d9ac4f5.js"><link rel="prefetch" href="/assets/js/191.f19beada.js"><link rel="prefetch" href="/assets/js/192.bcd02302.js"><link rel="prefetch" href="/assets/js/193.05afb721.js"><link rel="prefetch" href="/assets/js/194.698e74d2.js"><link rel="prefetch" href="/assets/js/195.70ee23b9.js"><link rel="prefetch" href="/assets/js/196.14c12f32.js"><link rel="prefetch" href="/assets/js/197.52e07cb7.js"><link rel="prefetch" href="/assets/js/198.6312a976.js"><link rel="prefetch" href="/assets/js/199.600b8211.js"><link rel="prefetch" href="/assets/js/20.d994b814.js"><link rel="prefetch" href="/assets/js/200.1658389e.js"><link rel="prefetch" href="/assets/js/201.f2ecc5d4.js"><link rel="prefetch" href="/assets/js/202.05a5bb1c.js"><link rel="prefetch" href="/assets/js/203.893b83ad.js"><link rel="prefetch" href="/assets/js/204.a90c3691.js"><link rel="prefetch" href="/assets/js/205.d82fb971.js"><link rel="prefetch" href="/assets/js/206.00e0b021.js"><link rel="prefetch" href="/assets/js/207.a5dbb279.js"><link rel="prefetch" href="/assets/js/208.d15bb006.js"><link rel="prefetch" href="/assets/js/209.00d63e46.js"><link rel="prefetch" href="/assets/js/21.a6384f41.js"><link rel="prefetch" href="/assets/js/210.7be66150.js"><link rel="prefetch" href="/assets/js/211.0e180f84.js"><link rel="prefetch" href="/assets/js/212.fb4f4028.js"><link rel="prefetch" href="/assets/js/213.b0f21e70.js"><link rel="prefetch" href="/assets/js/214.4efc5657.js"><link rel="prefetch" href="/assets/js/215.cb6972fd.js"><link rel="prefetch" href="/assets/js/216.08f7d173.js"><link rel="prefetch" href="/assets/js/217.e10ebd79.js"><link rel="prefetch" href="/assets/js/218.9974d5b0.js"><link rel="prefetch" href="/assets/js/219.d7704602.js"><link rel="prefetch" href="/assets/js/22.72cc2819.js"><link rel="prefetch" href="/assets/js/220.4019d417.js"><link rel="prefetch" href="/assets/js/221.d9ca6f7d.js"><link rel="prefetch" href="/assets/js/222.79b831b9.js"><link rel="prefetch" href="/assets/js/223.ea2393bc.js"><link rel="prefetch" href="/assets/js/224.c953d3de.js"><link rel="prefetch" href="/assets/js/225.a6eed8e5.js"><link rel="prefetch" href="/assets/js/226.5c18d0cc.js"><link rel="prefetch" href="/assets/js/227.9a99996d.js"><link rel="prefetch" href="/assets/js/228.f1f76fdd.js"><link rel="prefetch" href="/assets/js/229.83cf7341.js"><link rel="prefetch" href="/assets/js/23.0989982c.js"><link rel="prefetch" href="/assets/js/230.d239ed00.js"><link rel="prefetch" href="/assets/js/231.ddfd0758.js"><link rel="prefetch" href="/assets/js/232.6b57acfb.js"><link rel="prefetch" href="/assets/js/233.a104a750.js"><link rel="prefetch" href="/assets/js/234.53fd4805.js"><link rel="prefetch" href="/assets/js/235.9e19c5d0.js"><link rel="prefetch" href="/assets/js/236.9f300061.js"><link rel="prefetch" href="/assets/js/237.9fb8d4bd.js"><link rel="prefetch" href="/assets/js/238.ceec05fc.js"><link rel="prefetch" href="/assets/js/24.2cd24028.js"><link rel="prefetch" href="/assets/js/25.8f5cf322.js"><link rel="prefetch" href="/assets/js/26.67d8ecd5.js"><link rel="prefetch" href="/assets/js/27.05800199.js"><link rel="prefetch" href="/assets/js/28.72a4cebd.js"><link rel="prefetch" href="/assets/js/29.f8d2f7c1.js"><link rel="prefetch" href="/assets/js/3.aec45124.js"><link rel="prefetch" href="/assets/js/30.0ac25def.js"><link rel="prefetch" href="/assets/js/31.0c3dd05b.js"><link rel="prefetch" href="/assets/js/32.6811c167.js"><link rel="prefetch" href="/assets/js/33.eaa3ce2b.js"><link rel="prefetch" href="/assets/js/34.81c17242.js"><link rel="prefetch" href="/assets/js/35.d4d05428.js"><link rel="prefetch" href="/assets/js/36.6dd0dde1.js"><link rel="prefetch" href="/assets/js/37.4af0c50a.js"><link rel="prefetch" href="/assets/js/38.1a98317a.js"><link rel="prefetch" href="/assets/js/39.8383d231.js"><link rel="prefetch" href="/assets/js/4.6a499ed7.js"><link rel="prefetch" href="/assets/js/40.ea1ea46b.js"><link rel="prefetch" href="/assets/js/41.29846640.js"><link rel="prefetch" href="/assets/js/42.9c906181.js"><link rel="prefetch" href="/assets/js/43.344bd56a.js"><link rel="prefetch" href="/assets/js/44.e23af589.js"><link rel="prefetch" href="/assets/js/45.e1166f45.js"><link rel="prefetch" href="/assets/js/46.ddf18f6d.js"><link rel="prefetch" href="/assets/js/47.c936559a.js"><link rel="prefetch" href="/assets/js/48.fb21c024.js"><link rel="prefetch" href="/assets/js/49.5bb86e0c.js"><link rel="prefetch" href="/assets/js/5.98df09ef.js"><link rel="prefetch" href="/assets/js/50.ff18899e.js"><link rel="prefetch" href="/assets/js/51.cc03ca9e.js"><link rel="prefetch" href="/assets/js/52.db56410e.js"><link rel="prefetch" href="/assets/js/53.c7e04159.js"><link rel="prefetch" href="/assets/js/54.ff09ad12.js"><link rel="prefetch" href="/assets/js/55.57d17d47.js"><link rel="prefetch" href="/assets/js/56.a58b3cc3.js"><link rel="prefetch" href="/assets/js/57.9a7cb0ee.js"><link rel="prefetch" href="/assets/js/58.b712d5ab.js"><link rel="prefetch" href="/assets/js/59.ff3f0900.js"><link rel="prefetch" href="/assets/js/6.1505523f.js"><link rel="prefetch" href="/assets/js/60.bc9edb0a.js"><link rel="prefetch" href="/assets/js/61.6d1803da.js"><link rel="prefetch" href="/assets/js/62.7e4ac7f9.js"><link rel="prefetch" href="/assets/js/63.07174021.js"><link rel="prefetch" href="/assets/js/64.d821c8d4.js"><link rel="prefetch" href="/assets/js/65.c48ce70a.js"><link rel="prefetch" href="/assets/js/66.6fc46ec0.js"><link rel="prefetch" href="/assets/js/67.5a70400c.js"><link rel="prefetch" href="/assets/js/68.a022507d.js"><link rel="prefetch" href="/assets/js/69.1b0cb79c.js"><link rel="prefetch" href="/assets/js/7.4168dddb.js"><link rel="prefetch" href="/assets/js/70.61fcea39.js"><link rel="prefetch" href="/assets/js/71.ac8186ec.js"><link rel="prefetch" href="/assets/js/72.d6eafa00.js"><link rel="prefetch" href="/assets/js/73.28f2202d.js"><link rel="prefetch" href="/assets/js/74.7a9a5c58.js"><link rel="prefetch" href="/assets/js/75.07ad0a66.js"><link rel="prefetch" href="/assets/js/76.24d6e0bf.js"><link rel="prefetch" href="/assets/js/77.e614d3fc.js"><link rel="prefetch" href="/assets/js/78.65525b88.js"><link rel="prefetch" href="/assets/js/79.74592520.js"><link rel="prefetch" href="/assets/js/8.c299ab50.js"><link rel="prefetch" href="/assets/js/80.14610309.js"><link rel="prefetch" href="/assets/js/81.2390f5cd.js"><link rel="prefetch" href="/assets/js/82.714b0d6b.js"><link rel="prefetch" href="/assets/js/83.dbededec.js"><link rel="prefetch" href="/assets/js/84.539b410e.js"><link rel="prefetch" href="/assets/js/85.82dfce18.js"><link rel="prefetch" href="/assets/js/87.a2e0e9ce.js"><link rel="prefetch" href="/assets/js/88.7e7414b7.js"><link rel="prefetch" href="/assets/js/89.7e203f16.js"><link rel="prefetch" href="/assets/js/9.bf9d8b8d.js"><link rel="prefetch" href="/assets/js/90.e24afdb4.js"><link rel="prefetch" href="/assets/js/91.519f7089.js"><link rel="prefetch" href="/assets/js/92.6bddee4d.js"><link rel="prefetch" href="/assets/js/93.20272a60.js"><link rel="prefetch" href="/assets/js/94.1295cc0e.js"><link rel="prefetch" href="/assets/js/95.109d2745.js"><link rel="prefetch" href="/assets/js/96.e1e90d86.js"><link rel="prefetch" href="/assets/js/97.2baf5c13.js"><link rel="prefetch" href="/assets/js/98.01d69253.js"><link rel="prefetch" href="/assets/js/99.4d6d6ecf.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.76d9f797.css">
-  </head>
-  <body class="theme-mode-light">
-    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" aria-current="page" class="home-link router-link-exact-active router-link-active"><img src="/img/logo.png" alt="庄生晓梦" class="logo"> <span class="site-name can-hide">庄生晓梦</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" aria-current="page" class="nav-link router-link-exact-active router-link-active">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/8143cc480faf9a11/" class="nav-link">JavaScript</a></li></ul></li><li class="dropdown-item"><h4>学习笔记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/javascript/" class="nav-link">《JavaScript教程》</a></li><li class="dropdown-subitem"><a href="/note/js/" class="nav-link">《JavaScript高级程序设计》</a></li><li class="dropdown-subitem"><a href="/note/es6/" class="nav-link">《ES6 教程》</a></li><li class="dropdown-subitem"><a href="/note/vue/" class="nav-link">《Vue》</a></li><li class="dropdown-subitem"><a href="/note/react/" class="nav-link">《React》</a></li><li class="dropdown-subitem"><a href="/note/typescript-axios/" class="nav-link">《TypeScript 从零实现 axios》</a></li><li class="dropdown-subitem"><a href="/note/git/" class="nav-link">《Git》</a></li><li class="dropdown-subitem"><a href="/pages/51afd6/" class="nav-link">TypeScript</a></li><li class="dropdown-subitem"><a href="/pages/4643cd/" class="nav-link">JS设计模式总结</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/pages/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/zzxm" target="_blank" rel="noopener noreferrer" class="repo-link">
-    GitHub
-    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg"> <div class="blogger-info"><h3>庄生晓梦</h3> <span>让别人因为我的存在而感到幸福</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" aria-current="page" class="nav-link router-link-exact-active router-link-active">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/8143cc480faf9a11/" class="nav-link">JavaScript</a></li></ul></li><li class="dropdown-item"><h4>学习笔记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/javascript/" class="nav-link">《JavaScript教程》</a></li><li class="dropdown-subitem"><a href="/note/js/" class="nav-link">《JavaScript高级程序设计》</a></li><li class="dropdown-subitem"><a href="/note/es6/" class="nav-link">《ES6 教程》</a></li><li class="dropdown-subitem"><a href="/note/vue/" class="nav-link">《Vue》</a></li><li class="dropdown-subitem"><a href="/note/react/" class="nav-link">《React》</a></li><li class="dropdown-subitem"><a href="/note/typescript-axios/" class="nav-link">《TypeScript 从零实现 axios》</a></li><li class="dropdown-subitem"><a href="/note/git/" class="nav-link">《Git》</a></li><li class="dropdown-subitem"><a href="/pages/51afd6/" class="nav-link">TypeScript</a></li><li class="dropdown-subitem"><a href="/pages/4643cd/" class="nav-link">JS设计模式总结</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/pages/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/zzxm" target="_blank" rel="noopener noreferrer" class="repo-link">
-    GitHub
-    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <div class="home-wrapper" data-v-7d2bb426><div class="banner" style="background:rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=);" data-v-7d2bb426><div class="banner-conent" data-v-7d2bb426><header class="hero" data-v-7d2bb426><!----> <h1 id="main-title" data-v-7d2bb426>
-          庄生晓梦
-        </h1> <p class="description" data-v-7d2bb426>
-          Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
-        </p> <!----></header> <div class="features" data-v-7d2bb426><div class="feature" data-v-7d2bb426><a href="/web/" data-v-7d2bb426><img src="/img/web.png" alt="前端" class="feature-img" data-v-7d2bb426> <h2 data-v-7d2bb426>前端</h2> <p data-v-7d2bb426>JavaScript、ES6、Vue框架等前端技术</p></a></div><div class="feature" data-v-7d2bb426><a href="/ui/" data-v-7d2bb426><img src="/img/ui.png" alt="页面" class="feature-img" data-v-7d2bb426> <h2 data-v-7d2bb426>页面</h2> <p data-v-7d2bb426>html(5)/css(3)，前端页面相关技术</p></a></div><div class="feature" data-v-7d2bb426><a href="/technology/" data-v-7d2bb426><img src="/img/other.png" alt="技术" class="feature-img" data-v-7d2bb426> <h2 data-v-7d2bb426>技术</h2> <p data-v-7d2bb426>技术文档、教程、技巧、总结等文章</p></a></div></div></div> <div class="slide-banner" style="display:none;" data-v-7d2bb426><div class="banner-wrapper" data-v-7d2bb426><div class="slide-banner-scroll" data-v-7d2bb426><div class="slide-banner-wrapper" data-v-7d2bb426><div class="slide-item" data-v-7d2bb426><a href="/web/" data-v-7d2bb426><img src="/img/web.png" alt="前端" class="feature-img" data-v-7d2bb426> <h2 data-v-7d2bb426>前端</h2> <p data-v-7d2bb426>JavaScript、ES6、Vue框架等前端技术</p></a></div><div class="slide-item" data-v-7d2bb426><a href="/ui/" data-v-7d2bb426><img src="/img/ui.png" alt="页面" class="feature-img" data-v-7d2bb426> <h2 data-v-7d2bb426>页面</h2> <p data-v-7d2bb426>html(5)/css(3)，前端页面相关技术</p></a></div><div class="slide-item" data-v-7d2bb426><a href="/technology/" data-v-7d2bb426><img src="/img/other.png" alt="技术" class="feature-img" data-v-7d2bb426> <h2 data-v-7d2bb426>技术</h2> <p data-v-7d2bb426>技术文档、教程、技巧、总结等文章</p></a></div></div></div> <div class="docs-wrapper" data-v-7d2bb426><span class="doc active" data-v-7d2bb426></span><span class="doc" data-v-7d2bb426></span><span class="doc" data-v-7d2bb426></span></div></div></div></div> <div class="main-wrapper" data-v-7d2bb426><div class="main-left"><div class="post-list" data-v-7d2bb426><div><div class="post card-box iconfont icon-zhiding"><div class="title-wrapper"><h2><a href="/pages/dcebaf/">
-            一行代码“黑”掉任意网站
-            <span class="title-tag">原创</span></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2021-11-25</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E6%9B%B4%E5%A4%9A">更多</a><a href="/categories/?category=%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7">实用技巧</a></span> <span title="标签" class="iconfont icon-biaoqian tags"><a href="/tags/?tag=JavaScript">JavaScript</a><a href="/tags/?tag=css">css</a><a href="/tags/?tag=%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7">实用技巧</a></span></div></div> <div class="excerpt-wrapper"><div class="excerpt"><h1 id="一行代码-黑-掉任意网站"><a class="header-anchor" href="#一行代码-黑-掉任意网站">#</a> 一行代码“黑”掉任意网站</h1>
-<p>实用技巧：只需一行代码，轻轻一点就可以把任意网站变成暗黑模式。
-<p align="center"><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store@master/blog/QQ20211125-163111.2tmjlvz28n80.png" width="500" style="cursor: zoom-in;"></p></p>
-</div> <a href="/pages/dcebaf/" class="readmore iconfont icon-jiantou-you">阅读全文</a></div></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/922650/">
-            Git修改分支名
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2022-08-11</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E6%8A%80%E6%9C%AF">技术</a><a href="/categories/?category=%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3">技术文档</a></span> <!----></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/55f894/">
-            CSS给table的tbody添加滚动条
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2022-06-29</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E9%A1%B5%E9%9D%A2">页面</a><a href="/categories/?category=CSS">CSS</a></span> <!----></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/829589/">
-            我做了一个手写春联小网页，祝大家虎年暴富
-            <span class="title-tag">原创</span></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2022-01-28</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E9%9A%8F%E7%AC%94">随笔</a></span> <!----></div></div> <div class="excerpt-wrapper"><div class="excerpt"><p>手写春联：<a href="https://cl.xugaoyi.com/" target="_blank" rel="noopener noreferrer">https://cl.xugaoyi.com/<OutboundLink/></a></p>
-<h3 id="前言"><a class="header-anchor" href="#前言">#</a> 前言</h3>
-<p>虎年春节快到了，首先祝大家新年快乐，轻松暴富。
-最近在网上经常看到生成春联的文章，不过这些小demo要么功能简陋,要么UI特别‘程序员’，满足不了我挑剔的眼光。干脆我自己做一个吧，顺便简单体验一下vite+vue3。（因为页面相对简单，vue组件风格还是使用选项式api，重点还是想把产品快速做出来。）</p>
-</div> <a href="/pages/829589/" class="readmore iconfont icon-jiantou-you">阅读全文</a></div></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/a61298/">
-            33个非常实用的JavaScript一行代码
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">CUGGZ</span> <span title="创建时间" class="iconfont icon-riqi">2021-11-02</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E5%89%8D%E7%AB%AF">前端</a><a href="/categories/?category=JavaScript%E6%96%87%E7%AB%A0">JavaScript文章</a></span> <span title="标签" class="iconfont icon-biaoqian tags"><a href="/tags/?tag=JavaScript">JavaScript</a></span></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/82baa3/">
-            使用State Hook
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2021-04-06</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0">《React》笔记</a><a href="/categories/?category=Hook">Hook</a></span> <!----></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/723be7/">
-            Hook规则
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2021-04-06</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0">《React》笔记</a><a href="/categories/?category=Hook">Hook</a></span> <!----></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/72710d/">
-            使用Effect Hook
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2021-04-06</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0">《React》笔记</a><a href="/categories/?category=Hook">Hook</a></span> <!----></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/cf1018/">
-            自定义 Hook
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2021-04-06</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0">《React》笔记</a><a href="/categories/?category=Hook">Hook</a></span> <!----></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/4c13b9/">
-            Hook概述
-            <!----></a></h2> <div class="article-info"><span title="作者" class="iconfont icon-touxiang">zzxm</span> <span title="创建时间" class="iconfont icon-riqi">2021-03-31</span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0">《React》笔记</a><a href="/categories/?category=Hook">Hook</a></span> <span title="标签" class="iconfont icon-biaoqian tags"><a href="/tags/?tag=React">React</a></span></div></div> <!----></div></div></div> <div class="pagination" data-v-7d2bb426><span class="card-box prev iconfont icon-jiantou-zuo disabled"><p>上一页</p></span> <div class="pagination-list"><span class="card-box active">1</span> <span title="上两页" class="ellipsis ell-two" style="display:none;"></span> <span class="card-box" style="display:;">2</span> <span class="card-box">3</span> <span title="下两页" class="ellipsis ell-four" style="display:;"></span> <span class="card-box" style="display:none;">21</span> <span class="card-box">22</span></div> <span class="card-box next iconfont icon-jiantou-you"><p>下一页</p></span></div> <div class="theme-vdoing-content custom card-box content__default" data-v-7d2bb426></div></div> <div class="main-right"><aside class="blogger-wrapper card-box" data-v-7d2bb426><div class="avatar"><img src="https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg" alt="头像" title="我好看吗"></div> <div class="icons"><a href="mailto:894072666@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian" style="width:33.333333333333336%;"></a><a href="https://github.com/zzxm" title="GitHub" target="_blank" class="iconfont icon-github" style="width:33.333333333333336%;"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji" style="width:33.333333333333336%;"></a></div> <div class="blogger"><span class="name">庄生晓梦</span> <span class="slogan">让别人因为我的存在而感到幸福</span></div></aside> <div class="categories-wrapper card-box" data-v-7d2bb426><a href="/categories/" title="全部分类" class="title iconfont icon-wenjianjia">文章分类</a> <div class="categories"><a href="/categories/?category=%E6%9B%B4%E5%A4%9A">
-      更多
-      <span>12</span></a><a href="/categories/?category=%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7">
-      实用技巧
-      <span>2</span></a><a href="/categories/?category=%E6%8A%80%E6%9C%AF">
-      技术
-      <span>14</span></a><a href="/categories/?category=%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3">
-      技术文档
-      <span>6</span></a><a href="/categories/?category=%E9%A1%B5%E9%9D%A2">
-      页面
-      <span>18</span></a><a href="/categories/?category=CSS">
-      CSS
-      <span>17</span></a><a href="/categories/?category=%E9%9A%8F%E7%AC%94">
-      随笔
-      <span>3</span></a><a href="/categories/?category=%E5%89%8D%E7%AB%AF">
-      前端
-      <span>15</span></a><a href="/categories/?category=JavaScript%E6%96%87%E7%AB%A0">
-      JavaScript文章
-      <span>12</span></a><a href="/categories/?category=%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0">
-      《React》笔记
-      <span>18</span></a> <a href="/categories/" class="more">更多 ...</a></div></div> <div class="tags-wrapper card-box" data-v-7d2bb426><a href="/tags/" title="全部标签" class="title iconfont icon-biaoqian1">热门标签</a> <div class="tags"><a href="/tags/?tag=JavaScript" style="background:#849B87;--random-color:#849B87;">JavaScript</a> <span></span><a href="/tags/?tag=css" style="background:#849B87;--random-color:#849B87;">css</a> <span></span><a href="/tags/?tag=%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7" style="background:#849B87;--random-color:#849B87;">实用技巧</a> <span></span><a href="/tags/?tag=React" style="background:#F47E60;--random-color:#F47E60;">React</a> <span></span><a href="/tags/?tag=%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" style="background:#F8B26A;--random-color:#F8B26A;">设计模式</a> <span></span><a href="/tags/?tag=Git" style="background:#F8B26A;--random-color:#F8B26A;">Git</a> <span></span><a href="/tags/?tag=%E6%96%87%E6%91%98" style="background:#F8B26A;--random-color:#F8B26A;">文摘</a> <span></span><a href="/tags/?tag=TypeScript" style="background:#67CC86;--random-color:#67CC86;">TypeScript</a> <span></span><a href="/tags/?tag=%E5%BF%83%E7%90%86" style="background:#F47E60;--random-color:#F47E60;">心理</a> <span></span><a href="/tags/?tag=%E8%87%AA%E5%BE%8B" style="background:#E15B64;--random-color:#E15B64;">自律</a> <span></span><a href="/tags/?tag=%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95" style="background:#E15B64;--random-color:#E15B64;">笔记方法</a> <span></span><a href="/tags/?tag=%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95" style="background:#F8B26A;--random-color:#F8B26A;">学习方法</a> <span></span><a href="/tags/?tag=%E9%B8%A1%E6%B1%A4" style="background:#11a8cd;--random-color:#11a8cd;">鸡汤</a> <span></span><a href="/tags/?tag=%E7%AC%94%E8%AE%B0" style="background:#E15B64;--random-color:#E15B64;">笔记</a> <span></span><a href="/tags/?tag=%E7%BA%A2%E5%AE%9D%E4%B9%A6" style="background:#F47E60;--random-color:#F47E60;">红宝书</a> <span></span><a href="/tags/?tag=%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7" style="background:#E15B64;--random-color:#E15B64;">搜索技巧</a> <span></span><a href="/tags/?tag=%E5%AD%A6%E4%B9%A0" style="background:#F8B26A;--random-color:#F8B26A;">学习</a> <span></span><a href="/tags/?tag=%E7%9F%A5%E8%AF%86" style="background:#F47E60;--random-color:#F47E60;">知识</a> <span></span><a href="/tags/?tag=Vue" style="background:#67CC86;--random-color:#67CC86;">Vue</a> <span></span><a href="/tags/?tag=ES6" style="background:#11a8cd;--random-color:#11a8cd;">ES6</a> <span></span><a href="/tags/?tag=github" style="background:#F8B26A;--random-color:#F8B26A;">github</a> <span></span><a href="/tags/?tag=%E5%8D%9A%E5%AE%A2" style="background:#E15B64;--random-color:#E15B64;">博客</a> <span></span><a href="/tags/?tag=%E5%B0%8F%E7%A8%8B%E5%BA%8F" style="background:#E15B64;--random-color:#E15B64;">小程序</a> <span></span> <!----></div></div> <!----></div></div></div> <div class="footer"><div class="icons"><a href="mailto:894072666@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/zzxm" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
-  Theme by
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
-    | Copyright © 2019-2023
-    <span>庄生晓梦 | <a href="https://github.com/ZZXM/ target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
-          跟随系统
-        </li><li class="iconfont icon-rijianmoshi">
-          浅色模式
-        </li><li class="iconfont icon-yejianmoshi">
-          深色模式
-        </li><li class="iconfont icon-yuedu">
-          阅读模式
-        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div></div></div>
-    <script src="/assets/js/app.c26acd8a.js" defer></script><script src="/assets/js/2.c31fd2a3.js" defer></script><script src="/assets/js/86.72458698.js" defer></script>
-  </body>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/922650/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/922650/" class="post-title-link" itemprop="url">Git修改分支名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-08-11 10:51:18" itemprop="dateCreated datePublished" datetime="2022-08-11T10:51:18+08:00">2022-08-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="同时修改本地分支名和对应的远程分支名"><a href="#同时修改本地分支名和对应的远程分支名" class="headerlink" title="同时修改本地分支名和对应的远程分支名"></a>同时修改本地分支名和对应的远程分支名</h2><p>修改前要确保本地分支的代码是最新的，并且修改后不会影响到同事的代码。</p>
+<ol>
+<li>修改本地分支名</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m oldBranchName newBranchName</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>删除远程分支</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin :oldBranchName</span><br><span class="line"><span class="comment"># 或者 git push origin --delete oldBranchName</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>改名后的本地分支推送到远程</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --set-upstream origin newBranchName</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/55f894/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/55f894/" class="post-title-link" itemprop="url">CSS给table的tbody添加滚动条</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-29 09:34:23" itemprop="dateCreated datePublished" datetime="2022-06-29T09:34:23+08:00">2022-06-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/" itemprop="url" rel="index"><span itemprop="name">页面</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B5%E9%9D%A2/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span> <span class="selector-tag">tbody</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">overflow-y</span>: auto;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">table</span> <span class="selector-tag">thead</span>,</span><br><span class="line"><span class="selector-tag">tbody</span> <span class="selector-tag">tr</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: table;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/829589/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/829589/" class="post-title-link" itemprop="url">我做了一个手写春联小网页，祝大家虎年暴富</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-01-28 14:59:51" itemprop="dateCreated datePublished" datetime="2022-01-28T14:59:51+08:00">2022-01-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>手写春联：<a target="_blank" rel="noopener" href="https://cl.xugaoyi.com/">https://cl.xugaoyi.com/</a></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>虎年春节快到了，首先祝大家新年快乐，轻松暴富。<br>最近在网上经常看到生成春联的文章，不过这些小demo要么功能简陋,要么UI特别‘程序员’，满足不了我挑剔的眼光。干脆我自己做一个吧，顺便简单体验一下vite+vue3。（因为页面相对简单，vue组件风格还是使用选项式api，重点还是想把产品快速做出来。）</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/829589/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/dcebaf/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/dcebaf/" class="post-title-link" itemprop="url">一行代码“黑”掉任意网站</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-11-25 14:33:51" itemprop="dateCreated datePublished" datetime="2021-11-25T14:33:51+08:00">2021-11-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9B%B4%E5%A4%9A/" itemprop="url" rel="index"><span itemprop="name">更多</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9B%B4%E5%A4%9A/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">实用技巧</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>实用技巧：只需一行代码，轻轻一点就可以把任意网站变成暗黑模式。</p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store@master/blog/QQ20211125-163111.2tmjlvz28n80.png" width="500" style="cursor: zoom-in;"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/pages/dcebaf/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/a61298/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/a61298/" class="post-title-link" itemprop="url">33个非常实用的JavaScript一行代码</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-11-02 09:51:37" itemprop="dateCreated datePublished" datetime="2021-11-02T09:51:37+08:00">2021-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript%E6%96%87%E7%AB%A0/" itemprop="url" rel="index"><span itemprop="name">JavaScript文章</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="一、日期处理"><a href="#一、日期处理" class="headerlink" title="一、日期处理"></a>一、日期处理</h2><h3 id="1-检察日期是否有效"><a href="#1-检察日期是否有效" class="headerlink" title="1. 检察日期是否有效"></a>1. 检察日期是否有效</h3><p>该方法用于检测给出的日期是否有效：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">isDateValid</span> = (<span class="params">...val</span>) =&gt; !<span class="title class_">Number</span>.<span class="built_in">isNaN</span>(<span class="keyword">new</span> <span class="title class_">Date</span>(...val).<span class="title function_">valueOf</span>());</span><br><span class="line"></span><br><span class="line"><span class="title function_">isDateValid</span>(<span class="string">&quot;December 17, 1995 03:24:00&quot;</span>);  <span class="comment">// true</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-计算两个日期之间的间隔"><a href="#2-计算两个日期之间的间隔" class="headerlink" title="2. 计算两个日期之间的间隔"></a>2. 计算两个日期之间的间隔</h3><p>该方法用于计算两个日期之间的间隔时间：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">dayDif</span> = (<span class="params">date1, date2</span>) =&gt; <span class="title class_">Math</span>.<span class="title function_">ceil</span>(<span class="title class_">Math</span>.<span class="title function_">abs</span>(date1.<span class="title function_">getTime</span>() - date2.<span class="title function_">getTime</span>()) / <span class="number">86400000</span>)</span><br><span class="line"></span><br><span class="line"><span class="title function_">dayDif</span>(<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;2021-11-3&quot;</span>), <span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;2022-2-1&quot;</span>))  <span class="comment">// 90</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<p>距离过年还有90天~</p>
+<h3 id="3-查找日期位于一年中的第几天"><a href="#3-查找日期位于一年中的第几天" class="headerlink" title="3. 查找日期位于一年中的第几天"></a>3. 查找日期位于一年中的第几天</h3><p>该方法用于检测给出的日期位于今年的第几天：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">dayOfYear</span> = (<span class="params">date</span>) =&gt; <span class="title class_">Math</span>.<span class="title function_">floor</span>((date - <span class="keyword">new</span> <span class="title class_">Date</span>(date.<span class="title function_">getFullYear</span>(), <span class="number">0</span>, <span class="number">0</span>)) / <span class="number">1000</span> / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">dayOfYear</span>(<span class="keyword">new</span> <span class="title class_">Date</span>());   <span class="comment">// 307</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<p>2021年已经过去300多天了~</p>
+<h3 id="4-时间格式化"><a href="#4-时间格式化" class="headerlink" title="4. 时间格式化"></a>4. 时间格式化</h3><p>该方法可以用于将时间转化为hour:minutes:seconds的格式：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">timeFromDate</span> = date =&gt; date.<span class="title function_">toTimeString</span>().<span class="title function_">slice</span>(<span class="number">0</span>, <span class="number">8</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">timeFromDate</span>(<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="number">2021</span>, <span class="number">11</span>, <span class="number">2</span>, <span class="number">12</span>, <span class="number">30</span>, <span class="number">0</span>));  <span class="comment">// 12:30:00</span></span><br><span class="line"><span class="title function_">timeFromDate</span>(<span class="keyword">new</span> <span class="title class_">Date</span>());  <span class="comment">// 返回当前时间 09:00:00</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、字符串处理"><a href="#二、字符串处理" class="headerlink" title="二、字符串处理"></a>二、字符串处理</h2><h3 id="1-字符串首字母大写"><a href="#1-字符串首字母大写" class="headerlink" title="1. 字符串首字母大写"></a>1. 字符串首字母大写</h3><p>该方法用于将英文字符串的首字母大写处理：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">capitalize</span> = str =&gt; str.<span class="title function_">charAt</span>(<span class="number">0</span>).<span class="title function_">toUpperCase</span>() + str.<span class="title function_">slice</span>(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="title function_">capitalize</span>(<span class="string">&quot;hello world&quot;</span>)  <span class="comment">// Hello world</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-翻转字符串"><a href="#2-翻转字符串" class="headerlink" title="2. 翻转字符串"></a>2. 翻转字符串</h3><p>该方法用于将一个字符串进行翻转操作，返回翻转后的字符串：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">reverse</span> = str =&gt; str.<span class="title function_">split</span>(<span class="string">&#x27;&#x27;</span>).<span class="title function_">reverse</span>().<span class="title function_">join</span>(<span class="string">&#x27;&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">reverse</span>(<span class="string">&#x27;hello world&#x27;</span>);   <span class="comment">// &#x27;dlrow olleh&#x27;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-随机字符串"><a href="#3-随机字符串" class="headerlink" title="3. 随机字符串"></a>3. 随机字符串</h3><p>该方法用于生成一个随机的字符串：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">randomString</span> = (<span class="params"></span>) =&gt; <span class="title class_">Math</span>.<span class="title function_">random</span>().<span class="title function_">toString</span>(<span class="number">36</span>).<span class="title function_">slice</span>(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">randomString</span>();</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-截断字符串"><a href="#4-截断字符串" class="headerlink" title="4. 截断字符串"></a>4. 截断字符串</h3><p>该方法可以从指定长度处截断字符串:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">truncateString</span> = (<span class="params">string, length</span>) =&gt; string.<span class="property">length</span> &lt; length ? string : <span class="string">`<span class="subst">$&#123;string.slice(<span class="number">0</span>, length - <span class="number">3</span>)&#125;</span>...`</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">truncateString</span>(<span class="string">&#x27;Hi, I should be truncated because I am too loooong!&#x27;</span>, <span class="number">36</span>)   <span class="comment">// &#x27;Hi, I should be truncated because...&#x27;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-去除字符串中的HTML"><a href="#5-去除字符串中的HTML" class="headerlink" title="5. 去除字符串中的HTML"></a>5. 去除字符串中的HTML</h3><p>该方法用于去除字符串中的HTML元素：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">stripHtml</span> = html =&gt; (<span class="keyword">new</span> <span class="title class_">DOMParser</span>().<span class="title function_">parseFromString</span>(html, <span class="string">&#x27;text/html&#x27;</span>)).<span class="property">body</span>.<span class="property">textContent</span> || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、数组处理"><a href="#三、数组处理" class="headerlink" title="三、数组处理"></a>三、数组处理</h2><h3 id="1-从数组中移除重复项"><a href="#1-从数组中移除重复项" class="headerlink" title="1. 从数组中移除重复项"></a>1. 从数组中移除重复项</h3><p>该方法用于移除数组中的重复项：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">removeDuplicates</span> = (<span class="params">arr</span>) =&gt; [...<span class="keyword">new</span> <span class="title class_">Set</span>(arr)];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">removeDuplicates</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>, <span class="number">6</span>]));</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-判断数组是否为空"><a href="#2-判断数组是否为空" class="headerlink" title="2. 判断数组是否为空"></a>2. 判断数组是否为空</h3><p>该方法用于判断一个数组是否为空数组，它将返回一个布尔值：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">isNotEmpty</span> = arr =&gt; <span class="title class_">Array</span>.<span class="title function_">isArray</span>(arr) &amp;&amp; arr.<span class="property">length</span> &gt; <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">isNotEmpty</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);  <span class="comment">// true</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-合并两个数组"><a href="#3-合并两个数组" class="headerlink" title="3. 合并两个数组"></a>3. 合并两个数组</h3><p>可以使用下面两个方法来合并两个数组：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">a, b</span>) =&gt; a.<span class="title function_">concat</span>(b);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">a, b</span>) =&gt; [...a, ...b];</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、数字操作"><a href="#四、数字操作" class="headerlink" title="四、数字操作"></a>四、数字操作</h2><h3 id="1-判断一个数是奇数还是偶数"><a href="#1-判断一个数是奇数还是偶数" class="headerlink" title="1. 判断一个数是奇数还是偶数"></a>1. 判断一个数是奇数还是偶数</h3><p>该方法用于判断一个数字是奇数还是偶数：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">isEven</span> = num =&gt; num % <span class="number">2</span> === <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">isEven</span>(<span class="number">996</span>);</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-获得一组数的平均值"><a href="#2-获得一组数的平均值" class="headerlink" title="2. 获得一组数的平均值"></a>2. 获得一组数的平均值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">average</span> = (<span class="params">...args</span>) =&gt; args.<span class="title function_">reduce</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a + b) / args.<span class="property">length</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">average</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);   <span class="comment">// 3</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-获取两个整数之间的随机整数"><a href="#3-获取两个整数之间的随机整数" class="headerlink" title="3. 获取两个整数之间的随机整数"></a>3. 获取两个整数之间的随机整数</h3><p>该方法用于获取两个整数之间的随机整数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">random</span> = (<span class="params">min, max</span>) =&gt; <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min + <span class="number">1</span>) + min);</span><br><span class="line"></span><br><span class="line"><span class="title function_">random</span>(<span class="number">1</span>, <span class="number">50</span>);</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-指定位数四舍五入"><a href="#4-指定位数四舍五入" class="headerlink" title="4. 指定位数四舍五入"></a>4. 指定位数四舍五入</h3><p>该方法用于将一个数字按照指定位进行四舍五入：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">round</span> = (<span class="params">n, d</span>) =&gt; <span class="title class_">Number</span>(<span class="title class_">Math</span>.<span class="title function_">round</span>(n + <span class="string">&quot;e&quot;</span> + d) + <span class="string">&quot;e-&quot;</span> + d)</span><br><span class="line"></span><br><span class="line"><span class="title function_">round</span>(<span class="number">1.005</span>, <span class="number">2</span>) <span class="comment">//1.01</span></span><br><span class="line"><span class="title function_">round</span>(<span class="number">1.555</span>, <span class="number">2</span>) <span class="comment">//1.56</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="五、颜色操作"><a href="#五、颜色操作" class="headerlink" title="五、颜色操作"></a>五、颜色操作</h2><h3 id="1-将RGB转化为十六机制"><a href="#1-将RGB转化为十六机制" class="headerlink" title="1. 将RGB转化为十六机制"></a>1. 将RGB转化为十六机制</h3><p>该方法可以将一个RGB的颜色值转化为16进制值：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">rgbToHex</span> = (<span class="params">r, g, b</span>) =&gt; <span class="string">&quot;#&quot;</span> + ((<span class="number">1</span> &lt;&lt; <span class="number">24</span>) + (r &lt;&lt; <span class="number">16</span>) + (g &lt;&lt; <span class="number">8</span>) + b).<span class="title function_">toString</span>(<span class="number">16</span>).<span class="title function_">slice</span>(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">rgbToHex</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>);  <span class="comment">// &#x27;#ffffff&#x27;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-获取随机十六进制颜色"><a href="#2-获取随机十六进制颜色" class="headerlink" title="2. 获取随机十六进制颜色"></a>2. 获取随机十六进制颜色</h3><p>该方法用于获取一个随机的十六进制颜色值：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">randomHex</span> = (<span class="params"></span>) =&gt; <span class="string">`#<span class="subst">$&#123;<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">0xffffff</span>).toString(<span class="number">16</span>).padEnd(<span class="number">6</span>, <span class="string">&quot;0&quot;</span>)&#125;</span>`</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">randomHex</span>();</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="六、浏览器操作"><a href="#六、浏览器操作" class="headerlink" title="六、浏览器操作"></a>六、浏览器操作</h2><h3 id="1-复制内容到剪切板"><a href="#1-复制内容到剪切板" class="headerlink" title="1. 复制内容到剪切板"></a>1. 复制内容到剪切板</h3><p>该方法使用 navigator.clipboard.writeText 来实现将文本复制到剪贴板：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">copyToClipboard</span> = (<span class="params">text</span>) =&gt; navigator.<span class="property">clipboard</span>.<span class="title function_">writeText</span>(text);</span><br><span class="line"></span><br><span class="line"><span class="title function_">copyToClipboard</span>(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-清除所有cookie"><a href="#2-清除所有cookie" class="headerlink" title="2. 清除所有cookie"></a>2. 清除所有cookie</h3><p>该方法可以通过使用 document.cookie 来访问 cookie 并清除存储在网页中的所有 cookie：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> clearCookies = <span class="variable language_">document</span>.<span class="property">cookie</span>.<span class="title function_">split</span>(<span class="string">&#x27;;&#x27;</span>).<span class="title function_">forEach</span>(<span class="function"><span class="params">cookie</span> =&gt;</span> <span class="variable language_">document</span>.<span class="property">cookie</span> = cookie.<span class="title function_">replace</span>(<span class="regexp">/^ +/</span>, <span class="string">&#x27;&#x27;</span>).<span class="title function_">replace</span>(<span class="regexp">/=.*/</span>, <span class="string">`=;expires=<span class="subst">$&#123;<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">0</span>).toUTCString()&#125;</span>;path=/`</span>));</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-获取选中的文本"><a href="#3-获取选中的文本" class="headerlink" title="3. 获取选中的文本"></a>3. 获取选中的文本</h3><p>该方法通过内置的 getSelection 属性获取用户选择的文本：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">getSelectedText</span> = (<span class="params"></span>) =&gt; <span class="variable language_">window</span>.<span class="title function_">getSelection</span>().<span class="title function_">toString</span>();</span><br><span class="line"></span><br><span class="line"><span class="title function_">getSelectedText</span>();</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-检测是否是黑暗模式"><a href="#4-检测是否是黑暗模式" class="headerlink" title="4. 检测是否是黑暗模式"></a>4. 检测是否是黑暗模式</h3><p>该方法用于检测当前的环境是否是黑暗模式，它是一个布尔值：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> isDarkMode = <span class="variable language_">window</span>.<span class="property">matchMedia</span> &amp;&amp; <span class="variable language_">window</span>.<span class="title function_">matchMedia</span>(<span class="string">&#x27;(prefers-color-scheme: dark)&#x27;</span>).<span class="property">matches</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(isDarkMode)</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-滚动到页面顶部"><a href="#5-滚动到页面顶部" class="headerlink" title="5. 滚动到页面顶部"></a>5. 滚动到页面顶部</h3><p>该方法用于在页面中返回顶部：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">goToTop</span> = (<span class="params"></span>) =&gt; <span class="variable language_">window</span>.<span class="title function_">scrollTo</span>(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">goToTop</span>();</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-判断当前标签页是否激活"><a href="#6-判断当前标签页是否激活" class="headerlink" title="6. 判断当前标签页是否激活"></a>6. 判断当前标签页是否激活</h3><p>该方法用于检测当前标签页是否已经激活：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">isTabInView</span> = (<span class="params"></span>) =&gt; !<span class="variable language_">document</span>.<span class="property">hidden</span>;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-判断当前是否是苹果设备"><a href="#7-判断当前是否是苹果设备" class="headerlink" title="7. 判断当前是否是苹果设备"></a>7. 判断当前是否是苹果设备</h3><p>该方法用于检测当前的设备是否是苹果的设备：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">isAppleDevice</span> = (<span class="params"></span>) =&gt; <span class="regexp">/Mac|iPod|iPhone|iPad/</span>.<span class="title function_">test</span>(navigator.<span class="property">platform</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">isAppleDevice</span>();</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-是否滚动到页面底部"><a href="#8-是否滚动到页面底部" class="headerlink" title="8. 是否滚动到页面底部"></a>8. 是否滚动到页面底部</h3><p>该方法用于判断页面是否已经底部：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">scrolledToBottom</span> = (<span class="params"></span>) =&gt; <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">clientHeight</span> + <span class="variable language_">window</span>.<span class="property">scrollY</span> &gt;= <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">scrollHeight</span>;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="9-重定向到一个URL"><a href="#9-重定向到一个URL" class="headerlink" title="9. 重定向到一个URL"></a>9. 重定向到一个URL</h3><p>该方法用于重定向到一个新的URL：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">redirect</span> = url =&gt; location.<span class="property">href</span> = url</span><br><span class="line"></span><br><span class="line"><span class="title function_">redirect</span>(<span class="string">&quot;https://www.google.com/&quot;</span>)</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-打开浏览器打印框"><a href="#10-打开浏览器打印框" class="headerlink" title="10. 打开浏览器打印框"></a>10. 打开浏览器打印框</h3><p>该方法用于打开浏览器的打印框：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">showPrintDialog</span> = (<span class="params"></span>) =&gt; <span class="variable language_">window</span>.<span class="title function_">print</span>()</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="七、其他操作"><a href="#七、其他操作" class="headerlink" title="七、其他操作"></a>七、其他操作</h2><h3 id="1-随机布尔值"><a href="#1-随机布尔值" class="headerlink" title="1. 随机布尔值"></a>1. 随机布尔值</h3><p>该方法可以返回一个随机的布尔值，使用Math.random()可以获得0-1的随机数，与0.5进行比较，就有一半的概率获得真值或者假值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">randomBoolean</span> = (<span class="params"></span>) =&gt; <span class="title class_">Math</span>.<span class="title function_">random</span>() &gt;= <span class="number">0.5</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">randomBoolean</span>();</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-变量交换"><a href="#2-变量交换" class="headerlink" title="2. 变量交换"></a>2. 变量交换</h3><p>可以使用以下形式在不适用第三个变量的情况下，交换两个变量的值：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[foo, bar] = [bar, foo];</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-获取变量的类型"><a href="#3-获取变量的类型" class="headerlink" title="3. 获取变量的类型"></a>3. 获取变量的类型</h3><p>该方法用于获取一个变量的类型：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">trueTypeOf</span> = (<span class="params">obj</span>) =&gt; <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(obj).<span class="title function_">slice</span>(<span class="number">8</span>, -<span class="number">1</span>).<span class="title function_">toLowerCase</span>();</span><br><span class="line"></span><br><span class="line"><span class="title function_">trueTypeOf</span>(<span class="string">&#x27;&#x27;</span>);     <span class="comment">// string</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>(<span class="number">0</span>);      <span class="comment">// number</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>();       <span class="comment">// undefined</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>(<span class="literal">null</span>);   <span class="comment">// null</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>(&#123;&#125;);     <span class="comment">// object</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>([]);     <span class="comment">// array</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>(<span class="number">0</span>);      <span class="comment">// number</span></span><br><span class="line"><span class="title function_">trueTypeOf</span>(<span class="function">() =&gt;</span> &#123;&#125;);  <span class="comment">// function</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-华氏度和摄氏度之间的转化"><a href="#4-华氏度和摄氏度之间的转化" class="headerlink" title="4. 华氏度和摄氏度之间的转化"></a>4. 华氏度和摄氏度之间的转化</h3><p>该方法用于摄氏度和华氏度之间的转化：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">celsiusToFahrenheit</span> = (<span class="params">celsius</span>) =&gt; celsius * <span class="number">9</span>/<span class="number">5</span> + <span class="number">32</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">fahrenheitToCelsius</span> = (<span class="params">fahrenheit</span>) =&gt; (fahrenheit - <span class="number">32</span>) * <span class="number">5</span>/<span class="number">9</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">celsiusToFahrenheit</span>(<span class="number">15</span>);    <span class="comment">// 59</span></span><br><span class="line"><span class="title function_">celsiusToFahrenheit</span>(<span class="number">0</span>);     <span class="comment">// 32</span></span><br><span class="line"><span class="title function_">celsiusToFahrenheit</span>(-<span class="number">20</span>);   <span class="comment">// -4</span></span><br><span class="line"><span class="title function_">fahrenheitToCelsius</span>(<span class="number">59</span>);    <span class="comment">// 15</span></span><br><span class="line"><span class="title function_">fahrenheitToCelsius</span>(<span class="number">32</span>);    <span class="comment">// 0</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-检测对象是否为空"><a href="#5-检测对象是否为空" class="headerlink" title="5. 检测对象是否为空"></a>5. 检测对象是否为空</h3><p>该方法用于检测一个JavaScript对象是否为空：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">isEmpty</span> = obj =&gt; <span class="title class_">Reflect</span>.<span class="title function_">ownKeys</span>(obj).<span class="property">length</span> === <span class="number">0</span> &amp;&amp; obj.<span class="property">constructor</span> === <span class="title class_">Object</span>;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>作者：CUGGZ<br>链接：<a target="_blank" rel="noopener" href="https://juejin.cn/post/7025771605422768159">https://juejin.cn/post/7025771605422768159</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/47cf96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/47cf96/" class="post-title-link" itemprop="url">常用的前端轮子</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-10-09 19:42:02" itemprop="dateCreated datePublished" datetime="2021-10-09T19:42:02+08:00">2021-10-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="React-UI-组件库"><a href="#React-UI-组件库" class="headerlink" title="React UI 组件库"></a>React UI 组件库</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://ant.design/">Ant Design</a></li>
+<li><a target="_blank" rel="noopener" href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
+<li><a target="_blank" rel="noopener" href="https://material-ui.com/">MATERIAL-UI</a></li>
+</ul>
+<h2 id="Vue-UI组件库"><a href="#Vue-UI组件库" class="headerlink" title="Vue UI组件库"></a>Vue UI组件库</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://element.eleme.io/#/zh-CN">Element UI</a> PC端</li>
+<li><a target="_blank" rel="noopener" href="https://youzan.github.io/vant/#/zh-CN/">Vant</a> 移动端</li>
+<li><a target="_blank" rel="noopener" href="https://www.iviewui.com/">View UI</a></li>
+</ul>
+<h2 id="常用效果组件"><a href="#常用效果组件" class="headerlink" title="常用效果组件"></a>常用效果组件</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://animate.style/">Animate.css</a> 动画库</li>
+<li><a target="_blank" rel="noopener" href="https://www.swiper.com.cn/">Swiper</a> 轮播组件</li>
+<li><a target="_blank" rel="noopener" href="http://www.mescroll.com/">mescroll</a> 下拉刷新和上拉加载框架-基于原生JS</li>
+</ul>
+<h2 id="工具类"><a href="#工具类" class="headerlink" title="工具类"></a>工具类</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.lodashjs.com/">Lodash.js</a></li>
+<li><a target="_blank" rel="noopener" href="https://dayjs.fenxianglu.cn/">Day.js</a> 处理日期</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hustcc/timeago.js">Timeago.js</a> 相对时间，如N小时前</li>
+<li><a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/index.html">Echarts</a> 百度图表</li>
+<li><a target="_blank" rel="noopener" href="https://pandao.github.io/editor.md/">Meditor.md</a> 开源在线 Markdown 编辑器</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/validatorjs/validator.js">validator.js</a> 验证库</li>
+</ul>
+<h2 id="Vue工具类"><a href="#Vue工具类" class="headerlink" title="Vue工具类"></a>Vue工具类</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.itxst.com/vue-draggable/tutorial.html">vue-draggable</a> 基于Sortable.js实现的vue拖拽插件</li>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/vue-qr">vue-qr</a> 文本转二维码</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xyxiao001/vue-cropper">vue-cropper</a> 图片裁剪插件</li>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/vue-lazyload">vue-lazyload</a> 懒加载</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/saivarunk/vue-simple-upload">vue-simple-upload</a> 上传组件</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/linjc/smooth-signature">H5带笔锋手写签名，支持PC端和移动端</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/723be7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/723be7/" class="post-title-link" itemprop="url">Hook规则</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-06 19:13:06" itemprop="dateCreated datePublished" datetime="2021-04-06T19:13:06+08:00">2021-04-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/Hook/" itemprop="url" rel="index"><span itemprop="name">Hook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="04-Hook规则"><a href="#04-Hook规则" class="headerlink" title="04. Hook规则"></a>04. Hook规则</h1><p>Hook 本质就是 JavaScript 函数，但是在使用它时需要遵循<strong>两条规则</strong>。我们提供了一个 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/eslint-plugin-react-hooks">linter 插件</a>来强制执行这些规则：</p>
+<h2 id="只在最顶层使用-Hook"><a href="#只在最顶层使用-Hook" class="headerlink" title="只在最顶层使用 Hook"></a>只在最顶层使用 Hook</h2><p>不要在循环，条件或嵌套函数中调用 Hook， 确保<strong>总是在你的 React 函数的最顶层以及任何 return 之前调用他们</strong>。遵守这条规则，你就能确保 Hook 在每一次渲染中都按照同样的顺序被调用。</p>
+<ol>
+<li><p>React 怎么知道哪个 state 对应哪个 <code>useState</code>？答案是 React 靠的是 Hook 调用的顺序</p>
+</li>
+<li><p>如果我们想要有条件地执行一个 effect，可以将判断放到 Hook 的<em>内部</em>：</p>
+</li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">useEffect</span>(<span class="keyword">function</span> <span class="title function_">persistForm</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 👍 将条件判断放置在 effect 中</span></span><br><span class="line">  <span class="keyword">if</span> (name !== <span class="string">&#x27;&#x27;</span>) &#123;</span><br><span class="line">    <span class="variable language_">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&#x27;formData&#x27;</span>, name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="只在-React-函数中调用-Hook"><a href="#只在-React-函数中调用-Hook" class="headerlink" title="只在 React 函数中调用 Hook"></a>只在 React 函数中调用 Hook</h2><p>**不要在普通的 JavaScript 函数中调用 Hook。**你可以：</p>
+<ul>
+<li>✅ 在 React 的函数组件中调用 Hook</li>
+<li>✅ 在自定义 Hook 中调用其他 Hook</li>
+</ul>
+<h2 id="ESLint-插件"><a href="#ESLint-插件" class="headerlink" title="ESLint 插件"></a>ESLint 插件</h2><p>我们发布了一个名为 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/eslint-plugin-react-hooks"><code>eslint-plugin-react-hooks</code></a> 的 ESLint 插件来强制执行这两条规则。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint-plugin-react-hooks --save-dev</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 你的 ESLint 配置</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;plugins&quot;</span>: [</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="string">&quot;react-hooks&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="string">&quot;rules&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="string">&quot;react-hooks/rules-of-hooks&quot;</span>: <span class="string">&quot;error&quot;</span>, <span class="comment">// 检查 Hook 的规则</span></span><br><span class="line">    <span class="string">&quot;react-hooks/exhaustive-deps&quot;</span>: <span class="string">&quot;warn&quot;</span> <span class="comment">// 检查 effect 的依赖</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/72710d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/72710d/" class="post-title-link" itemprop="url">使用Effect Hook</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-06 19:13:06" itemprop="dateCreated datePublished" datetime="2021-04-06T19:13:06+08:00">2021-04-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/Hook/" itemprop="url" rel="index"><span itemprop="name">Hook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="03-使用Effect-Hook（副作用钩子）"><a href="#03-使用Effect-Hook（副作用钩子）" class="headerlink" title="03. 使用Effect Hook（副作用钩子）"></a>03. 使用Effect Hook（副作用钩子）</h1><p>如果你熟悉 React class 的生命周期函数，你可以把 <code>useEffect</code> Hook 看做 <code>componentDidMount</code>(挂载完成)，<code>componentDidUpdate</code>(更新完成) 和 <code>componentWillUnmount</code>（即将销毁前） 这三个函数的组合。</p>
+<blockquote>
+<p>Did : 做了...     Will: 将要...</p>
+</blockquote>
+<p><strong>数据获取，设置订阅以及手动更改 React 组件中的 DOM 都属于副作用</strong>。不管你知不知道这些操作，或是“副作用”这个名字，应该都在组件中使用过它们。</p>
+<p>在 React 组件中有两种常见副作用操作：**需要清除的 **和 <strong>不需要清除的</strong>。我们来更仔细地看一下他们之间的区别。</p>
+<h2 id="无需清除的-effect"><a href="#无需清除的-effect" class="headerlink" title="无需清除的 effect"></a>无需清除的 effect</h2><p>有时候，我们只想**在 React 更新 DOM 之后运行一些额外的代码。**比如发送网络请求，手动变更 DOM，记录日志，这些都是常见的无需清除的操作。因为我们在执行完这些操作之后，就可以忽略他们了。让我们对比一下使用 class 和 Hook 都是怎么实现这些副作用的。</p>
+<h3 id="使用-class-的示例"><a href="#使用-class-的示例" class="headerlink" title="使用 class 的示例"></a>使用 class 的示例</h3><p>在 React 的 class 组件中，<code>render</code> 函数是不应该有任何副作用的。一般来说，在这里执行操作太早了，我们基本上都希望在 React 更新 DOM 之后才执行我们的操作。</p>
+<p>这就是为什么在 React class 中，我们把副作用操作放到 <code>componentDidMount</code> 和 <code>componentDidUpdate</code> 函数中。回到示例中，这是一个 React 计数器的 class 组件。它在 React 对 DOM 进行操作之后，立即更新了 document 的 title 属性</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Example</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;</span><br><span class="line">      <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">// DOM挂载了</span></span><br><span class="line">  <span class="title function_">componentDidMount</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;<span class="variable language_">this</span>.state.count&#125;</span> times`</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// DOM更新了</span></span><br><span class="line">  <span class="title function_">componentDidUpdate</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;<span class="variable language_">this</span>.state.count&#125;</span> times`</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>You clicked &#123;this.state.count&#125; times<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> this.setState(&#123; count: this.state.count + 1 &#125;)&#125;&gt;</span></span><br><span class="line"><span class="language-xml">          Click me</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意，<strong>在这个 class 中，我们需要在两个生命周期函数中编写重复的代码。</strong></p>
+<p>这是因为很多情况下，我们希望在组件加载和更新时执行同样的操作。<strong>从概念上说，我们希望它在每次渲染之后执行</strong> —— 但 React 的 class 组件没有提供这样的方法。即使我们提取出一个方法，我们还是要在两个地方调用它。</p>
+<p>现在让我们来看看如何使用 <code>useEffect</code> 执行相同的操作。</p>
+<h3 id="使用-Hook-的示例"><a href="#使用-Hook-的示例" class="headerlink" title="使用 Hook 的示例"></a>使用 Hook 的示例</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [count, setCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123; <span class="comment">// 每次渲染组件DOM后执行此回调函数（即，挂载完成和更新完成生命周期）</span></span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;count&#125;</span> times`</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>You clicked &#123;count&#125; times<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> setCount(count + 1)&#125;&gt;</span></span><br><span class="line"><span class="language-xml">        Click me</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><code>useEffect</code> 做了什么？</strong> 通过使用这个 Hook，你可以告诉 React 组件需要在渲染后执行某些操作。React 会保存你传递的函数（我们将它称之为 “effect”），并且在执行 DOM 更新之后调用它。在这个 effect 中，我们设置了 document 的 title 属性，不过我们也可以执行数据获取或调用其他命令式的 API。</p>
+<p><strong>为什么在组件内部调用 <code>useEffect</code>？</strong> 将 <code>useEffect</code> 放在组件内部让我们可以在 effect 中直接访问 <code>count</code> state 变量（或其他 props）。我们不需要特殊的 API 来读取它 —— 它已经保存在函数作用域中。Hook 使用了 JavaScript 的闭包机制，而不用在 JavaScript 已经提供了解决方案的情况下，还引入特定的 React API。</p>
+<p><strong><code>useEffect</code> 会在每次渲染后都执行吗？</strong> 是的，默认情况下，它在第一次渲染之后<em>和</em>每次更新之后都会执行。（我们稍后会谈到<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects">如何控制它</a>。）你可能会更容易接受 effect 发生在“渲染之后”这种概念，不用再去考虑“挂载”还是“更新”。React 保证了每次运行 effect 的同时，DOM 都已经更新完毕。</p>
+<h3 id="不同之处"><a href="#不同之处" class="headerlink" title="不同之处"></a>不同之处</h3><p>与 <code>componentDidMount</code> 或 <code>componentDidUpdate</code> 不同，使用 <code>useEffect</code> 调度的 effect 不会阻塞浏览器更新屏幕，这让你的应用看起来响应更快。大多数情况下，effect 不需要同步地执行。在个别情况下（例如测量布局），有单独的 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-reference.html#uselayouteffect"><code>useLayoutEffect</code></a> Hook 供你使用，其 API 与 <code>useEffect</code> 相同。</p>
+<h2 id="需要清除的-effect"><a href="#需要清除的-effect" class="headerlink" title="需要清除的 effect"></a>需要清除的 effect</h2><p>之前，我们研究了如何使用不需要清除的副作用，还有一些副作用是需要清除的。例如<strong>订阅外部数据源</strong>。这种情况下，清除工作是非常重要的，可以防止引起内存泄露！现在让我们来比较一下如何用 Class 和 Hook 来实现。</p>
+<h3 id="使用-Class-的示例"><a href="#使用-Class-的示例" class="headerlink" title="使用 Class 的示例"></a>使用 Class 的示例</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">FriendStatus</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123; <span class="attr">isOnline</span>: <span class="literal">null</span> &#125;;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleStatusChange</span> = <span class="variable language_">this</span>.<span class="property">handleStatusChange</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">// 挂载后</span></span><br><span class="line">  <span class="title function_">componentDidMount</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">props</span>.<span class="property">friend</span>.<span class="property">id</span>,</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">handleStatusChange</span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 即将卸载</span></span><br><span class="line">  <span class="title function_">componentWillUnmount</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">props</span>.<span class="property">friend</span>.<span class="property">id</span>,</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">handleStatusChange</span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;</span><br><span class="line">      <span class="attr">isOnline</span>: status.<span class="property">isOnline</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">isOnline</span> === <span class="literal">null</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">&#x27;Loading...&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">isOnline</span> ? <span class="string">&#x27;Online&#x27;</span> : <span class="string">&#x27;Offline&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-Hook-的示例-1"><a href="#使用-Hook-的示例-1" class="headerlink" title="使用 Hook 的示例"></a>使用 Hook 的示例</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">FriendStatus</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [isOnline, setIsOnline] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123; <span class="comment">// 每次渲染组件DOM后执行此回调函数（即，挂载完成和更新完成生命周期）</span></span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">      <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    <span class="comment">// 每次重新渲染前都会执行（class的 componentWillUnmount 只在卸载组件执行）</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">function</span> <span class="title function_">cleanup</span>(<span class="params"></span>) &#123; <span class="comment">// 函数名非必需，可使用箭头函数</span></span><br><span class="line">      <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (isOnline === <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;Loading...&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> isOnline ? <span class="string">&#x27;Online&#x27;</span> : <span class="string">&#x27;Offline&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-Effect-的提示"><a href="#使用-Effect-的提示" class="headerlink" title="使用 Effect 的提示"></a>使用 Effect 的提示</h2><h3 id="使用Hook的目的"><a href="#使用Hook的目的" class="headerlink" title="使用Hook的目的"></a>使用Hook的目的</h3><p>使用 Hook 其中一个<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-intro.html#complex-components-become-hard-to-understand">目的</a>就是要解决 class 中生命周期函数经常包含不相关的逻辑，但又把相关逻辑分离到了几个不同方法中的问题。</p>
+<h3 id="提示-使用多个-Effect-实现关注点分离"><a href="#提示-使用多个-Effect-实现关注点分离" class="headerlink" title="提示: 使用多个 Effect 实现关注点分离"></a>提示: 使用多个 Effect 实现关注点分离</h3><p>可以使用多个 effect。这会将不相关逻辑分离到不同的 effect 中：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">FriendStatusWithCounter</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [count, setCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;count&#125;</span> times`</span>;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> [isOnline, setIsOnline] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">      <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="解释-为什么每次更新的时候都要运行-Effect"><a href="#解释-为什么每次更新的时候都要运行-Effect" class="headerlink" title="解释: 为什么每次更新的时候都要运行 Effect"></a>解释: 为什么每次更新的时候都要运行 Effect</h3><p>如果你已经习惯了使用 class，那么你或许会疑惑<strong>为什么 effect 的清除阶段在每次重新渲染时都会执行，而不是只在卸载组件的时候执行一次</strong>。让我们看一个实际的例子，看看为什么这个设计可以帮助我们创建 bug 更少的组件。</p>
+<p>...</p>
+<p><strong>忘记正确地处理 <code>componentDidUpdate</code> 是 React 应用中常见的 bug 来源</strong>。</p>
+<p>...</p>
+<h3 id="提示-通过跳过-Effect-进行性能优化"><a href="#提示-通过跳过-Effect-进行性能优化" class="headerlink" title="提示: 通过跳过 Effect 进行性能优化"></a>提示: 通过跳过 Effect 进行性能优化</h3><p>在某些情况下，每次渲染后都执行清理或者执行 effect 可能会导致性能问题。</p>
+<p>如果某些特定值在两次重渲染之间没有发生变化，你可以通知 React <strong>跳过</strong>对 effect 的调用，只要传递数组作为 <code>useEffect</code> 的第二个可选参数即可：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;count&#125;</span> times`</span>;</span><br><span class="line">&#125;, [count]); <span class="comment">// 仅在 count 更改时更新</span></span><br></pre></td></tr></table></figure>
+
+<p>对于有清除操作的 effect 同样适用：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">    <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">  <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;, [props.<span class="property">friend</span>.<span class="property">id</span>]); <span class="comment">// 仅在 props.friend.id 发生变化时，重新订阅</span></span><br></pre></td></tr></table></figure>
+
+<p>未来版本，可能会在构建时自动添加第二个参数。</p>
+<p><strong>注意：</strong></p>
+<ol>
+<li><p>如果你要使用此优化方式，请确保数组中包含了<strong>所有外部作用域中会随时间变化并且在 effect 中使用的变量</strong>，否则你的代码会引用到先前渲染中的旧变量。</p>
+</li>
+<li><p>如果想执行只运行一次的 effect（仅在组件挂载和卸载时执行），可以传递一个空数组（<code>[]</code>）作为第二个参数。</p>
+</li>
+<li><p>如果你传入了一个空数组（<code>[]</code>），effect 内部的 props 和 state 就会一直拥有其初始值。尽管传入 <code>[]</code> 作为第二个参数更接近大家更熟悉的 <code>componentDidMount</code> 和 <code>componentWillUnmount</code> 思维模式，但我们有<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-faq.html#is-it-safe-to-omit-functions-from-the-list-of-dependencies">更好的</a><a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-faq.html#what-can-i-do-if-my-effect-dependencies-change-too-often">方式</a>来避免过于频繁的重复调用 effect。除此之外，请记得 React 会等待浏览器完成画面渲染之后才会延迟调用 <code>useEffect</code>，因此会使得额外操作很方便。</p>
+</li>
+<li><p>我们推荐启用 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/eslint-plugin-react-hooks#installation"><code>eslint-plugin-react-hooks</code></a> 中的 <a target="_blank" rel="noopener" href="https://github.com/facebook/react/issues/14920"><code>exhaustive-deps</code></a> 规则。此规则会在添加错误依赖时发出警告并给出修复建议。</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/82baa3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/82baa3/" class="post-title-link" itemprop="url">使用State Hook</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-06 19:13:06" itemprop="dateCreated datePublished" datetime="2021-04-06T19:13:06+08:00">2021-04-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/Hook/" itemprop="url" rel="index"><span itemprop="name">Hook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="02-使用State-Hook"><a href="#02-使用State-Hook" class="headerlink" title="02. 使用State Hook"></a>02. 使用State Hook</h1><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 声明一个叫 &quot;count&quot; 的 state 变量</span></span><br><span class="line">  <span class="keyword">const</span> [count, setCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>You clicked &#123;count&#125; times<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> setCount(count + 1)&#125;&gt;</span></span><br><span class="line"><span class="language-xml">        Click me</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们将通过将这段代码与一个等价的 class 示例进行比较来开始学习 Hook。</p>
+<h2 id="等价的Class组件示例"><a href="#等价的Class组件示例" class="headerlink" title="等价的Class组件示例"></a>等价的Class组件示例</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Example</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;</span><br><span class="line">      <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>You clicked &#123;this.state.count&#125; times<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> this.setState(&#123; count: this.state.count + 1 &#125;)&#125;&gt;</span></span><br><span class="line"><span class="language-xml">          Click me</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>state 初始值为 <code>{ count: 0 }</code> ，当用户点击按钮后，我们通过调用 <code>this.setState()</code> 来增加 <code>state.count</code>。整个章节中都将使用该 class 的代码片段做示例。</p>
+<h3 id="Hook-在-class-内部是不起作用"><a href="#Hook-在-class-内部是不起作用" class="headerlink" title="Hook 在 class 内部是不起作用"></a>Hook 在 class 内部是不起作用</h3><p><strong>Hook 在 class 内部是不起作用的</strong>。但你可以使用它们来取代 class 。</p>
+<h2 id="调用-useState-方法的时候做了什么"><a href="#调用-useState-方法的时候做了什么" class="headerlink" title="调用 useState 方法的时候做了什么?"></a>调用 <code>useState</code> 方法的时候做了什么?</h2><p>它定义一个 “state 变量”。我们的变量叫 <code>count</code>， 但是我们可以叫他任何名字，比如 <code>banana</code>。这是一种在函数调用时保存变量的方式 —— <code>useState</code> 是一种新方法，它与 class 里面的 <code>this.state</code> 提供的功能完全相同。<strong>一般来说，在函数退出后变量就会”消失”，而 state 中的变量会被 React 保留。</strong></p>
+<h2 id="useState-需要哪些参数？"><a href="#useState-需要哪些参数？" class="headerlink" title="useState 需要哪些参数？"></a><code>useState</code> 需要哪些参数？</h2><p><code>useState()</code> 方法里面<strong>唯一的参数就是初始 state</strong>。不同于 class 的是，我们可以按照需要使用数字或字符串对其进行赋值，而不一定是对象。在示例中，只需使用数字来记录用户点击次数，所以我们传了 <code>0</code> 作为变量的初始 state。（如果我们想要在 state 中存储两个不同的变量，只需调用 <code>useState()</code> 两次即可。）</p>
+<h2 id="useState-方法的返回值是什么？"><a href="#useState-方法的返回值是什么？" class="headerlink" title="useState 方法的返回值是什么？"></a><code>useState</code> 方法的返回值是什么？</h2><p>返回值为：当前 state 以及更新 state 的函数。这就是我们写 <code>const [count, setCount] = useState()</code> 的原因。这与 class 里面 <code>this.state.count</code> 和 <code>this.setState</code> 类似，唯一区别就是你需要成对的获取它们。</p>
+<h2 id="理解useState"><a href="#理解useState" class="headerlink" title="理解useState"></a>理解useState</h2><p>既然我们知道了 <code>useState</code> 的作用，我们的示例应该更容易理解了：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 声明一个叫 &quot;count&quot; 的 state 变量  const [count, setCount] = useState(0);</span></span><br></pre></td></tr></table></figure>
+
+<p>我们声明了一个叫 <code>count</code> 的 state 变量，然后把它设为 <code>0</code>。**React 会在重复渲染时记住它当前的值，并且提供最新的值给我们的函数。**我们可以通过调用 <code>setCount</code> 来更新当前的 <code>count</code>。</p>
+<blockquote>
+<p>注意</p>
+<p>你可能想知道：为什么叫 <code>useState</code> 而不叫 <code>createState</code>?</p>
+<p>“Create” 可能不是很准确，因为 state 只在组件首次渲染的时候被创建。在下一次重新渲染时，<code>useState</code> 返回给我们当前的 state。否则它就不是 “state”了！这也是 Hook 的名字<em>总是</em>以 <code>use</code> 开头的一个原因。我们将在后面的 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-rules.html">Hook 规则</a>中了解原因。</p>
+</blockquote>
+<h2 id="使用多个-state-变量"><a href="#使用多个-state-变量" class="headerlink" title="使用多个 state 变量"></a>使用多个 state 变量</h2><p>将 state 变量声明为一对 <code>[something, setSomething]</code> 也很方便，因为如果我们想使用多个 state 变量，它允许我们给不同的 state 变量取不同的名称：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">ExampleWithManyStates</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 声明多个 state 变量</span></span><br><span class="line">  <span class="keyword">const</span> [age, setAge] = <span class="title function_">useState</span>(<span class="number">42</span>);</span><br><span class="line">  <span class="keyword">const</span> [fruit, setFruit] = <span class="title function_">useState</span>(<span class="string">&#x27;banana&#x27;</span>);</span><br><span class="line">  <span class="keyword">const</span> [todos, setTodos] = <span class="title function_">useState</span>([&#123; <span class="attr">text</span>: <span class="string">&#x27;学习 Hook&#x27;</span> &#125;]);</span><br></pre></td></tr></table></figure>
+
+<p>在以上组件中，我们有局部变量 <code>age</code>，<code>fruit</code> 和 <code>todos</code>，并且我们可以单独更新它们：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">handleOrangeClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 和 this.setState(&#123; fruit: &#x27;orange&#x27; &#125;) 类似</span></span><br><span class="line">  <span class="title function_">setFruit</span>(<span class="string">&#x27;orange&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>你<strong>不必</strong>使用多个 state 变量。<strong>State 变量可以很好地存储对象和数组，因此，你仍然可以将相关数据分为一组</strong>。然而，不像 class 中的 <code>this.setState</code>，<strong>更新 state 变量总是<em>替换</em>它而不是合并它</strong>。</p>
+<p>我们<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-faq.html#should-i-use-one-or-many-state-variables">在 FAQ 中</a>提供了更多关于分离独立 state 变量的建议。</p>
+<blockquote>
+<p>把所有 state 都放在同一个 <code>useState</code> 调用中，或是每一个字段都对应一个 <code>useState</code> 调用，这两方式都能跑通。当你在这两个极端之间找到平衡，然后把相关 state 组合到几个独立的 state 变量时，组件就会更加的可读。如果 state 的逻辑开始变得复杂，我们推荐 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-reference.html#usereducer">用 reducer 来管理它</a>，或使用自定义 Hook。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/cf1018/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/cf1018/" class="post-title-link" itemprop="url">自定义 Hook</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-06 19:13:06" itemprop="dateCreated datePublished" datetime="2021-04-06T19:13:06+08:00">2021-04-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/Hook/" itemprop="url" rel="index"><span itemprop="name">Hook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="05-自定义-Hook"><a href="#05-自定义-Hook" class="headerlink" title="05. 自定义 Hook"></a>05. 自定义 Hook</h1><p><strong>通过自定义 Hook，可以将组件逻辑提取到可重用的函数中。</strong></p>
+<p>目前为止，在 React 中有两种流行的方式来共享组件之间的状态逻辑: <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/render-props.html">render props</a> 和<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/higher-order-components.html">高阶组件</a>，现在让我们来看看 Hook 是如何在让你不增加组件的情况下解决相同问题的。</p>
+<h2 id="提取自定义-Hook"><a href="#提取自定义-Hook" class="headerlink" title="提取自定义 Hook"></a>提取自定义 Hook</h2><p><strong>自定义 Hook 是一个函数，其名称以 “<code>use</code>” 开头，函数内部可以调用其他的 Hook。</strong> 例如，下面的 <code>useFriendStatus</code> 是我们第一个自定义的 Hook:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">useFriendStatus</span>(<span class="params">friendID</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [isOnline, setIsOnline] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">      <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(friendID, handleStatusChange);</span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(friendID, handleStatusChange);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> isOnline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>与 React 组件不同的是，自定义 Hook 不需要具有特殊的标识。我们可以自由的决定它的参数是什么，以及它应该返回什么（如果需要的话）。换句话说，它<strong>就像一个正常的函数</strong>。但是它的名字应该始终以 <code>use</code> 开头，这样可以一眼看出其符合 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-rules.html">Hook 的规则</a>。</p>
+<h2 id="使用自定义-Hook"><a href="#使用自定义-Hook" class="headerlink" title="使用自定义 Hook"></a>使用自定义 Hook</h2><p>现在我们已经把这个逻辑提取到 <code>useFriendStatus</code> 的自定义 Hook 中，然后就可以<em>使用它了：</em></p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">FriendStatus</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> isOnline = <span class="title function_">useFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>);</span><br><span class="line">  <span class="keyword">if</span> (isOnline === <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;Loading...&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> isOnline ? <span class="string">&#x27;Online&#x27;</span> : <span class="string">&#x27;Offline&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">FriendListItem</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> isOnline = <span class="title function_">useFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>);</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">&#123;&#123;</span> <span class="attr">color:</span> <span class="attr">isOnline</span> ? &#x27;<span class="attr">green</span>&#x27; <span class="attr">:</span> &#x27;<span class="attr">black</span>&#x27; &#125;&#125;&gt;</span></span></span><br><span class="line"><span class="language-xml">      &#123;props.friend.name&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>**这段代码等价于原来的示例代码吗？**等价，它的工作方式完全一样。如果你仔细观察，你会发现我们没有对其行为做任何的改变，我们只是将两个函数之间一些共同的代码提取到单独的函数中。<strong>自定义 Hook 是一种自然遵循 Hook 设计的约定，而并不是 React 的特性。</strong></p>
+<p>**自定义 Hook 必须以 “<code>use</code>” 开头吗？**必须如此。这个约定非常重要。不遵循的话，由于无法判断某个函数是否包含对其内部 Hook 的调用，React 将无法自动检查你的 Hook 是否违反了 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-rules.html">Hook 的规则</a>。</p>
+<p>**在两个组件中使用相同的 Hook 会共享 state 吗？*<em>不会。自定义 Hook 是一种重用</em>状态逻辑*的机制(例如设置为订阅并存储当前值)，所以每次使用自定义 Hook 时，其中的所有 state 和副作用都是完全隔离的。</p>
+<p>**自定义 Hook 如何获取独立的 state？*<em>每次</em>调用* Hook，它都会获取独立的 state。由于我们直接调用了 <code>useFriendStatus</code>，从 React 的角度来看，我们的组件只是调用了 <code>useState</code> 和 <code>useEffect</code>。 正如我们在<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-effect.html#tip-use-multiple-effects-to-separate-concerns">之前章节</a>中<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-state.html#tip-using-multiple-state-variables">了解到的</a>一样，我们可以在一个组件中多次调用 <code>useState</code> 和 <code>useEffect</code>，它们是完全独立的。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="小总结"><a href="#小总结" class="headerlink" title="小总结"></a>小总结</h3><ol>
+<li>自定义hook就像一个普通函数，内部包含可复用的组件逻辑。</li>
+<li>函数名以<code>use</code>开头。</li>
+<li><code>state</code>是独立的。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">true</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
 </html>

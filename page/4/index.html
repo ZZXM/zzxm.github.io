@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zzxm.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:type" content="website">
+<meta property="og:title" content="庄生晓梦">
+<meta property="og:url" content="https://zzxm.github.io/page/4/">
+<meta property="og:site_name" content="庄生晓梦">
+<meta property="og:description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="zzxm">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zzxm.github.io/page/4/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/4/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>庄生晓梦</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="搜索" role="button">
+      <i class="fa fa-search fa-fw fa-lg"></i>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">庄生晓梦</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Web 前端技术博客，积跬步以至千里</p>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="切换导航栏" role="button">
+      <i class="fa fa-ellipsis fa-fw fa-lg"></i>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  
+  <template id="search-popup-template"><div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div></template>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zzxm</p>
+  <div class="site-description" itemprop="description">前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">222</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/574d62/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/574d62/" class="post-title-link" itemprop="url">Git分支-远程分支</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><strong>远程引用是对远程仓库的引用（指针）</strong>，包括分支、标签等等。</p>
+<blockquote>
+<p> 远程分支本质上也是一个指针，指向远程地址</p>
+</blockquote>
+<h3 id="查看远程引用列表与信息"><a href="#查看远程引用列表与信息" class="headerlink" title="查看远程引用列表与信息"></a>查看远程引用列表与信息</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git ls-remote &lt;remote&gt; <span class="comment"># 远程引用的完整列表</span></span><br><span class="line">git remote show &lt;remote&gt; <span class="comment"># 远程分支的更多信息</span></span><br></pre></td></tr></table></figure>
+
+<p>上面两行命令比较少用，更常见的做法是利用远程跟踪分支。</p>
+<h3 id="远程跟踪分支"><a href="#远程跟踪分支" class="headerlink" title="远程跟踪分支"></a>远程跟踪分支</h3><p><strong>远程跟踪分支是远程分支状态的引用</strong>。它们是你无法移动的本地引用。一旦你进行了网络通信， Git 就会为你移动它们以<strong>精确反映远程仓库的状态</strong>。请将它们<strong>看做书签</strong>， 这样可以提醒你该分支在远程仓库中的位置就是你最后一次连接到它们的位置。</p>
+<p>它们<strong>以 <code>&lt;remote&gt;/&lt;branch&gt;</code> 的形式命名</strong>。 例如，如果你想要<strong>查看最后一次与远程仓库 <code>origin</code> 通信时 <code>master</code> 分支的状态</strong>，你可以查看 <code>origin/master</code> 分支。 你与同事合作解决一个问题并且他们推送了一个 <code>iss53</code> 分支，你可能有自己的本地 <code>iss53</code> 分支， 然而在服务器上的分支会以 <code>origin/iss53</code> 来表示。</p>
+<p>这可能有一点儿难以理解，让我们来看一个例子。 假设你的网络里有一个在 <code>git.ourcompany.com</code> 的 Git 服务器。 如果你从这里克隆，Git 的 <code>clone</code> 命令会为你自动将其命名为 <code>origin</code>，拉取它的所有数据， 创建一个指向它的 <code>master</code> 分支的指针，并且<strong>在本地将其命名为 <code>origin/master</code></strong>。 Git 也会给你一个与 origin 的 <code>master</code> 分支在指向同一个地方的本地 <code>master</code> 分支，这样你就有工作的基础。</p>
+<p><mark><strong>笔记：从远程克隆下来的仓库有一个叫<code>origin/master</code>的远程跟踪分支 和 一个本地的<code>master</code>分支</strong></mark></p>
+<blockquote>
+<p>笔记：“origin” 并无特殊含义远程仓库名字 “origin” 与分支名字 “master” 一样，在 Git 中并没有任何特别的含义一样。 同时 “master” 是当你运行 <code>git init</code> 时默认的起始分支名字，原因仅仅是它的广泛使用， “origin” 是当你运行 <code>git clone</code> 时默认的远程仓库名字。 如果你运行 <code>git clone -o booyah</code>，那么你默认的远程分支名字将会是 <code>booyah/master</code>。</p>
+</blockquote>
+<p><img src="https://git-scm.com/book/en/v2/images/remote-branches-1.png" alt="克隆之后的服务器与本地仓库。"></p>
+<p align="center">图1.  克隆之后的服务器与本地仓库 ▲</p>
+
+<p>如果你在本地的 <code>master</code> 分支做了一些工作，在同一段时间内有其他人推送提交到 <code>git.ourcompany.com</code> 并且更新了它的 <code>master</code> 分支，这就是说你们的提交历史已走向不同的方向。 即便这样，只要你保持不与 <code>origin</code> 服务器连接（并拉取数据），你的 <code>origin/master</code> 指针就不会移动。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/remote-branches-2.png" alt="本地与远程的工作可以分叉。"></p>
+<p align="center">图2.  本地与远程的工作可以分叉 ▲</p>
+
+<p>如果要与给定的远程仓库同步数据，运行 <code>git fetch &lt;remote&gt;</code> 命令（在本例中为 <code>git fetch origin</code>）。 这个命令查找 “origin” 是哪一个服务器（在本例中，它是 <code>git.ourcompany.com</code>）， 从中抓取本地没有的数据，并且更新本地数据库，移动 <code>origin/master</code> 指针到更新之后的位置。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/remote-branches-3.png" alt="&#96;git fetch&#96; 更新你的远程仓库引用。"></p>
+<p align="center">图3.   git fetch 更新你的远程跟踪分支 ▲</p>
+
+<p><mark>笔记: 本地的 master 分支 可能 和 远程跟踪分支 origin&#x2F;master 分叉</mark></p>
+<p>为了演示有多个远程仓库与远程分支的情况，我们假定你有另一个内部 Git 服务器，仅服务于你的某个敏捷开发团队。 这个服务器位于 <code>git.team1.ourcompany.com</code>。 你可以运行 <code>git remote add</code> 命令添加一个新的远程仓库引用到当前的项目，这个命令我们会在 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/ch02-git-basics-chapter">Git 基础</a> 中详细说明。 将这个远程仓库<strong>命名为 <code>teamone</code>，将其作为完整 URL 的缩写</strong>。<mark>远程仓库名本质上是远程URL的缩写</mark></p>
+<p><img src="https://git-scm.com/book/en/v2/images/remote-branches-4.png" alt="添加另一个远程仓库。"></p>
+<p align="center">图4.   添加另一个远程仓库 ▲</p>
+
+<p>现在，可以运行 <code>git fetch teamone</code> 来抓取远程仓库 <code>teamone</code> 有而本地没有的数据。 因为那台服务器上现有的数据是 <code>origin</code> 服务器上的一个子集， 所以 Git 并不会抓取数据而是会设置远程跟踪分支 <code>teamone/master</code> 指向 <code>teamone</code> 的 <code>master</code> 分支。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/remote-branches-5.png" alt="远程跟踪分支 &#96;teamone&#x2F;master&#96;。"></p>
+<p align="center">图5.   远程跟踪分支 teamone/master ▲</p>
+
+<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>当你想要公开分享一个分支时，需要将其推送到有写入权限的远程仓库上。 本地的分支并不会自动与远程仓库同步——你必须显式地推送想要分享的分支。 这样，你就可以把不愿意分享的内容放到私人分支上，而将需要和别人协作的内容推送到公开分支。</p>
+<p>如果希望和别人一起在名为 <code>serverfix</code> 的分支上工作，你可以像推送第一个分支那样推送它。 运行 <code>git push &lt;remote&gt; &lt;branch&gt;</code>:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin serverfix</span><br><span class="line">Counting objects: 24, <span class="keyword">done</span>.</span><br><span class="line">Delta compression using up to 8 threads.</span><br><span class="line">Compressing objects: 100% (15/15), <span class="keyword">done</span>.</span><br><span class="line">Writing objects: 100% (24/24), 1.91 KiB | 0 bytes/s, <span class="keyword">done</span>.</span><br><span class="line">Total 24 (delta 2), reused 0 (delta 0)</span><br><span class="line">To https://github.com/schacon/simplegit</span><br><span class="line"> * [new branch]      serverfix -&gt; serverfix</span><br></pre></td></tr></table></figure>
+
+<p>这里有些工作被简化了。 <strong>Git 自动将 <code>serverfix</code> 分支名字展开为 <code>refs/heads/serverfix:refs/heads/serverfix</code>，</strong> 那意味着，“推送本地的 <code>serverfix</code> 分支来更新远程仓库上的 <code>serverfix</code> 分支。” 我们将会详细学习 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/ch10-git-internals">Git 内部原理</a> 的 <code>refs/heads/</code> 部分， 但是现在可以先把它放在儿。你也可以运行 <code>git push origin serverfix:serverfix</code>， 它会做同样的事——也就是说“<strong>推送本地的 <code>serverfix</code> 分支，将其作为远程仓库的 <code>serverfix</code> 分支</strong>” 可以通过这种格式来推送本地分支到一个命名不相同的远程分支。</p>
+<h4 id="重命名远程仓库上的分支名"><a href="#重命名远程仓库上的分支名" class="headerlink" title="重命名远程仓库上的分支名"></a>重命名远程仓库上的分支名</h4><p>如果并不想让远程仓库上的分支叫做 <code>serverfix</code>，可以运行 <code>git push origin serverfix:awesomebranch</code> 来将本地的 <code>serverfix</code> 分支推送到远程仓库上的 <code>awesomebranch</code> 分支。</p>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>如何避免每次输入密码如果你正在使用 HTTPS URL 来推送，Git 服务器会询问用户名与密码。 默认情况下它会在终端中提示服务器是否允许你进行推送。如果不想在每一次推送时都输入用户名与密码，你可以设置一个 “credential cache”。 最简单的方式就是将其保存在内存中几分钟，可以简单地运行 <code>git config --global credential.helper cache</code> 来设置它。想要了解更多关于不同验证缓存的可用选项，查看 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/_credential_caching">凭证存储</a>。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>下一次其他协作者从服务器上抓取数据时，他们会在本地生成一个远程分支 <code>origin/serverfix</code>，指向服务器的 <code>serverfix</code> 分支的引用：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line">remote: Counting objects: 7, <span class="keyword">done</span>.</span><br><span class="line">remote: Compressing objects: 100% (2/2), <span class="keyword">done</span>.</span><br><span class="line">remote: Total 3 (delta 0), reused 3 (delta 0)</span><br><span class="line">Unpacking objects: 100% (3/3), <span class="keyword">done</span>.</span><br><span class="line">From https://github.com/schacon/simplegit</span><br><span class="line"> * [new branch]      serverfix    -&gt; origin/serverfix</span><br></pre></td></tr></table></figure>
+
+<p>要特别注意的一点是当抓取到新的远程跟踪分支时，本地不会自动生成一份可编辑的副本（拷贝）。 换一句话说，这种情况下，不会有一个新的 <code>serverfix</code> 分支——只有一个不可以修改的 <code>origin/serverfix</code> 指针。</p>
+<p>可以运行 <code>git merge origin/serverfix</code> 将这些工作合并到当前所在的分支。 如果想要在自己的 <code>serverfix</code> 分支上工作，可以将其建立在远程跟踪分支之上：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b serverfix origin/serverfix</span><br><span class="line">Branch serverfix <span class="built_in">set</span> up to track remote branch serverfix from origin.</span><br><span class="line">Switched to a new branch <span class="string">&#x27;serverfix&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>这会给你一个用于工作的本地分支，并且起点位于 <code>origin/serverfix</code>。</p>
+<h3 id="跟踪分支"><a href="#跟踪分支" class="headerlink" title="跟踪分支"></a>跟踪分支</h3><p><strong>从一个远程跟踪分支检出一个本地分支会自动创建所谓的“跟踪分支”（它跟踪的分支叫做“上游分支”）</strong>。 <strong>跟踪分支是与远程分支有直接关系的本地分支</strong>。 如果在一个跟踪分支上输入 <code>git pull</code>，Git 能自动地识别去哪个服务器上抓取、合并到哪个分支。</p>
+<p>当克隆一个仓库时，它通常会自动地创建一个跟踪 <code>origin/master</code> 的 <code>master</code> 分支。 然而，如果你愿意的话可以设置其他的跟踪分支，或是一个在其他远程仓库上的跟踪分支，又或者不跟踪 <code>master</code> 分支。 最简单的实例就是像之前看到的那样，运行 <code>git checkout -b &lt;branch&gt; &lt;remote&gt;/&lt;branch&gt;</code>。 这是一个十分常用的操作所以 Git 提供了 <code>--track</code> 快捷方式：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout --track origin/serverfix</span><br><span class="line">Branch serverfix <span class="built_in">set</span> up to track remote branch serverfix from origin.</span><br><span class="line">Switched to a new branch <span class="string">&#x27;serverfix&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>由于这个操作太常用了，该捷径本身还有一个捷径。 如果你尝试检出的分支 (a) 不存在且 (b) 刚好只有一个名字与之匹配的远程分支，那么 Git 就会为你创建一个跟踪分支：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout serverfix</span><br><span class="line">Branch serverfix <span class="built_in">set</span> up to track remote branch serverfix from origin.</span><br><span class="line">Switched to a new branch <span class="string">&#x27;serverfix&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想要将本地分支与远程分支设置为不同的名字，你可以轻松地使用上一个命令增加一个不同名字的本地分支：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b sf origin/serverfix</span><br><span class="line">Branch sf <span class="built_in">set</span> up to track remote branch serverfix from origin.</span><br><span class="line">Switched to a new branch <span class="string">&#x27;sf&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>现在，本地分支 <code>sf</code> 会自动从 <code>origin/serverfix</code> 拉取。</p>
+<p>设置已有的本地分支跟踪一个刚刚拉取下来的远程分支，或者想要修改正在跟踪的上游分支， 你可以在任意时间使用 <code>-u</code> 或 <code>--set-upstream-to</code> 选项运行 <code>git branch</code> 来显式地设置。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -u origin/serverfix</span><br><span class="line">Branch serverfix <span class="built_in">set</span> up to track remote branch serverfix from origin.</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>上游快捷方式当设置好跟踪分支后，可以通过简写 <code>@{upstream}</code> 或 <code>@{u}</code> 来引用它的上游分支。 所以在 <code>master</code> 分支时并且它正在跟踪 <code>origin/master</code> 时，如果愿意的话可以使用 <code>git merge @{u}</code> 来取代 <code>git merge origin/master</code>。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="查看跟踪分支"><a href="#查看跟踪分支" class="headerlink" title="查看跟踪分支"></a>查看跟踪分支</h3><p>如果想要查看设置的所有跟踪分支，可以使用 <code>git branch</code> 的 <code>-vv</code> 选项。 这会将所有的本地分支列出来并且包含更多的信息，如每一个分支正在跟踪哪个远程分支与本地分支是否是领先、落后或是都有。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -vv</span><br><span class="line">  iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets</span><br><span class="line">  master    1ae2a45 [origin/master] deploying index fix</span><br><span class="line">* serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should <span class="keyword">do</span> it</span><br><span class="line">  testing   5ea463a trying something new</span><br></pre></td></tr></table></figure>
+
+<p>这里可以看到 <code>iss53</code> 分支正在跟踪 <code>origin/iss53</code> 并且 “ahead” 是 2，意味着本地有两个提交还没有推送到服务器上。 也能看到 <code>master</code> 分支正在跟踪 <code>origin/master</code> 分支并且是最新的。 接下来可以看到 <code>serverfix</code> 分支正在跟踪 <code>teamone</code> 服务器上的 <code>server-fix-good</code> 分支并且领先 3 落后 1， 意味着服务器上有一次提交还没有合并入同时本地有三次提交还没有推送。 最后看到 <code>testing</code> 分支并没有跟踪任何远程分支。</p>
+<p>需要重点注意的一点是这些数字的值来自于你从每个服务器上最后一次抓取的数据。 <strong>这个命令并没有连接服务器</strong>，它只会告诉你关于本地缓存的服务器数据。 如果想要统计最新的领先与落后数字，需要在运行此命令前抓取所有的远程仓库。 可以像这样做：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch --all; git branch -vv</span><br></pre></td></tr></table></figure>
+
+<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><p>当 <code>git fetch</code> 命令从服务器上抓取本地没有的数据时，它并不会修改工作目录中的内容。 它只会获取数据然后让你自己合并。 然而，有一个命令叫作 <code>git pull</code> 在大多数情况下它的含义是一个 <code>git fetch</code> 紧接着一个 <code>git merge</code> 命令。 如果有一个像之前章节中演示的设置好的跟踪分支，不管它是显式地设置还是通过 <code>clone</code> 或 <code>checkout</code> 命令为你创建的，<code>git pull</code> 都会查找当前分支所跟踪的服务器与分支， 从服务器上抓取数据然后尝试合并入那个远程分支。</p>
+<p>由于 <code>git pull</code> 的魔法经常令人困惑所以通常单独显式地使用 <code>fetch</code> 与 <code>merge</code> 命令会更好一些。</p>
+<h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><p>假设你已经通过远程分支做完所有的工作了——也就是说你和你的协作者已经完成了一个特性， 并且将其合并到了远程仓库的 <code>master</code> 分支（或任何其他稳定代码分支）。 可以运行带有 <code>--delete</code> 选项的 <code>git push</code> 命令来删除一个远程分支。 如果想要从服务器上删除 <code>serverfix</code> 分支，运行下面的命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --delete serverfix</span><br><span class="line">To https://github.com/schacon/simplegit</span><br><span class="line"> - [deleted]         serverfix</span><br></pre></td></tr></table></figure>
+
+<p>基本上这个命令做的只是从服务器上移除这个指针。 Git 服务器通常会保留数据一段时间直到垃圾回收运行，所以如果不小心删除掉了，通常是很容易恢复的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/49ee30/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/49ee30/" class="post-title-link" itemprop="url">Git分支开发工作流</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>文档：<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81">Git分支开发工作流</a></p>
+<h3 id="长期分支"><a href="#长期分支" class="headerlink" title="长期分支"></a>长期分支</h3><p>因为 Git 使用简单的三方合并，所以就算在一段较长的时间内，反复把一个分支合并入另一个分支，也不是什么难事。 也就是说，在整个项目开发周期的不同阶段，你可以同时拥有多个开放的分支；你可以定期地把某些主题分支合并入其他分支中。</p>
+<p>许多使用 Git 的开发者都喜欢使用这种方式来工作，比如<strong>只在 <code>master</code> 分支上保留完全稳定的代码</strong>，开发过程在<code>dev</code>分支，开发完成后并入<code>test</code>分支进行测试，通过测试的稳定代码才并入<code>master</code>分支中。</p>
+<p><code>dev</code>和<code>test</code>分支不需要保持绝对稳定，但在<code>test</code>通过测试达到稳定状态，就可以被合并入<code>master</code>分支。</p>
+<p>事实上我们刚才讨论的，是随着你的提交而不断右移的指针。 稳定分支(<code>master</code>)的指针总是在提交历史中落后一大截，而前沿分支(<code>dev</code>或<code>test</code>)的指针往往比较靠前。</p>
+<p>你可以用这种方法维护不同层次的稳定性。 一些大型项目还有一个 <code>proposed</code>（建议） 或 <code>pu: proposed updates</code>（建议更新）分支，它可能因包含一些不成熟的内容而不能进入<code>master</code> 分支。 这么做的目的是使你的分支具有不同级别的稳定性；当它们具有一定程度的稳定性后，再把它们合并入具有更高级别稳定性的分支中。 再次强调一下，使用多个长期分支的方法并非必要，但是这么做通常很有帮助，尤其是当你在一个非常庞大或者复杂的项目中工作时。</p>
+<h3 id="主题分支-短期分支"><a href="#主题分支-短期分支" class="headerlink" title="主题分支 (短期分支)"></a>主题分支 (短期分支)</h3><p><strong>主题分支对任何规模的项目都适用</strong>。 主题分支是一种<strong>短期分支</strong>，它被<strong>用来实现单一特性或其相关工作</strong>。</p>
+<p>你已经在上一节中你创建的 <code>iss53</code> 和 <code>hotfix</code> 主题分支中看到过这种用法。 你在上一节用到的主题分支（<code>iss53</code> 和 <code>hotfix</code> 分支）中提交了一些更新，并且在它们合并入主干分支之后，你又删除了它们。 这项技术能使你快速并且完整地进行上下文切换（context-switch）——因为你的工作被分散到不同的流水线中，在不同的流水线中<strong>每个分支都仅与其目标特性相关</strong>，因此，<strong>在做代码审查之类的工作的时候就能更加容易地看出你做了哪些改动</strong>。 你可以把做出的改动在主题分支中保留几分钟、几天甚至几个月，等它们成熟之后再合并，而不用在乎它们建立的顺序或工作进度。</p>
+<p>考虑这样一个例子，你在 <code>master</code> 分支上工作到 <code>C1</code>，这时为了解决一个问题而新建 <code>iss91</code> 分支，在 <code>iss91</code> 分支上工作到 <code>C4</code>，然而对于那个问题你又有了新的想法，于是你再新建一个 <code>iss91v2</code> 分支试图用另一种方法解决那个问题，接着你回到 <code>master</code> 分支工作了一会儿，你又冒出了一个不太确定的想法，你便在 <code>C10</code> 的时候新建一个 <code>dumbidea</code> 分支，并在上面做些实验。 你的提交历史看起来像下面这个样子：</p>
+<p><img src="https://git-scm.com/book/en/v2/images/topic-branches-1.png" alt="拥有多个主题分支的提交历史。"></p>
+<p align="center">图1. 拥有多个主题分支的提交历史 ▲</p>
+
+<p>现在，我们假设两件事情：你决定使用第二个方案来解决那个问题，即使用在 <code>iss91v2</code> 分支中方案。 另外，你将 <code>dumbidea</code> 分支拿给你的同事看过之后，结果发现这是个惊人之举。 这时你可以<strong>抛弃 <code>iss91</code> 分支（即丢弃 <code>C5</code> 和 <code>C6</code> 提交）</strong>，然后把另外两个分支合并入主干分支。 最终你的提交历史看起来像下面这个样子：</p>
+<p><img src="https://git-scm.com/book/en/v2/images/topic-branches-2.png" alt="合并了 &#96;dumbidea&#96; 和 &#96;iss91v2&#96; 分支之后的提交历史。"></p>
+<p align="center">图2. 合并了 dumbidea 和 iss91v2 分支之后的提交历史 ▲</p>
+
+<p>我们将会在 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/ch05-distributed-git">分布式 Git</a> 中向你揭示更多有关分支工作流的细节， 因此，请确保你阅读完那个章节之后，再来决定你的下个项目要使用什么样的分支策略（branching scheme）。</p>
+<p>请牢记，当你做这么多操作的时候，这些分支全部都存于本地。 当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中 —— 没有与服务器发生交互。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/ea5a8c/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/ea5a8c/" class="post-title-link" itemprop="url">Git分支的新建与合并-分支操作</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>文档：<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">Git 分支 - 分支的新建与合并</a></p>
+<h3 id="创建分支并切换"><a href="#创建分支并切换" class="headerlink" title="创建分支并切换"></a>创建分支并切换</h3><p>此时有一个需求需要在新的分支<code>iss53</code>上工作：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b iss53  <span class="comment"># b表示branch</span></span><br></pre></td></tr></table></figure>
+
+<p>它是下面两条命令的简写：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch iss53</span><br><span class="line">$ git checkout iss53</span><br></pre></td></tr></table></figure>
+
+<h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><p>突然有一个紧急问题要解决，需要在原来的<code>master</code>分支进行修复：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
+
+<p>在切换到<code>master</code>之前，需要<code>iss53</code>分支保持好一个干净的状态（修改都已提交）。</p>
+<p><strong>注意：切换分支Git 会重置你的工作目录。</strong></p>
+<blockquote>
+<p> <code>checkout</code> 中文含义 “检出”，<code>checkout &lt;branch&gt;</code> 检出分支 &#x3D;&gt; 检出指定分支的代码 &#x3D;&gt; 重置工作目录并切换分支。</p>
+</blockquote>
+<p>接下来，你要修复这个紧急问题。 建立一个 <code>hotfix</code> 分支，在该分支上工作直到问题解决：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b hotfix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 中间过程在hotfix上修改了代码并提交</span></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&#x27;test&#x27;</span> &gt; ./hotfix.txt</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">&#x27;fixed&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master <span class="comment"># 首先切回master分支</span></span><br><span class="line">$ git merge hotfix <span class="comment"># 把 hotfix 分支合并过来</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d hotfix <span class="comment"># d表示delete</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 然后切回iss53继续工作</span></span><br><span class="line">$ git checkout iss53</span><br></pre></td></tr></table></figure>
+
+<p>注意删除分支是在 <code>branch</code> 命令上</p>
+<h3 id="多次提交之后合并分支"><a href="#多次提交之后合并分支" class="headerlink" title="多次提交之后合并分支"></a>多次提交之后合并分支</h3><p>假设你已经修正了 #53 问题，打算合并到<code>master</code>分支：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git merga iss53</span><br></pre></td></tr></table></figure>
+
+<p>这看似和之前的合并区别不大。此时你的开发历史从一个更早的地方开始分叉开来（diverged）。 因为，<code>master</code> 分支所在提交并不是 <code>iss53</code> 分支所在提交的直接祖先，Git 不得不做一些额外的工作。 出现这种情况的时候，Git 会使用两个分支的末端所指的快照以及这两个分支的公共祖先，做一个简单的<strong>三方合并</strong>。</p>
+<p>和之前将分支指针向前推进所不同的是，<strong>Git 将此次三方合并的结果做了一个新的快照并且自动创建一个新的提交指向它</strong>。 这个被称作一次合并提交，它的特别之处在于他有不止一个父提交。</p>
+<h3 id="遇到冲突时的分支合并"><a href="#遇到冲突时的分支合并" class="headerlink" title="遇到冲突时的分支合并"></a>遇到冲突时的分支合并</h3><p> 如果你在两个不同的分支中，<strong>对同一个文件的同一个部分进行了不同的修改</strong>，Git 就没法干净的合并它们，就产生了冲突。</p>
+<p>合并过程中出现<code>CONFLICT</code>提升，表示有冲突</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git merge iss53</span><br><span class="line">Auto-merging index.html</span><br><span class="line">CONFLICT (content): Merge conflict <span class="keyword">in</span> index.html</span><br><span class="line">Automatic merge failed; fix conflicts and <span class="keyword">then</span> commit the result.</span><br></pre></td></tr></table></figure>
+
+<p>使用<code>git status</code>查看未合并状态。</p>
+<p>任何因包含合并冲突而有待解决的文件，都会以未合并状态标识出来。 <strong>Git 会在有冲突的文件中加入标准的冲突解决标记，这样你可以打开这些包含冲突的文件然后手动解决冲突。</strong> 出现冲突的文件会包含一些特殊区段，看起来像下面这个样子：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:index.html</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;footer&quot;</span>&gt;</span>contact : email.support@github.com<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">=======</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;footer&quot;</span>&gt;</span></span><br><span class="line"> please contact us at support@github.com</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; iss53:index.html</span><br></pre></td></tr></table></figure>
+
+<p>你需要<strong>手动解决冲突</strong>，解决了所有文件里的冲突之后，对每个文件<strong>使用 <code>git add</code> 命令</strong>来将其标记为冲突已解决。 <strong>一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决</strong>。</p>
+<p>如果你对结果感到满意，并且确定之前有冲突的的文件都已经暂存了，这时你可以输入 <code>git commit</code> 来完成合并提交。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/a399b3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/a399b3/" class="post-title-link" itemprop="url">Git分支管理-查看分支</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">  iss53</span><br><span class="line">* master  <span class="comment"># 带星号*表示当前所在分支</span></span><br><span class="line">  testing</span><br></pre></td></tr></table></figure>
+
+<p><code>git branch</code> 命令不只是可以创建与删除分支。 如果不加任何参数运行它，会得到当前所有分支的一个列表。</p>
+<h3 id="查看每个分支的最后提交"><a href="#查看每个分支的最后提交" class="headerlink" title="查看每个分支的最后提交"></a>查看每个分支的最后提交</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -v</span><br><span class="line">  iss53   93b412c fix javascript issue</span><br><span class="line">* master  7a98805 Merge branch <span class="string">&#x27;iss53&#x27;</span></span><br><span class="line">  testing 782fd34 <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看已-未-合并的分支"><a href="#查看已-未-合并的分支" class="headerlink" title="查看已(未)合并的分支"></a>查看已(未)合并的分支</h3><p><code>--merged</code> 与 <code>--no-merged</code> 这两个选项可以查看哪些分支已经合并或未合并到 <strong>当前</strong> 分支。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --merged <span class="comment"># 查看已合并分支列表</span></span><br><span class="line">  iss53</span><br><span class="line">* master</span><br></pre></td></tr></table></figure>
+
+<p>上面列表中分支名字前没有 <code>*</code> 号的分支通常可以使用 <code>git branch -d</code> 删除掉；</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --no-merged <span class="comment"># 查看未合并的分支列表</span></span><br><span class="line">  testing</span><br></pre></td></tr></table></figure>
+
+<p>上面显示未合并的分支，尝试使用 <code>git branch -d</code> 命令删除它时会失败：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d testing</span><br><span class="line">error: The branch <span class="string">&#x27;testing&#x27;</span> is not fully merged.</span><br><span class="line">If you are sure you want to delete it, run <span class="string">&#x27;git branch -D testing&#x27;</span>.</span><br></pre></td></tr></table></figure>
+
+<p>强制删除未合并的分支:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D testing</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看指定分支的已-未-合并的分支"><a href="#查看指定分支的已-未-合并的分支" class="headerlink" title="查看指定分支的已(未)合并的分支"></a>查看指定分支的已(未)合并的分支</h4><p>上面描述的选项 <code>--merged</code> 和 <code>--no-merged</code> 会在没有给定提交或分支名作为参数时， 分别列出已合并或未合并到 <strong>当前</strong> 分支的分支。</p>
+<p>你总是可以提供一个附加的参数来查看其它分支的合并状态而不必检出它们。 例如，尚未合并到 <code>testing</code> 分支的有哪些？</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --no-merged testing</span><br><span class="line">  topicA</span><br><span class="line">  featureB</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/c10281/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/c10281/" class="post-title-link" itemprop="url">Git变基合并</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="rebase分支合并"><a href="#rebase分支合并" class="headerlink" title="rebase分支合并"></a>rebase分支合并</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>以下 <code>v2</code> 是某个需求的开发分支， <code>dev</code>是总的开发分支，<code>v2</code> 是基于<code>dev</code>分支签出的。</p>
+<p>当完成<code>v2</code>的开发后，需要把代码合并到<code>dev</code>，我们可以使用<code>rebase</code>进行合并：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先将 v2 push到远程仓库</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&#x27;xxx&#x27;</span></span><br><span class="line">git push origin v2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到 dev 拉取最新代码</span></span><br><span class="line">git checkout dev</span><br><span class="line">git pull origin dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到 v2</span></span><br><span class="line">git checkout v2</span><br><span class="line">git rebase dev <span class="comment"># 将 v2 的所有[commit] 变基到(应用到) dev</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到 dev</span></span><br><span class="line">git checkout dev</span><br><span class="line">git merge v2  <span class="comment"># 将 dev分支 快进合并 （此时 (HEAD -&gt; dev, v2) [commit] 两个分支指向同一个提交）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看 原v2的[commit]记录 是否在dev分支的最前面（变基成功会把v2的提交记录应用到dev分支的最前面）</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line">	<span class="comment"># 如果到这一步发现有问题，尝试使用 git --abort中止变基，如果还是有问题的可以在dev分支上使用《后悔药》操作， 再到v2分支上使用《后悔药》操作，即可使两个分支都回退到 rebase变基 之前的状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 试运行项目是否有问题</span></span><br><span class="line">yarn start</span><br><span class="line"></span><br><span class="line">git status <span class="comment"># 查看状态是否有问题</span></span><br><span class="line">git push origin dev <span class="comment"># 推送到远程仓库的 dev</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="变基要遵守的准则"><a href="#变基要遵守的准则" class="headerlink" title="变基要遵守的准则"></a>变基要遵守的准则</h3><p><strong>几个人同时在一个分支上进行开发和提交时，开发中途请不要私自执行变基，只有在大家都完成工作之后才可以执行变基。</strong></p>
+<h3 id="变基的实质"><a href="#变基的实质" class="headerlink" title="变基的实质"></a>变基的实质</h3><p>变基操作的实质是丢弃一些现有的提交，然后相应地新建一些内容一样但实际上不同的提交。<br>因此，<strong>变基操作过后的分支将不要再使用</strong>。</p>
+<h2 id="后悔药"><a href="#后悔药" class="headerlink" title="后悔药"></a>后悔药</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看HEAD指针变动记录</span></span><br><span class="line">git reflog</span><br><span class="line"><span class="comment"># 记录示例(当前分支是v2):</span></span><br><span class="line">07c398f (HEAD -&gt; v2, master) HEAD@&#123;0&#125;: checkout: moving from master to v2</span><br><span class="line">07c398f (HEAD -&gt; v2, master) HEAD@&#123;1&#125;: rebase (finish): returning to refs/heads/master</span><br><span class="line">07c398f (HEAD -&gt; v2, master) HEAD@&#123;2&#125;: rebase (start): checkout v2</span><br><span class="line">15a97d8 HEAD@&#123;3&#125;: reset: moving to 15a97d8</span><br><span class="line">07c398f (HEAD -&gt; v2, master) HEAD@&#123;4&#125;: merge v2: Fast-forward</span><br><span class="line">15a97d8 HEAD@&#123;5&#125;: checkout: moving from v2 to master</span><br><span class="line">07c398f (HEAD -&gt; v2, master) HEAD@&#123;6&#125;: rebase (finish): returning to refs/heads/v2</span><br><span class="line">07c398f (HEAD -&gt; v2, master) HEAD@&#123;7&#125;: rebase (pick): C</span><br><span class="line">15a97d8 HEAD@&#123;8&#125;: rebase (start): checkout master <span class="comment"># 首次rebase</span></span><br><span class="line">d278ecd HEAD@&#123;9&#125;: checkout: moving from master to v2 <span class="comment"># rebase前的状态</span></span><br><span class="line">15a97d8 HEAD@&#123;10&#125;: commit: D</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可见，示例中最初的 rebase 操作是 HEAD@&#123;8&#125;，想回退到变基前的状态需让指针指向 HEAD@&#123;9&#125;</span></span><br><span class="line">git reset --hard d278ecd  <span class="comment"># 重置当前分支的HEAD为指定[commit]，同时重置暂存区和工作区，与指定[commit]一致</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 此时打印 log 查看是否回到之前的状态</span></span><br><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：此操作只能回退当前的分支，如其他分支也要回退，需要切换到该分支并执行上面操作。</strong></p>
+<h2 id="开发期间的rebase操作"><a href="#开发期间的rebase操作" class="headerlink" title="开发期间的rebase操作"></a>开发期间的rebase操作</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>有两个分支：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dev</span><br><span class="line">*v2</span><br></pre></td></tr></table></figure>
+
+<p><code>v2</code> 是基于<code>dev</code>切出来的。</p>
+<p>提交记录如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">		dev</span><br><span class="line">a - b - c</span><br><span class="line">		v2</span><br></pre></td></tr></table></figure>
+
+<p>开发期间，两个分支同时有新的commit ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">				dev</span><br><span class="line">a - b - c - d - e</span><br><span class="line">		\ - f - g</span><br><span class="line">				v2</span><br></pre></td></tr></table></figure>
+
+<p>当前你正在<code>v2</code>进行开发，<code>dev</code>也同时进行开发，并有重大的改变，你需要把<code>dev</code>的提交同步到<code>v2</code>。</p>
+<p><strong>需求： 把<code>dev</code>中新的提交同步到<code>v2</code>，且不能影响<code>dev</code>分支。</strong></p>
+<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ol>
+<li><p>基于最新的 <code>dev</code> 切一个新的分支 <code>dev-copy</code></p>
+<blockquote>
+<p> <code>dev-copy</code> 和 <code>dev</code>  两者的 commit ID 一致。</p>
+</blockquote>
+</li>
+<li><p>在<code>dev-copy</code>中执行rebase，将 <code>dev-copy</code> 的提交变基到 <code>v2</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase v2 <span class="comment"># 将 dev-copy 的提交[commit] 变基到(应用到) v2</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除原<code>v2</code>分支，将<code>dev-copy</code>分支名改为<code>v2</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前在 dev-copy 分支</span></span><br><span class="line">git branch -d v2 <span class="comment"># 删除分支</span></span><br><span class="line">git branch -m dev-copy v2 <span class="comment"># 重命名</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="git-cherry-pick"><a href="#git-cherry-pick" class="headerlink" title="git cherry-pick"></a>git cherry-pick</h2><p>来源：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html">《git cherry-pick 教程》</a></p>
+<p>用于将单个或几个<code>[commit]</code>复制到另一个分支。</p>
+<h3 id="基本应用"><a href="#基本应用" class="headerlink" title="基本应用"></a>基本应用</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick &lt;commitHash&gt; <span class="comment"># 将commitHash应用于当前分支</span></span><br></pre></td></tr></table></figure>
+<p>上面命令就会将指定的提交<code>commitHash</code>，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的<strong>哈希值会不一样</strong>。</p>
+<p>git cherry-pick命令的参数，不一定是提交的哈希值，分支名也是可以的，表示转移该分支的最新提交。</p>
+<h3 id="转移多个提交"><a href="#转移多个提交" class="headerlink" title="转移多个提交"></a>转移多个提交</h3><p>Cherry pick 支持一次转移多个提交。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick &lt;HashA&gt; &lt;HashB&gt; <span class="comment"># A和B提交</span></span><br></pre></td></tr></table></figure>
+<p>上面的命令将 A 和 B 两个提交应用到当前分支。这会在当前分支生成两个对应的新提交。</p>
+<p>如果想要转移一系列的连续提交，可以使用下面的简便语法。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick A..B <span class="comment"># A到B提交，不包含A</span></span><br></pre></td></tr></table></figure>
+<p>上面的命令可以转移从 A 到 B 的所有提交。它们必须按照正确的顺序放置：提交 A 必须早于提交 B，否则命令将失败，但不会报错。</p>
+<p><strong>注意，使用上面的命令，提交 A 将不会包含在 Cherry pick 中。如果要包含提交 A，可以使用下面的语法。</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick A^..B <span class="comment"># A到B提交，包含A</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/635088/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/635088/" class="post-title-link" itemprop="url">Git基础与命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>官方文档（中文）：<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2">https://git-scm.com/book/zh/v2</a></p>
+<blockquote>
+<p>本文档是根据官方文档来编写的，以官方文档为准。</p>
+</blockquote>
+<h2 id="Git基础"><a href="#Git基础" class="headerlink" title="Git基础"></a>Git基础</h2><h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&#x27;your name&#x27;</span></span><br><span class="line">git config --global user.email <span class="string">&#x27;xxx@xx.com&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>自报家门</p>
+<h3 id="检查配置信息"><a href="#检查配置信息" class="headerlink" title="检查配置信息"></a>检查配置信息</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取帮助"><a href="#获取帮助" class="headerlink" title="获取帮助"></a>获取帮助</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取全局帮助手册</span></span><br><span class="line">git <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取特定命令的详细版帮助手册 (两个命令是等价的)</span></span><br><span class="line">git <span class="built_in">help</span> &lt;某个命令&gt;</span><br><span class="line">git &lt;某个命令&gt; --<span class="built_in">help</span> <span class="comment"># 两个横杠</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取特定命令的简明版帮助手册</span></span><br><span class="line">git &lt;某个命令&gt; -h  <span class="comment"># 一个横杠</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地目录初始化仓库</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>如果你是从远程仓库clone的项目，则该项目是已经初始化好的git仓库</p>
+<h3 id="克隆远程仓库"><a href="#克隆远程仓库" class="headerlink" title="克隆远程仓库"></a>克隆远程仓库</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 克隆</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;url&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆同时修改目录名</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;url&gt; &lt;name&gt;</span><br></pre></td></tr></table></figure>
+
+<p>初次克隆某个仓库的时候，工作目录中的所有文件都属于已跟踪文件，并处于未修改状态，因为 Git 刚刚检出了它们， 而你尚未编辑过它们</p>
+<h3 id="检查文件状态"><a href="#检查文件状态" class="headerlink" title="检查文件状态"></a>检查文件状态</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看详细状态说明</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看简明状态说明</span></span><br><span class="line">git status -s  <span class="comment"># -s 或 --short</span></span><br><span class="line"> M README <span class="comment"># 已修改，但未暂存 （M的位置靠右，红色）</span></span><br><span class="line">MM Rakefile <span class="comment"># 已修改，暂存后又作了修改（有暂存和未暂存）</span></span><br><span class="line">A  lib/git.rb <span class="comment"># 新添加到暂存区，未提交</span></span><br><span class="line">M  lib/simplegit.rb <span class="comment"># 已修改，已暂存 （M的位置靠左，绿色）</span></span><br><span class="line">?? LICENSE.txt <span class="comment"># 新添加，未跟踪</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>git目录中的文件状态包含：是否跟踪、是否修改、是否已存入暂存区</p>
+</li>
+<li><p>参数的<strong>一个横杠表示缩写，两个横杠表示全称。</strong></p>
+</li>
+</ul>
+<h3 id="加入暂存区-跟踪文件"><a href="#加入暂存区-跟踪文件" class="headerlink" title="加入暂存区 (跟踪文件)"></a>加入暂存区 (跟踪文件)</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件加入暂存区（跟踪指定文件)</span></span><br><span class="line">git add &lt;files&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>git add</code> 命令使用文件或目录的路径作为参数；如果参数是目录的路径，该命令将递归地跟踪该目录下的所有文件。</p>
+<p><code>add</code> 命令是将文件<strong>加入</strong>到<strong>暂存区</strong>，<code>commit</code> 命令的<strong>提交</strong>到<strong>本地仓库</strong>，<code>push</code> 命令是<strong>推送</strong>到<strong>远程仓库</strong>。</p>
+<h3 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h3><p>添加一个名为 <code>.gitignore</code> 的文件，列出要忽略的文件的模式</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">*.[oa]  <span class="comment"># 忽略以 .o 或 .a 结尾的文件（一般这类文件是编译过程出现）</span></span><br><span class="line">*~      <span class="comment"># 忽略以 ~ 结尾的文件（一般是文本编辑软件保存的副本）</span></span><br></pre></td></tr></table></figure>
+
+<p>文件 <code>.gitignore</code> 的<strong>格式规范</strong>如下：</p>
+<ul>
+<li><p>所有空行或者以 <code>#</code> 开头的行都会被 Git 忽略（注释符号）。</p>
+</li>
+<li><p>可以使用标准的 glob 模式匹配，它会递归地应用在整个工作区中。</p>
+<blockquote>
+<p> glob 模式是指 shell 所使用的简化了的正则表达式</p>
+</blockquote>
+</li>
+<li><p>匹配模式可以以（<code>/</code>）开头防止递归。</p>
+</li>
+<li><p>匹配模式可以以（<code>/</code>）结尾指定目录。</p>
+</li>
+<li><p>要忽略指定模式以外的文件或目录，可以在模式前加上叹号（<code>!</code>）取反。</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>星号（<code>*</code>）匹配零个或多个任意字符</li>
+<li><code>[abc]</code> 匹配任何一个列在方括号中的字符 （这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）</li>
+<li>问号（<code>?</code>）只匹配一个任意字符</li>
+<li><code>[0-9]</code> 表示匹配所有 0 到 9 的数字。在方括号中使用短划线分隔两个字符， 表示所有在这两个字符范围内的都可以匹配</li>
+<li>使用两个星号（<code>**</code>）表示匹配任意中间目录，比如 <code>a/**/z</code> 可以匹配 <code>a/z</code> 、 <code>a/b/z</code> 或 <code>a/b/c/z</code> 等。</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 忽略所有的 .a 文件</span></span><br><span class="line">*.a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 但跟踪所有的 lib.a，即便你在前面忽略了 .a 文件</span></span><br><span class="line">!lib.a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只忽略当前目录下的 TODO 文件，而不忽略 subdir/TODO</span></span><br><span class="line">/TODO</span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略任何目录下名为 build 的文件夹</span></span><br><span class="line">build/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略 doc/notes.txt，但不忽略 doc/server/arch.txt</span></span><br><span class="line">doc/*.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略 doc/ 目录及其所有子目录下的 .pdf 文件</span></span><br><span class="line">doc/**/*.pdf</span><br></pre></td></tr></table></figure>
+
+<p>GitHub 有一个十分详细的针对数十种项目及语言的 <code>.gitignore</code> 文件列表， 你可以在 <a target="_blank" rel="noopener" href="https://github.com/github/gitignore">https://github.com/github/gitignore</a> 找到它。</p>
+<h3 id="查看修改的具体内容"><a href="#查看修改的具体内容" class="headerlink" title="查看修改的具体内容"></a>查看修改的具体内容</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment"># 比较修改之后还没有暂存起来的变化内容。</span></span><br><span class="line"></span><br><span class="line">git diff --staged <span class="comment"># 查看已暂存的将要添加到下次提交里的内容</span></span><br></pre></td></tr></table></figure>
+
+<p><code>git status</code> 只能查看文件变动的状态，并不能查看具体修改了哪些内容。使用<code>git diff</code>可以看到具体变动的内容。</p>
+<h3 id="提交更新"><a href="#提交更新" class="headerlink" title="提交更新"></a>提交更新</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit <span class="comment"># 未带参数的会打开默认文本编辑器让你输入提交说明</span></span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">&#x27;提交说明&#x27;</span> <span class="comment"># 带-m参数直接输入提交说明</span></span><br></pre></td></tr></table></figure>
+
+<p>使用<code>git commit</code>提交更新，在此之前，务必确认所有变动已经被<code>git add</code>添加到暂存区。</p>
+<h3 id="跳过使用暂存区域"><a href="#跳过使用暂存区域" class="headerlink" title="跳过使用暂存区域"></a>跳过使用暂存区域</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -a -m <span class="string">&#x27;提交说明&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>添加<code>-a</code>选项可以跳过<code>git add</code> 步骤，把已经跟踪过的文件一并提交。</p>
+<p>注意：这个操作<strong>无法提交未跟踪</strong>的文件。</p>
+<h2 id="Git-基础-查看提交历史"><a href="#Git-基础-查看提交历史" class="headerlink" title="Git 基础 - 查看提交历史"></a>Git 基础 - 查看提交历史</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+
+<p>不传入任何参数的默认情况下，<code>git log</code> 会按时间先后顺序列出所有的提交，最近的更新排在最上面。</p>
+<p>此命令打印的数据中有一项是一长串的 <code>SHA-1</code> 校验码。</p>
+<p><strong>带入<code>-p</code>或<code>--patch </code>查看提交的具体差异：</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> -p -2 <span class="comment"># -p显示差异  -2显示最近的提交次数</span></span><br></pre></td></tr></table></figure>
+
+<p><code>--stat</code> 显示每次提交的差异统计</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --<span class="built_in">stat</span></span><br></pre></td></tr></table></figure>
+
+<p><code>--pretty</code>  这个选项可以使用不同于默认格式的方式展示提交历史</p>
+<p>这个选项有一些内建的子选项供你使用。 比如 <code>oneline</code> 会将每个提交放在一行显示，在浏览大量的提交时非常有用。 另外还有 <code>short</code>，<code>full</code> 和 <code>fuller</code> 选项，它们展示信息的格式基本一致，但是详尽程度不一：</p>
+<figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">$</span> git log <span class="operator">--</span>pretty<span class="operator">=</span>oneline</span><br><span class="line">ca82a6dff817ec66f44342007202690a93763949 changed the version number</span><br><span class="line"><span class="number">085</span>bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test</span><br><span class="line">a11bef06a3f659402fe7563abf99ad00de2209e6 first commit</span><br></pre></td></tr></table></figure>
+
+<p>最有意思的是 <code>format</code> ，可以定制记录的显示格式。 这样的输出对后期提取分析格外有用——因为你知道输出的格式不会随着 Git 的更新而发生改变：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --pretty=format:<span class="string">&quot;%h - %an, %ar : %s&quot;</span></span><br><span class="line">ca82a6d - Scott Chacon, 6 years ago : changed the version number</span><br><span class="line">085bb3b - Scott Chacon, 6 years ago : removed unnecessary <span class="built_in">test</span></span><br><span class="line">a11bef0 - Scott Chacon, 6 years ago : first commit</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/pretty_format"><code>git log --pretty=format</code> 常用的选项</a> 列出了 <code>format</code> 接受的常用格式占位符的写法及其代表的意义。</p>
+<p><strong>当 <code>oneline</code> 或 <code>format</code> 与另一个 <code>log</code> 选项 <code>--graph</code> 结合使用时尤其有用。 这个选项添加了一些 ASCII 字符串来形象地展示你的分支、合并历史：</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --pretty=format:<span class="string">&quot;%h %s&quot;</span> --graph</span><br><span class="line">* 2d3acf9 ignore errors from SIGCHLD on <span class="built_in">trap</span></span><br><span class="line">*  5e3ee11 Merge branch <span class="string">&#x27;master&#x27;</span> of git://github.com/dustin/grit</span><br><span class="line">|\</span><br><span class="line">| * 420eac9 Added a method <span class="keyword">for</span> getting the current branch.</span><br><span class="line">* | 30e367c <span class="built_in">timeout</span> code and tests</span><br><span class="line">* | 5a09431 add <span class="built_in">timeout</span> protection to grit</span><br><span class="line">* | e1193f8 support <span class="keyword">for</span> heads with slashes <span class="keyword">in</span> them</span><br><span class="line">|/</span><br><span class="line">* d6016bc require <span class="keyword">time</span> <span class="keyword">for</span> xmlschema</span><br><span class="line">*  11d191e Merge branch <span class="string">&#x27;defunkt&#x27;</span> into <span class="built_in">local</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Git-基础-撤消操作"><a href="#Git-基础-撤消操作" class="headerlink" title="Git 基础 - 撤消操作"></a>Git 基础 - 撤消操作</h2><p>你提交后发现忘记了暂存某些需要的修改，可以像下面这样操作：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&#x27;initial commit&#x27;</span></span><br><span class="line">$ git add forgotten_file</span><br><span class="line">$ git commit --amend <span class="comment"># 重新提交，且只有一次提交记录</span></span><br></pre></td></tr></table></figure>
+
+<p>最终你只会有一个提交——第二次提交将代替第一次提交的结果。</p>
+<p>更多撤销操作请了解 <code>reset</code>命令。</p>
+<h2 id="Git-基础-远程仓库的使用"><a href="#Git-基础-远程仓库的使用" class="headerlink" title="Git 基础 - 远程仓库的使用"></a>Git 基础 - 远程仓库的使用</h2><h3 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="comment"># 仅显示远程仓库的名称</span></span><br><span class="line">git remote -v <span class="comment"># 显示远程仓库的名称 + 地址</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add &lt;远程仓库名&gt; &lt;url&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="从远程仓库中抓取与拉取"><a href="#从远程仓库中抓取与拉取" class="headerlink" title="从远程仓库中抓取与拉取"></a>从远程仓库中抓取与拉取</h3><p>就如刚才所见，从远程仓库中获得数据，可以执行：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch &lt;remote&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这个命令会访问远程仓库，从中拉取所有你还没有的数据。 执行完成后，你将会拥有那个远程仓库中所有分支的引用，可以随时合并或查看。</p>
+<p>注意： <code>git fetch</code> 命令只会将数据下载到你的本地仓库——<strong>它并不会自动合并或修改你当前的工作</strong>。 当准备好时你必须手动将其合并入你的工作。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<p>用 <code>git pull</code> 命令来自动抓取后合并该远程分支到当前分支。 这或许是个更加简单舒服的工作流程。默认情况下，<code>git clone</code> 命令会自动设置本地 master 分支跟踪克隆的远程仓库的 <code>master</code> 分支（或其它名字的默认分支）。 <strong>运行 <code>git pull</code> 通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前所在的分支。</strong></p>
+<h3 id="推送到远程仓库"><a href="#推送到远程仓库" class="headerlink" title="推送到远程仓库"></a>推送到远程仓库</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push &lt;remote&gt; &lt;branch&gt; <span class="comment"># git push origin master</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看某个远程仓库"><a href="#查看某个远程仓库" class="headerlink" title="查看某个远程仓库"></a>查看某个远程仓库</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote show &lt;remote&gt; <span class="comment"># git remote show origin</span></span><br></pre></td></tr></table></figure>
+
+<p>查看远程仓库的详细信息。这个命令列出了当你在特定的分支上执行 <code>git push</code> 会自动地推送到哪一个远程分支</p>
+<h3 id="远程仓库的重命名与移除"><a href="#远程仓库的重命名与移除" class="headerlink" title="远程仓库的重命名与移除"></a>远程仓库的重命名与移除</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rename &lt;原名&gt; &lt;新名&gt; <span class="comment"># 重命名</span></span><br><span class="line">git remote remove paul &lt;remote&gt;# 移除远程仓库</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git-基础-打标签"><a href="#Git-基础-打标签" class="headerlink" title="Git 基础 - 打标签"></a>Git 基础 - 打标签</h2><h3 id="列出标签"><a href="#列出标签" class="headerlink" title="列出标签"></a>列出标签</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git tag <span class="comment"># 完整标签列表</span></span><br><span class="line">git tag -l <span class="string">&quot;v2.0*&quot;</span> <span class="comment"># 只显示包含 v2.0 的标签。 注意加星号(*)</span></span><br></pre></td></tr></table></figure>
+
+<p><code>-l</code> 或 <code>--list</code> 都可以。</p>
+<h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><p>Git 支持两种标签：<strong>轻量标签</strong>（lightweight）与<strong>附注标签</strong>（annotated）。</p>
+<p>轻量标签很像一个不会改变的分支——它<strong>只是某个特定提交的引用</strong>。</p>
+<p>而附注标签是存储在 Git 数据库中的一个完整对象， 它们是可以被校验的，其中<strong>包含打标签者的名字、电子邮件地址、日期时间， 此外还有一个标签信息</strong>，并且可以使用 GNU Privacy Guard （GPG）签名并验证。 通常会建议创建附注标签，这样你可以拥有以上所有信息。但是如果你只是想用一个临时的标签， 或者因为某些原因不想要保存这些信息，那么也可以用轻量标签。</p>
+<h3 id="附注标签"><a href="#附注标签" class="headerlink" title="附注标签"></a>附注标签</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -a v1.4 -m <span class="string">&quot;my version 1.4&quot;</span> <span class="comment"># -a表示add， -m 表示附件信息</span></span><br></pre></td></tr></table></figure>
+
+<p>通过使用 <code>git show</code> 命令可以看到标签信息和与之对应的提交信息：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git show v1.4</span><br></pre></td></tr></table></figure>
+
+<h3 id="轻量标签"><a href="#轻量标签" class="headerlink" title="轻量标签"></a>轻量标签</h3><p>轻量标签本质上是将提交校验和存储到一个文件中——没有保存任何其他信息。 创建轻量标签，不需要使用 <code>-a</code>、<code>-s</code> 或 <code>-m</code> 选项，只需要提供标签名字：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag v1.4-lw <span class="comment"># 不需要添加选项</span></span><br></pre></td></tr></table></figure>
+
+<p>这时，如果在标签上运行 <code>git show</code>，你不会看到额外的标签信息。 命令只会显示出提交信息：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git show v1.4-lw</span><br><span class="line">commit ca82a6dff817ec66f44342007202690a93763949</span><br><span class="line">Author: Scott Chacon &lt;schacon@gee-mail.com&gt;</span><br><span class="line">Date:   Mon Mar 17 21:52:11 2008 -0700</span><br></pre></td></tr></table></figure>
+
+<h3 id="后期打标签"><a href="#后期打标签" class="headerlink" title="后期打标签"></a>后期打标签</h3><p>你也可以对过去的提交打标签。 假设提交历史是这样的：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --pretty=oneline</span><br><span class="line">166ae0c4d3f420721acbb115cc33848dfcc2121a started write support</span><br><span class="line">9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile</span><br><span class="line">8a5cbc430f1a9c3d00faaeffd07798508422908a updated readme</span><br></pre></td></tr></table></figure>
+
+<p>现在，假设在 v1.2 时你忘记给项目打标签，也就是在 “updated rakefile” 提交。 你可以在之后补上标签。 要在那个提交上打标签，你需要在命令的末尾指定提交的校验和（或部分校验和）：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a v1.2 9fceb02 <span class="comment"># 打的标签属于附注标签</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="共享标签"><a href="#共享标签" class="headerlink" title="共享标签"></a>共享标签</h3><p><code>git push</code> 命令并不会传送标签到远程仓库服务器上。 在创建完标签后你必须显式地推送标签到共享服务器上。 这个过程就像共享远程分支一样——你可以运行 <code>git push origin &lt;tagname&gt;</code>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin v1.5 <span class="comment"># 显式地推送标签到远程仓库</span></span><br><span class="line">git push origin --tags <span class="comment"># 一次性推送所有不在远程仓库上的标签</span></span><br></pre></td></tr></table></figure>
+
+<p>现在，当其他人从仓库中克隆或拉取，他们也能得到你的那些标签。</p>
+<h3 id="删除标签"><a href="#删除标签" class="headerlink" title="删除标签"></a>删除标签</h3><p>要删除掉你本地仓库上的标签，可以使用命令 <code>git tag -d &lt;tagname&gt;</code>。 例如，可以使用以下命令删除一个轻量标签：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -d v1.4-lw</span><br><span class="line">Deleted tag <span class="string">&#x27;v1.4-lw&#x27;</span> (was e7d5add)</span><br></pre></td></tr></table></figure>
+
+<p>注意上述命令并不会从任何远程仓库中移除这个标签，你必须用 <code>git push &lt;remote&gt; :refs/tags/&lt;tagname&gt;</code> 来更新你的远程仓库：</p>
+<p>第一种变体是 <code>git push &lt;remote&gt; :refs/tags/&lt;tagname&gt;</code> ：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :refs/tags/v1.4-lw</span><br><span class="line">To /git@github.com:schacon/simplegit.git</span><br><span class="line"> - [deleted]         v1.4-lw</span><br></pre></td></tr></table></figure>
+
+<p>上面这种操作的含义是，将冒号前面的空值推送到远程标签名，从而高效地删除它。</p>
+<p>第二种更直观的删除远程标签的方式是：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --delete &lt;tagname&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="检出标签"><a href="#检出标签" class="headerlink" title="检出标签"></a>检出标签</h3><p>如果你想查看某个标签所指向的文件版本，可以使用 <code>git checkout</code> 命令， 虽然这会使你的仓库处于“分离头指针（detached HEAD）”的状态——这个状态有些不好的副作用：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout 2.0.0</span><br><span class="line">Note: checking out <span class="string">&#x27;2.0.0&#x27;</span>.</span><br><span class="line"></span><br><span class="line">You are <span class="keyword">in</span> <span class="string">&#x27;detached HEAD&#x27;</span> state. You can look around, make experimental</span><br><span class="line">changes and commit them, and you can discard any commits you make <span class="keyword">in</span> this</span><br><span class="line">state without impacting any branches by performing another checkout.</span><br><span class="line"></span><br><span class="line">If you want to create a new branch to retain commits you create, you may</span><br><span class="line"><span class="keyword">do</span> so (now or later) by using -b with the checkout <span class="built_in">command</span> again. Example:</span><br><span class="line"></span><br><span class="line">  git checkout -b &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line">HEAD is now at 99ada87... Merge pull request <span class="comment">#89 from schacon/appendix-final</span></span><br><span class="line"></span><br><span class="line">$ git checkout 2.0-beta-0.1</span><br><span class="line">Previous HEAD position was 99ada87... Merge pull request <span class="comment">#89 from schacon/appendix-final</span></span><br><span class="line">HEAD is now at df3f601... add atlas.json and cover image</span><br></pre></td></tr></table></figure>
+
+<p>在“分离头指针”状态下，如果你做了某些更改然后提交它们，标签不会发生变化， 但你的新提交将不属于任何分支，并且将无法访问，除非通过确切的提交哈希才能访问。 因此，如果你需要进行更改，比如你要修复旧版本中的错误，那么通常需要创建一个新分支：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b version2 v2.0.0</span><br><span class="line">Switched to a new branch <span class="string">&#x27;version2&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果在这之后又进行了一次提交，<code>version2</code> 分支就会因为这个改动向前移动， 此时它就会和 <code>v2.0.0</code> 标签稍微有些不同，这时就要当心了。</p>
+<h2 id="Git-命令别名"><a href="#Git-命令别名" class="headerlink" title="Git 命令别名"></a>Git 命令别名</h2><p>Git 并不会在你输入部分命令时自动推断出你想要的命令。 如果不想每次都输入完整的 Git 命令，可以通过 <code>git config</code> 文件来轻松地为每一个命令设置一个别名。 这里有一些例子你可以试试：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.br branch</span><br><span class="line">$ git config --global alias.ci commit</span><br><span class="line">$ git config --global alias.st status</span><br></pre></td></tr></table></figure>
+
+<p>这意味着，当要输入 <code>git commit</code> 时，只需要输入 <code>git ci</code>。</p>
+<p>在创建你认为应该存在的命令时这个技术会很有用。 例如，为了解决取消暂存文件的易用性问题，可以向 Git 中添加你自己的取消暂存别名：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.unstage <span class="string">&#x27;reset HEAD --&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>这会使下面的两个命令等价：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git unstage fileA</span><br><span class="line">$ git reset HEAD -- fileA</span><br></pre></td></tr></table></figure>
+
+<p>这样看起来更清楚一些。 通常也会添加一个 <code>last</code> 命令，像这样：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.last <span class="string">&#x27;log -1 HEAD&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样，可以轻松地看到最后一次提交：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git last</span><br><span class="line">commit 66938dae3329c7aebe598c2246a8e6af90d04646</span><br><span class="line">Author: Josh Goebel &lt;dreamer3@example.com&gt;</span><br><span class="line">Date:   Tue Aug 26 19:48:51 2008 +0800</span><br><span class="line"></span><br><span class="line">    <span class="built_in">test</span> <span class="keyword">for</span> current <span class="built_in">head</span></span><br><span class="line"></span><br><span class="line">    Signed-off-by: Scott Chacon &lt;schacon@example.com&gt;</span><br></pre></td></tr></table></figure>
+
+<p>可以看出，Git 只是简单地将别名替换为对应的命令。 然而，你可能想要执行外部命令，而不是一个 Git 子命令。 如果是那样的话，可以在命令前面加入 <code>!</code> 符号。 如果你自己要写一些与 Git 仓库协作的工具的话，那会很有用。 我们现在演示将 <code>git visual</code> 定义为 <code>gitk</code> 的别名：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.visual <span class="string">&#x27;!gitk&#x27;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/76d859/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/76d859/" class="post-title-link" itemprop="url">Git工具-交互式暂存</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>本节中的几个交互式 Git 命令可以帮助你将文件的特定部分组合成提交。 当你在修改了大量文件后，希望这些改动能拆分为若干提交而不是混杂在一起成为一个提交时，这几个工具会非常有用。 通过这种方式，可以确保提交是逻辑上独立的变更集，同时也会使其他开发者在与你工作时很容易地审核。 如果运行 <code>git add</code> 时使用 <code>-i</code> 或者 <code>--interactive</code> 选项，Git 将会进入一个交互式终端模式，显示类似下面的东西：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git add -i</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:    unchanged        +0/-1 TODO</span><br><span class="line">  2:    unchanged        +1/-1 index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br><span class="line"></span><br><span class="line">*** Commands ***</span><br><span class="line">  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]<span class="built_in">dd</span> untracked</span><br><span class="line">  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp</span><br><span class="line">What now&gt;</span><br></pre></td></tr></table></figure>
+
+<p>可以看到这个命令以和平时非常不同的视图显示了暂存区——基本上与 <code>git status</code> 是相同的信息，但是更简明扼要一些。 它将暂存的修改列在左侧，未暂存的修改列在右侧。</p>
+<p>在这块区域后是“Commands”命令区域。 在这里你可以做一些工作，包括暂存文件、取消暂存文件、暂存文件的一部分、添加未被追踪的文件、显示暂存内容的区别。</p>
+<h2 id="暂存与取消暂存文件"><a href="#暂存与取消暂存文件" class="headerlink" title="暂存与取消暂存文件"></a>暂存与取消暂存文件</h2><p>如果在 <code>What now&gt;</code> 提示符后键入 <code>u</code> 或 <code>2</code>（更新），它会问你想要暂存哪个文件：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">What now&gt; u</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:    unchanged        +0/-1 TODO</span><br><span class="line">  2:    unchanged        +1/-1 index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br><span class="line">Update&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>要暂存 <code>TODO</code> 和 <code>index.html</code> 文件，可以输入数字：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Update&gt;&gt; 1,2</span><br><span class="line">           staged     unstaged path</span><br><span class="line">* 1:    unchanged        +0/-1 TODO</span><br><span class="line">* 2:    unchanged        +1/-1 index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br><span class="line">Update&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>每个文件前面的 <code>*</code> 意味着选中的文件将会被暂存。 如果在 <code>Update&gt;&gt;</code> 提示符后不输入任何东西并直接按回车，Git 将会暂存之前选择的文件：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Update&gt;&gt;</span><br><span class="line">updated 2 paths</span><br><span class="line"></span><br><span class="line">*** Commands ***</span><br><span class="line">  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]<span class="built_in">dd</span> untracked</span><br><span class="line">  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp</span><br><span class="line">What now&gt; s</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:        +0/-1      nothing TODO</span><br><span class="line">  2:        +1/-1      nothing index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br></pre></td></tr></table></figure>
+
+<p>现在可以看到 <code>TODO</code> 与 <code>index.html</code> 文件已经被暂存而 <code>simplegit.rb</code> 文件还未被暂存。 如果这时想要取消暂存 TODO 文件，使用 <code>r</code> 或 <code>3</code>（撤消）选项：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">*** Commands ***</span><br><span class="line">  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]<span class="built_in">dd</span> untracked</span><br><span class="line">  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp</span><br><span class="line">What now&gt; r</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:        +0/-1      nothing TODO</span><br><span class="line">  2:        +1/-1      nothing index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br><span class="line">Revert&gt;&gt; 1</span><br><span class="line">           staged     unstaged path</span><br><span class="line">* 1:        +0/-1      nothing TODO</span><br><span class="line">  2:        +1/-1      nothing index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br><span class="line">Revert&gt;&gt; [enter]</span><br><span class="line">reverted one path</span><br></pre></td></tr></table></figure>
+
+<p>再次查看 Git 状态，可以看到已经取消暂存 <code>TODO</code> 文件：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">*** Commands ***</span><br><span class="line">  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]<span class="built_in">dd</span> untracked</span><br><span class="line">  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp</span><br><span class="line">What now&gt; s</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:    unchanged        +0/-1 TODO</span><br><span class="line">  2:        +1/-1      nothing index.html</span><br><span class="line">  3:    unchanged        +5/-1 lib/simplegit.rb</span><br></pre></td></tr></table></figure>
+
+<p>如果想要查看已暂存内容的区别，可以使用 <code>d</code> 或 <code>6</code>（区别）命令。 它会显示暂存文件的一个列表，可以从中选择想要查看的暂存区别。 这跟你在命令行指定 <code>git diff --cached</code> 非常相似：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">*** Commands ***</span><br><span class="line">  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]<span class="built_in">dd</span> untracked</span><br><span class="line">  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp</span><br><span class="line">What now&gt; d</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:        +1/-1      nothing index.html</span><br><span class="line">Review diff&gt;&gt; 1</span><br><span class="line">diff --git a/index.html b/index.html</span><br><span class="line">index 4d07108..4335f49 100644</span><br><span class="line">--- a/index.html</span><br><span class="line">+++ b/index.html</span><br><span class="line">@@ -16,7 +16,7 @@ Date Finder</span><br><span class="line"></span><br><span class="line"> &lt;p <span class="built_in">id</span>=<span class="string">&quot;out&quot;</span>&gt;...&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">-&lt;div <span class="built_in">id</span>=<span class="string">&quot;footer&quot;</span>&gt;contact : support@github.com&lt;/div&gt;</span><br><span class="line">+&lt;div <span class="built_in">id</span>=<span class="string">&quot;footer&quot;</span>&gt;contact : email.support@github.com&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"> &lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>通过这些基本命令，可以使用交互式添加模式来轻松地处理暂存区。</p>
+<h2 id="暂存补丁"><a href="#暂存补丁" class="headerlink" title="暂存补丁"></a>暂存补丁</h2><p>Git 也可以暂存文件的特定部分。 例如，如果在 simplegit.rb 文件中做了两处修改，但只想要暂存其中的一个而不是另一个，Git 会帮你轻松地完成。 在和上一节一样的交互式提示符中，输入 <code>p</code> 或 <code>5</code>（补丁）。 Git 会询问你想要部分暂存哪些文件；然后，对已选择文件的每一个部分，它都会一个个地显示文件区别并询问你是否想要暂存它们：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">diff --git a/lib/simplegit.rb b/lib/simplegit.rb</span><br><span class="line">index dd5ecc4..57399e0 100644</span><br><span class="line">--- a/lib/simplegit.rb</span><br><span class="line">+++ b/lib/simplegit.rb</span><br><span class="line">@@ -22,7 +22,7 @@ class SimpleGit</span><br><span class="line">   end</span><br><span class="line"></span><br><span class="line">   def <span class="built_in">log</span>(treeish = <span class="string">&#x27;master&#x27;</span>)</span><br><span class="line">-    <span class="built_in">command</span>(<span class="string">&quot;git log -n 25 #&#123;treeish&#125;&quot;</span>)</span><br><span class="line">+    <span class="built_in">command</span>(<span class="string">&quot;git log -n 30 #&#123;treeish&#125;&quot;</span>)</span><br><span class="line">   end</span><br><span class="line"></span><br><span class="line">   def blame(path)</span><br><span class="line">Stage this hunk [y,n,a,d,/,j,J,g,e,?]?</span><br></pre></td></tr></table></figure>
+
+<p>这时有很多选项。 输入 <code>?</code> 显示所有可以使用的命令列表：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Stage this hunk [y,n,a,d,/,j,J,g,e,?]? ?</span><br><span class="line">y - stage this hunk</span><br><span class="line">n - <span class="keyword">do</span> not stage this hunk</span><br><span class="line">a - stage this and all the remaining hunks <span class="keyword">in</span> the file</span><br><span class="line">d - <span class="keyword">do</span> not stage this hunk nor any of the remaining hunks <span class="keyword">in</span> the file</span><br><span class="line">g - <span class="keyword">select</span> a hunk to go to</span><br><span class="line">/ - search <span class="keyword">for</span> a hunk matching the given regex</span><br><span class="line">j - leave this hunk undecided, see next undecided hunk</span><br><span class="line">J - leave this hunk undecided, see next hunk</span><br><span class="line">k - leave this hunk undecided, see previous undecided hunk</span><br><span class="line">K - leave this hunk undecided, see previous hunk</span><br><span class="line">s - <span class="built_in">split</span> the current hunk into smaller hunks</span><br><span class="line">e - manually edit the current hunk</span><br><span class="line">? - <span class="built_in">print</span> <span class="built_in">help</span></span><br></pre></td></tr></table></figure>
+
+<p>通常情况下可以输入 <code>y</code> 或 <code>n</code> 来选择是否要暂存每一个区块， 当然，暂存特定文件中的所有部分或为之后的选择跳过一个区块也是非常有用的。 如果你只暂存文件的一部分，状态输出可能会像下面这样：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">What now&gt; 1</span><br><span class="line">           staged     unstaged path</span><br><span class="line">  1:    unchanged        +0/-1 TODO</span><br><span class="line">  2:        +1/-1      nothing index.html</span><br><span class="line">  3:        +1/-1        +4/-0 lib/simplegit.rb</span><br></pre></td></tr></table></figure>
+
+<p><code>simplegit.rb</code> 文件的状态很有趣。 它显示出若干行被暂存与若干行未被暂存。 已经部分地暂存了这个文件。 在这时，可以退出交互式添加脚本并且运行 <code>git commit</code> 来提交部分暂存的文件。</p>
+<p>也可以不必在交互式添加模式中做部分文件暂存——可以在命令行中使用 <code>git add -p</code> 或 <code>git add --patch</code> 来启动同样的脚本。</p>
+<p>更进一步地，可以使用 <code>git reset --patch</code> 命令的补丁模式来部分重置文件， 通过 <code>git checkout --patch</code> 命令来部分检出文件与 <code>git stash save --patch</code> 命令来部分暂存文件。 我们将会在接触这些命令的高级使用方法时了解更多详细信息。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/c984d1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/c984d1/" class="post-title-link" itemprop="url">Git工具-查看修订版本</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Git 能够以多种方式来指定单个提交、一组提交、或者一定范围内的提交。 了解它们并不是必需的，但是了解一下总没坏处。</p>
+<p>修订版本指的是：<strong>提交</strong></p>
+<h2 id="单个修订版本"><a href="#单个修订版本" class="headerlink" title="单个修订版本"></a>单个修订版本</h2><p>你可以通过任意一个提交的 40 个字符的完整 SHA-1 散列值来指定它， 不过还有很多更人性化的方式来做同样的事情。本节将会介绍获取单个提交的多种方法。</p>
+<h2 id="简短的-SHA-1"><a href="#简短的-SHA-1" class="headerlink" title="简短的 SHA-1"></a>简短的 SHA-1</h2><p>Git 十分智能，你只需要提供 SHA-1 的前几个字符就可以获得对应的那次提交， 当然你提供的 SHA-1 字符数量<strong>不得少于 4 个</strong>，并且没有歧义——也就是说， 当前对象数据库中没有其它对象以这段 SHA-1 开头。</p>
+<p>例如，要查看你知道其中添加了某个功能的提交，首先运行 <code>git log</code> 命令来定位该提交：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">commit 734713bc047d87bf7eac9674765ae793478c50d3</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Fri Jan 2 18:32:33 2009 -0800</span><br><span class="line"></span><br><span class="line">    fixed refs handling, added gc auto, updated tests</span><br><span class="line"></span><br><span class="line">commit d921970aadf03b3cf0e71becdaab3147ba71cdef</span><br><span class="line">Merge: 1c002dd... 35cfb2b...</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 11 15:08:43 2008 -0800</span><br><span class="line"></span><br><span class="line">    Merge commit <span class="string">&#x27;phedders/rdocs&#x27;</span></span><br><span class="line"></span><br><span class="line">commit 1c002dd4b536e7479fe34593e72e6c6c1819e53b</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 11 14:58:32 2008 -0800</span><br><span class="line"></span><br><span class="line">    added some blame and merge stuff</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看给定SHA-1值的提交"><a href="#查看给定SHA-1值的提交" class="headerlink" title="查看给定SHA-1值的提交"></a>查看给定SHA-1值的提交</h3><p>在本例中，假设你想要的提交其 SHA-1 以 <code>1c002dd....</code> 开头， 那么你可以用如下几种 <code>git show</code> 的变体来检视该提交（假设简短的版本没有歧义）：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git show 1c002dd4b536e7479fe34593e72e6c6c1819e53b</span><br><span class="line">$ git show 1c002dd4b536e7479f</span><br><span class="line">$ git show 1c002d</span><br></pre></td></tr></table></figure>
+
+<p>Git 可以为 SHA-1 值生成出简短且唯一的缩写。 如果你在 <code>git log</code> 后加上 <code>--abbrev-commit</code> 参数，输出结果里就会显示简短且唯一的值； 默认使用七个字符，不过有时为了避免 SHA-1 的歧义，会增加字符数：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --abbrev-commit --pretty=oneline</span><br><span class="line">ca82a6d changed the version number</span><br><span class="line">085bb3b removed unnecessary <span class="built_in">test</span> code</span><br><span class="line">a11bef0 first commit</span><br></pre></td></tr></table></figure>
+
+<p>通常 8 到 10 个字符就已经足够在一个项目中避免 SHA-1 的歧义。 例如，到 2019 年 2 月为止，Linux 内核这个相当大的 Git 项目， 其对象数据库中有超过 875,000 个提交，包含七百万个对象，也只需要前 12 个字符就能保证唯一性。</p>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>关于 SHA-1 的简短说明许多人觉得他们的仓库里有可能出现两个不同的对象其 SHA-1 值相同。 然后呢？如果你真的向仓库里提交了一个对象，它跟之前的某个 <strong>不同</strong> 对象的 SHA-1 值相同， Git 会发现该对象的散列值已经存在于仓库里了，于是就会认为该对象被写入，然后直接使用它。 如果之后你想检出那个对象时，你将得到先前那个对象的数据。但是这种情况发生的概率十分渺小。 SHA-1 摘要长度是 20 字节，也就是 160 位。 2^80 个随机哈希对象才有 50% 的概率出现一次冲突 （计算冲突机率的公式是 <code>p = (n(n-1)/2) * (1/2^160))</code> ）。 2^80 是 1.2 x 10^24，也就是一亿亿亿，这是地球上沙粒总数的 1200 倍。举例说一下怎样才能产生一次 SHA-1 冲突。 如果地球上 65 亿个人类都在编程，每人每秒都在产生等价于整个 Linux 内核历史（650 万个 Git 对象）的代码， 并将之提交到一个巨大的 Git 仓库里面，这样持续两年的时间才会产生足够的对象， 使其拥有 50% 的概率产生一次 SHA-1 对象冲突， 这比你编程团队的成员同一个晚上在互不相干的意外中被狼袭击并杀死的机率还要小。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="分支引用"><a href="#分支引用" class="headerlink" title="分支引用"></a>分支引用</h2><p>引用特定提交的一种直接方法是，若它是一个分支的顶端的提交， 那么可以在任何需要引用该提交的 Git 命令中直接使用该分支的名称。</p>
+<h3 id="查看最后一次提交"><a href="#查看最后一次提交" class="headerlink" title="查看最后一次提交"></a>查看最后一次提交</h3><p> 例如，你想要查看一个分支的最后一次提交的对象，假设 <code>topic1</code> 分支指向提交 <code>ca82a6d...</code> ， 那么以下的命令是等价的：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git show ca82a6dff817ec66f44342007202690a93763949</span><br><span class="line">$ git show topic1  <span class="comment"># topic1是分支名</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你想知道某个分支指向哪个特定的 SHA-1，或者想看任何一个例子中被简写的 SHA-1， 你可以使用一个叫做 <code>rev-parse</code> 的 Git 探测工具。 你可以在 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/ch10-git-internals">Git 内部原理</a> 中查看更多关于探测工具的信息。 简单来说，<code>rev-parse</code> 是为了底层操作而不是日常操作设计的。 不过，有时你想看 Git 现在到底处于什么状态时，它可能会很有用。 你可以在你的分支上执行 <code>rev-parse</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git rev-parse topic1</span><br><span class="line">ca82a6dff817ec66f44342007202690a93763949</span><br></pre></td></tr></table></figure>
+
+<h2 id="引用日志"><a href="#引用日志" class="headerlink" title="引用日志"></a>引用日志</h2><h3 id="HEAD的指向历史"><a href="#HEAD的指向历史" class="headerlink" title="HEAD的指向历史"></a>HEAD的指向历史</h3><p>当你在工作时， Git 会在后台保存一个引用日志（reflog）， 引用日志记录了最近几个月你的 HEAD 和分支引用所指向的历史。</p>
+<p>你可以使用 <code>git reflog</code> 来查看引用日志</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line">734713b HEAD@&#123;0&#125;: commit: fixed refs handling, added gc auto, updated</span><br><span class="line">d921970 HEAD@&#123;1&#125;: merge phedders/rdocs: Merge made by the <span class="string">&#x27;recursive&#x27;</span> strategy.</span><br><span class="line">1c002dd HEAD@&#123;2&#125;: commit: added some blame and merge stuff</span><br><span class="line">1c36188 HEAD@&#123;3&#125;: rebase -i (squash): updating HEAD</span><br><span class="line">95df984 HEAD@&#123;4&#125;: commit: <span class="comment"># This is a combination of two commits.</span></span><br><span class="line">1c36188 HEAD@&#123;5&#125;: rebase -i (squash): updating HEAD</span><br><span class="line">7e05da5 HEAD@&#123;6&#125;: rebase -i (pick): updating HEAD</span><br></pre></td></tr></table></figure>
+
+<p>每当你的 HEAD 所指向的位置发生了变化，Git 就会将这个信息存储到引用日志这个历史记录里。 你也可以通过 reflog 数据来获取之前的提交历史。 如果你想查看仓库中 HEAD 在五次前的所指向的提交，你可以使用 <code>@{n}</code> 来引用 reflog 中输出的提交记录。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show HEAD@&#123;5&#125;</span><br></pre></td></tr></table></figure>
+
+<p>你同样可以使用这个语法来查看某个分支在一定时间前的位置。 例如，查看你的 <code>master</code> 分支在昨天的时候指向了哪个提交，你可以输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show master@&#123;yesterday&#125;</span><br></pre></td></tr></table></figure>
+
+<p>就会显示昨天 <code>master</code> 分支的顶端指向了哪个提交。 这个方法只对还在你引用日志里的数据有用，所以不能用来查好几个月之前的提交。</p>
+<p>可以运行 <code>git log -g</code> 来查看类似于 <code>git log</code> 输出格式的引用日志信息：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> -g master</span><br><span class="line">commit 734713bc047d87bf7eac9674765ae793478c50d3</span><br><span class="line">Reflog: master@&#123;0&#125; (Scott Chacon &lt;schacon@gmail.com&gt;)</span><br><span class="line">Reflog message: commit: fixed refs handling, added gc auto, updated</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Fri Jan 2 18:32:33 2009 -0800</span><br><span class="line"></span><br><span class="line">    fixed refs handling, added gc auto, updated tests</span><br><span class="line"></span><br><span class="line">commit d921970aadf03b3cf0e71becdaab3147ba71cdef</span><br><span class="line">Reflog: master@&#123;1&#125; (Scott Chacon &lt;schacon@gmail.com&gt;)</span><br><span class="line">Reflog message: merge phedders/rdocs: Merge made by recursive.</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 11 15:08:43 2008 -0800</span><br><span class="line"></span><br><span class="line">    Merge commit <span class="string">&#x27;phedders/rdocs&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>值得注意的是，<strong>引用日志只存在于本地仓库，它只是一个记录你在 自己 的仓库里做过什么的日志</strong>。 其他人拷贝的仓库里的引用日志不会和你的相同，而你新克隆一个仓库的时候，引用日志是空的，因为你在仓库里还没有操作。 <code>git show HEAD@{2.months.ago}</code> 这条命令只有在你克隆了一个项目至少两个月时才会显示匹配的提交—— 如果你刚刚克隆了仓库，那么它将不会有任何结果返回。</p>
+<table>
+<thead>
+<tr>
+<th>Tip</th>
+<th>将引用日志想作 Git 版的 shell 历史记录如果你有 UNIX 或者 Linux 的背景，不妨将引用日志想作 Git 版的 shell 历史记录， 重点在于仅与你和你的会话相关，而与他人无关。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="祖先引用"><a href="#祖先引用" class="headerlink" title="祖先引用"></a>祖先引用</h2><p>祖先引用是另一种指明一个提交的方式。 如果你在引用的尾部加上一个 <code>^</code>（脱字符）， Git 会将其解析为该引用的上一个提交。 假设你的提交历史是：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --pretty=format:<span class="string">&#x27;%h %s&#x27;</span> --graph</span><br><span class="line">* 734713b fixed refs handling, added gc auto, updated tests</span><br><span class="line">*   d921970 Merge commit <span class="string">&#x27;phedders/rdocs&#x27;</span></span><br><span class="line">|\</span><br><span class="line">| * 35cfb2b Some rdoc changes</span><br><span class="line">* | 1c002dd added some blame and merge stuff</span><br><span class="line">|/</span><br><span class="line">* 1c36188 ignore *.gem</span><br><span class="line">* 9b29157 add open3_detach to gemspec file list</span><br></pre></td></tr></table></figure>
+
+<p>你可以使用 <code>HEAD^</code> 来查看上一个提交，也就是 “<strong>HEAD 的父提交</strong>”：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git show HEAD^</span><br><span class="line">commit d921970aadf03b3cf0e71becdaab3147ba71cdef</span><br><span class="line">Merge: 1c002dd... 35cfb2b...</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 11 15:08:43 2008 -0800</span><br><span class="line"></span><br><span class="line">    Merge commit <span class="string">&#x27;phedders/rdocs&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>在 Windows 上转义脱字符在 Windows 的 <code>cmd.exe</code> 中，<code>^</code> 是一个特殊字符，因此需要区别对待。 你可以双写它或者将提交引用放在引号中：<code>$ git show HEAD^     # 在 Windows 上无法工作 $ git show HEAD^^    # 可以 $ git show &quot;HEAD^&quot;   # 可以</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>你也可以在 <code>^</code> 后面添加一个数字来指明想要 <strong>哪一个</strong> 父提交——例如 <code>d921970^2</code> 代表 “d921970 的第二父提交” 这个语法只适用于合并的提交，因为合并提交会有多个父提交。 合并提交的第一父提交是你合并时所在分支（通常为 <code>master</code>），而第二父提交是你所合并的分支（例如 <code>topic</code>）：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ git show d921970^</span><br><span class="line">commit 1c002dd4b536e7479fe34593e72e6c6c1819e53b</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Thu Dec 11 14:58:32 2008 -0800</span><br><span class="line"></span><br><span class="line">    added some blame and merge stuff</span><br><span class="line"></span><br><span class="line">$ git show d921970^2</span><br><span class="line">commit 35cfb2b795a55793d7cc56a6cc2060b4bb732548</span><br><span class="line">Author: Paul Hedderly &lt;paul+git@mjr.org&gt;</span><br><span class="line">Date:   Wed Dec 10 22:22:03 2008 +0000</span><br><span class="line"></span><br><span class="line">    Some rdoc changes</span><br></pre></td></tr></table></figure>
+
+<p>另一种指明祖先提交的方法是 <code>~</code>（波浪号）。 同样是指向第一父提交，因此 <code>HEAD~</code> 和 <code>HEAD^</code> 是等价的。 而区别在于你在后面加数字的时候。 <code>HEAD~2</code> 代表“第一父提交的第一父提交”，也就是“祖父提交”——Git 会根据你指定的次数获取对应的第一父提交。 例如，在之前的列出的提交历史中，<code>HEAD~3</code> 就是</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git show HEAD~3</span><br><span class="line">commit 1c3618887afb5fbcbea25b7c013f4e2114448b8d</span><br><span class="line">Author: Tom Preston-Werner &lt;tom@mojombo.com&gt;</span><br><span class="line">Date:   Fri Nov 7 13:47:59 2008 -0500</span><br><span class="line"></span><br><span class="line">    ignore *.gem</span><br></pre></td></tr></table></figure>
+
+<p>也可以写成 <code>HEAD~~~</code>，也是第一父提交的第一父提交的第一父提交：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git show HEAD~~~</span><br><span class="line">commit 1c3618887afb5fbcbea25b7c013f4e2114448b8d</span><br><span class="line">Author: Tom Preston-Werner &lt;tom@mojombo.com&gt;</span><br><span class="line">Date:   Fri Nov 7 13:47:59 2008 -0500</span><br><span class="line"></span><br><span class="line">    ignore *.gem</span><br></pre></td></tr></table></figure>
+
+<p>你也可以组合使用这两个语法——你可以通过 <code>HEAD~3^2</code> 来取得之前引用的第二父提交（假设它是一个合并提交）。</p>
+<h2 id="提交区间"><a href="#提交区间" class="headerlink" title="提交区间"></a>提交区间</h2><p>你已经学会如何单次的提交，现在来看看如何指明一定区间的提交。 当你有很多分支时，这对管理你的分支时十分有用， 你可以用提交区间来解决“这个分支还有哪些提交尚未合并到主分支？”的问题</p>
+<h3 id="双点"><a href="#双点" class="headerlink" title="双点"></a>双点</h3><p>最常用的指明提交区间语法是双点。 这种语法可以让 Git 选出在一个分支中而不在另一个分支中的提交。 例如，你有如下的提交历史 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/double_dot">Example history for range selection.</a></p>
+<p><img src="https://git-scm.com/book/en/v2/images/double-dot.png" alt="Example history for range selection."></p>
+<p>Figure 137. Example history for range selection.</p>
+<p>你想要查看 experiment 分支中还有哪些提交尚未被合并入 master 分支。 你可以使用 <code>master..experiment</code> 来让 Git 显示这些提交。也就是“在 experiment 分支中而不在 master 分支中的提交”。 为了使例子简单明了，我使用了示意图中提交对象的字母来代替真实日志的输出，所以会显示：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> master..experiment</span><br><span class="line">D</span><br><span class="line">C</span><br></pre></td></tr></table></figure>
+
+<p>反过来，如果你想查看在 <code>master</code> 分支中而不在 <code>experiment</code> 分支中的提交，你只要交换分支名即可。 <code>experiment..master</code> 会显示在 <code>master</code> 分支中而不在 <code>experiment</code> 分支中的提交：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> experiment..master</span><br><span class="line">F</span><br><span class="line">E</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看即将推送到远端的内容"><a href="#查看即将推送到远端的内容" class="headerlink" title="查看即将推送到远端的内容"></a>查看即将推送到远端的内容</h4><p>这可以让你保持 <code>experiment</code> 分支跟随最新的进度以及查看你即将合并的内容。 另一个常用的场景是查看你即将推送到远端的内容：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> origin/master..HEAD</span><br></pre></td></tr></table></figure>
+
+<p>这个命令会输出在你当前分支中而不在远程 <code>origin</code> 中的提交。 如果你执行 <code>git push</code> 并且你的当前分支正在跟踪 <code>origin/master</code>，由 <code>git log origin/master..HEAD</code> 所输出的提交就是会被传输到远端服务器的提交。如果你留空了其中的一边， Git 会默认为 <code>HEAD</code>。 例如， <code>git log origin/master..</code> 将会输出与之前例子相同的结果 —— Git 使用 HEAD 来代替留空的一边。</p>
+<h3 id="多点"><a href="#多点" class="headerlink" title="多点"></a>多点</h3><p>双点语法很好用，但有时候你可能需要两个以上的分支才能确定你所需要的修订， 比如查看哪些提交是被包含在某些分支中的一个，但是不在你当前的分支上。 Git 允许你在任意引用前加上 <code>^</code> 字符或者 <code>--not</code> 来指明你不希望提交被包含其中的分支。 因此下列三个命令是等价的：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> refA..refB</span><br><span class="line">$ git <span class="built_in">log</span> ^refA refB</span><br><span class="line">$ git <span class="built_in">log</span> refB --not refA</span><br></pre></td></tr></table></figure>
+
+<p>这个语法很好用，因为你可以在查询中指定超过两个的引用，这是双点语法无法实现的。 比如，你想查看所有被 <code>refA</code> 或 <code>refB</code> 包含的但是不被 <code>refC</code> 包含的提交，你可以使用以下任意一个命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> refA refB ^refC</span><br><span class="line">$ git <span class="built_in">log</span> refA refB --not refC</span><br></pre></td></tr></table></figure>
+
+<p>这就构成了一个十分强大的修订查询系统，你可以通过它来查看你的分支里包含了哪些东西。</p>
+<h3 id="三点"><a href="#三点" class="headerlink" title="三点"></a>三点</h3><p>最后一种主要的区间选择语法是三点，这个语法可以选择出被两个引用 <strong>之一</strong> 包含但又不被两者同时包含的提交。 再看看之前双点例子中的提交历史。 如果你想看 <code>master</code> 或者 <code>experiment</code> 中包含的但不是两者共有的提交，你可以执行：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> master...experiment</span><br><span class="line">F</span><br><span class="line">E</span><br><span class="line">D</span><br><span class="line">C</span><br></pre></td></tr></table></figure>
+
+<p>这和通常 <code>log</code> 按日期排序的输出一样，仅仅给出了4个提交的信息。</p>
+<p>这种情形下，<code>log</code> 命令的一个常用参数是 <code>--left-right</code>，它会显示每个提交到底处于哪一侧的分支。 这会让输出数据更加清晰。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --left-right master...experiment</span><br><span class="line">&lt; F</span><br><span class="line">&lt; E</span><br><span class="line">&gt; D</span><br><span class="line">&gt; C</span><br></pre></td></tr></table></figure>
+
+<p>有了这些工具，你就可以十分方便地查看你 Git 仓库中的提交。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/d9e9c6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/d9e9c6/" class="post-title-link" itemprop="url">Git工具-重置揭密</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在继续了解更专业的工具前，我们先探讨一下 Git 的 <code>reset</code> 和 <code>checkout</code> 命令。 在初遇的 Git 命令中，这两个是最让人困惑的。 它们能做很多事情，所以看起来我们很难真正地理解并恰当地运用它们。 针对这一点，我们先来做一个简单的比喻。</p>
+<h2 id="三棵树"><a href="#三棵树" class="headerlink" title="三棵树"></a>三棵树</h2><p>理解 <code>reset</code> 和 <code>checkout</code> 的最简方法，就是以 Git 的思维框架（将其作为内容管理器）来管理三棵不同的树。 “树” 在我们这里的实际意思是 “文件的集合”，而不是指特定的数据结构。 （在某些情况下索引看起来并不像一棵树，不过我们现在的目的是用简单的方式思考它。）</p>
+<p>Git 作为一个系统，是以它的一般操作来管理并操纵这三棵树的：</p>
+<table>
+<thead>
+<tr>
+<th align="left">树</th>
+<th align="left">用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">HEAD</td>
+<td align="left">上一次提交的快照，下一次提交的父结点</td>
+</tr>
+<tr>
+<td align="left">Index</td>
+<td align="left">预期的下一次提交的快照</td>
+</tr>
+<tr>
+<td align="left">Working Directory</td>
+<td align="left">沙盒</td>
+</tr>
+</tbody></table>
+<h3 id="HEAD"><a href="#HEAD" class="headerlink" title="HEAD"></a>HEAD</h3><p><strong>HEAD 是当前分支引用的指针，它总是指向该分支上的最后一次提交</strong>。 这表示 HEAD 将是下一次提交的父结点。 通常，理解 HEAD 的最简方式，就是将它看做 <strong>该分支上的最后一次提交</strong> 的快照。</p>
+<p>其实，查看快照的样子很容易。 下例就显示了 HEAD 快照实际的目录列表，以及其中每个文件的 SHA-1 校验和：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ git cat-file -p HEAD</span><br><span class="line">tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf</span><br><span class="line">author Scott Chacon  1301511835 -0700</span><br><span class="line">committer Scott Chacon  1301511835 -0700</span><br><span class="line"></span><br><span class="line">initial commit</span><br><span class="line"></span><br><span class="line">$ git ls-tree -r HEAD</span><br><span class="line">100644 blob a906cb2a4a904a152...   README</span><br><span class="line">100644 blob 8f94139338f9404f2...   Rakefile</span><br><span class="line">040000 tree 99f1a6d12cb4b6f19...   lib</span><br></pre></td></tr></table></figure>
+
+<p>Git 的 <code>cat-file</code> 和 <code>ls-tree</code> 是底层命令，它们一般用于底层工作，在日常工作中并不使用。 不过它们能帮助我们了解到底发生了什么。</p>
+<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><p>索引是你的 <strong>预期的下一次提交</strong>。 我们也会将这个概念引用为 Git 的“暂存区”，这就是当你运行 <code>git commit</code> 时 Git 看起来的样子。</p>
+<p>Git 将上一次检出到工作目录中的所有文件填充到索引区，它们看起来就像最初被检出时的样子。 之后你会将其中一些文件替换为新版本，接着通过 <code>git commit</code> 将它们转换为树来用作新的提交。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git ls-files -s</span><br><span class="line">100644 a906cb2a4a904a152e80877d4088654daad0c859 0	README</span><br><span class="line">100644 8f94139338f9404f26296befa88755fc2598c289 0	Rakefile</span><br><span class="line">100644 47c6340d6459e05787f644c2447d2595f5d3a54b 0	lib/simplegit.rb</span><br></pre></td></tr></table></figure>
+
+<p>再说一次，我们在这里又用到了 <code>git ls-files</code> 这个幕后的命令，它会显示出索引当前的样子。</p>
+<p>确切来说，索引在技术上并非树结构，它其实是以扁平的清单实现的。不过对我们而言，把它当做树就够了。</p>
+<h3 id="工作目录"><a href="#工作目录" class="headerlink" title="工作目录"></a>工作目录</h3><p>最后，你就有了自己的 <strong>工作目录</strong>（通常也叫 <strong>工作区</strong>）。 另外两棵树以一种高效但并不直观的方式，将它们的内容存储在 <code>.git</code> 文件夹中。 工作目录会将它们解包为实际的文件以便编辑。 你可以把工作目录当做 <strong>沙盒</strong>。在你将修改提交到暂存区并记录到历史之前，可以随意更改。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ tree</span><br><span class="line">.</span><br><span class="line">├── README</span><br><span class="line">├── Rakefile</span><br><span class="line">└── lib</span><br><span class="line">    └── simplegit.rb</span><br><span class="line"></span><br><span class="line">1 directory, 3 files</span><br></pre></td></tr></table></figure>
+
+<h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><p>经典的 Git 工作流程是通过操纵这三个区域来以更加连续的状态记录项目快照的。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-workflow.png" alt="reset workflow"></p>
+<p>让我们来可视化这个过程：假设我们进入到一个新目录，其中有一个文件。 我们称其为该文件的 <strong>v1</strong> 版本，将它标记为蓝色。 现在运行 <code>git init</code>，这会创建一个 Git 仓库，其中的 HEAD 引用指向未创建的 <code>master</code> 分支。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-ex1.png" alt="reset ex1"></p>
+<p>此时，只有工作目录有内容。</p>
+<p>现在我们想要提交这个文件，所以用 <code>git add</code> 来获取工作目录中的内容，并将其复制到索引中。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-ex2.png" alt="reset ex2"></p>
+<p>接着运行 <code>git commit</code>，它会取得索引中的内容并将它保存为一个永久的快照， 然后创建一个指向该快照的提交对象，最后更新 <code>master</code> 来指向本次提交。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-ex3.png" alt="reset ex3"></p>
+<p>此时如果我们运行 <code>git status</code>，会发现没有任何改动，因为现在三棵树完全相同。</p>
+<p>现在我们想要对文件进行修改然后提交它。 我们将会经历同样的过程；首先在工作目录中修改文件。 我们称其为该文件的 <strong>v2</strong> 版本，并将它标记为红色。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-ex4.png" alt="reset ex4"></p>
+<p>如果现在运行 <code>git status</code>，我们会看到文件显示在 “Changes not staged for commit” 下面并被标记为红色，因为该条目在索引与工作目录之间存在不同。 接着我们运行 <code>git add</code> 来将它暂存到索引中。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-ex5.png" alt="reset ex5"></p>
+<p>此时，由于索引和 HEAD 不同，若运行 <code>git status</code> 的话就会看到 “Changes to be committed” 下的该文件变为绿色 ——也就是说，现在预期的下一次提交与上一次提交不同。 最后，我们运行 <code>git commit</code> 来完成提交。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-ex6.png" alt="reset ex6"></p>
+<p>现在运行 <code>git status</code> 会没有输出，因为三棵树又变得相同了。</p>
+<p>切换分支或克隆的过程也类似。 当检出一个分支时，它会修改 <strong>HEAD</strong> 指向新的分支引用，将 <strong>索引</strong> 填充为该次提交的快照， 然后将 <strong>索引</strong> 的内容复制到 <strong>工作目录</strong> 中。</p>
+<h2 id="重置的作用"><a href="#重置的作用" class="headerlink" title="重置的作用"></a>重置的作用</h2><p>在以下情景中观察 <code>reset</code> 命令会更有意义。</p>
+<p>为了演示这些例子，假设我们再次修改了 <code>file.txt</code> 文件并第三次提交它。 现在的历史看起来是这样的：</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-start.png" alt="reset start"></p>
+<p>让我们跟着 <code>reset</code> 看看它都做了什么。 它以一种简单可预见的方式直接操纵这三棵树。 它做了三个基本操作。</p>
+<h3 id="第-1-步：移动-HEAD"><a href="#第-1-步：移动-HEAD" class="headerlink" title="第 1 步：移动 HEAD"></a>第 1 步：移动 HEAD</h3><p><code>reset</code> 做的第一件事是移动 HEAD 的指向。 这与改变 HEAD 自身不同（<code>checkout</code> 所做的）；<code>reset</code> 移动 HEAD 指向的分支。 这意味着如果 HEAD 设置为 <code>master</code> 分支（例如，你正在 <code>master</code> 分支上）， 运行 <code>git reset 9e5e6a4</code> 将会使 <code>master</code> 指向 <code>9e5e6a4</code>。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-soft.png" alt="reset soft"></p>
+<p>无论你调用了何种形式的带有一个提交的 <code>reset</code>，它首先都会尝试这样做。 使用 <code>reset --soft</code>，它将仅仅停在那儿。</p>
+<p>现在看一眼上图，理解一下发生的事情：它本质上是撤销了上一次 <code>git commit</code> 命令。 当你在运行 <code>git commit</code> 时，Git 会创建一个新的提交，并移动 HEAD 所指向的分支来使其指向该提交。 当你将它 <code>reset</code> 回 <code>HEAD~</code>（HEAD 的父结点）时，其实就是把该分支移动回原来的位置，而不会改变索引和工作目录。 现在你可以更新索引并再次运行 <code>git commit</code> 来完成 <code>git commit --amend</code> 所要做的事情了（见 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/_git_amend">修改最后一次提交</a>）。</p>
+<h3 id="第-2-步：更新索引（-mixed）"><a href="#第-2-步：更新索引（-mixed）" class="headerlink" title="第 2 步：更新索引（--mixed）"></a>第 2 步：更新索引（--mixed）</h3><p>注意，如果你现在运行 <code>git status</code> 的话，就会看到新的 HEAD 和以绿色标出的它和索引之间的区别。</p>
+<p>接下来，<code>reset</code> 会用 HEAD 指向的当前快照的内容来更新索引。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-mixed.png" alt="reset mixed"></p>
+<p>如果指定 <code>--mixed</code> 选项，<code>reset</code> 将会在这时停止。 这也是默认行为，所以如果没有指定任何选项（在本例中只是 <code>git reset HEAD~</code>），这就是命令将会停止的地方。</p>
+<p>现在再看一眼上图，理解一下发生的事情：它依然会撤销一上次 <code>提交</code>，但还会 <em>取消暂存</em> 所有的东西。 于是，我们回滚到了所有 <code>git add</code> 和 <code>git commit</code> 的命令执行之前。</p>
+<h3 id="第-3-步：更新工作目录（-hard）"><a href="#第-3-步：更新工作目录（-hard）" class="headerlink" title="第 3 步：更新工作目录（--hard）"></a>第 3 步：更新工作目录（--hard）</h3><p><code>reset</code> 要做的的第三件事情就是让工作目录看起来像索引。 如果使用 <code>--hard</code> 选项，它将会继续这一步。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-hard.png" alt="reset hard"></p>
+<p>现在让我们回想一下刚才发生的事情。 你撤销了最后的提交、<code>git add</code> 和 <code>git commit</code> 命令 <strong>以及</strong> 工作目录中的所有工作。</p>
+<p>必须注意，<code>--hard</code> 标记是 <code>reset</code> 命令唯一的危险用法，它也是 Git 会真正地销毁数据的仅有的几个操作之一。 其他任何形式的 <code>reset</code> 调用都可以轻松撤消，但是 <code>--hard</code> 选项不能，因为它强制覆盖了工作目录中的文件。 在这种特殊情况下，我们的 Git 数据库中的一个提交内还留有该文件的 <strong>v3</strong> 版本， 我们可以通过 <code>reflog</code> 来找回它。但是若该文件还未提交，Git 仍会覆盖它从而导致无法恢复。</p>
+<h3 id="回顾"><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h3><p><code>reset</code> 命令会以特定的顺序重写这三棵树，在你指定以下选项时停止：</p>
+<ol>
+<li>移动 HEAD 分支的指向 <em>（若指定了 <code>--soft</code>，则到此停止）</em></li>
+<li>使索引看起来像 HEAD <em>（若未指定 <code>--hard</code>，则到此停止）</em></li>
+<li>使工作目录看起来像索引</li>
+</ol>
+<h2 id="通过路径来重置"><a href="#通过路径来重置" class="headerlink" title="通过路径来重置"></a>通过路径来重置</h2><p>前面讲述了 <code>reset</code> 基本形式的行为，不过你还可以给它提供一个作用路径。 若指定了一个路径，<code>reset</code> 将会跳过第 1 步，并且将它的作用范围限定为指定的文件或文件集合。 这样做自然有它的道理，因为 HEAD 只是一个指针，你无法让它同时指向两个提交中各自的一部分。 不过索引和工作目录 <em>可以部分更新</em>，所以重置会继续进行第 2、3 步。</p>
+<p>现在，假如我们运行 <code>git reset file.txt</code> （这其实是 <code>git reset --mixed HEAD file.txt</code> 的简写形式，因为你既没有指定一个提交的 SHA-1 或分支，也没有指定 <code>--soft</code> 或 <code>--hard</code>），它会：</p>
+<ol>
+<li>移动 HEAD 分支的指向 <em>（已跳过）</em></li>
+<li>让索引看起来像 HEAD <em>（到此处停止）</em></li>
+</ol>
+<p>所以它本质上只是将 <code>file.txt</code> 从 HEAD 复制到索引中。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-path1.png" alt="reset path1"></p>
+<p>它还有 <em>取消暂存文件</em> 的实际效果。 如果我们查看该命令的示意图，然后再想想 <code>git add</code> 所做的事，就会发现它们正好相反。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-path2.png" alt="reset path2"></p>
+<p>这就是为什么 <code>git status</code> 命令的输出会建议运行此命令来取消暂存一个文件。 （查看 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/_unstaging">取消暂存的文件</a> 来了解更多。）</p>
+<p>我们可以不让 Git 从 HEAD 拉取数据，而是通过具体指定一个提交来拉取该文件的对应版本。 我们只需运行类似于 <code>git reset eb43bf file.txt</code> 的命令即可。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-path3.png" alt="reset path3"></p>
+<p>它其实做了同样的事情，也就是把工作目录中的文件恢复到 <strong>v1</strong> 版本，运行 <code>git add</code> 添加它， 然后再将它恢复到 <strong>v3</strong> 版本（只是不用真的过一遍这些步骤）。 如果我们现在运行 <code>git commit</code>，它就会记录一条“将该文件恢复到 <strong>v1</strong> 版本”的更改， 尽管我们并未在工作目录中真正地再次拥有它。</p>
+<p>还有一点同 <code>git add</code> 一样，就是 <code>reset</code> 命令也可以接受一个 <code>--patch</code> 选项来一块一块地取消暂存的内容。 这样你就可以根据选择来取消暂存或恢复内容了。</p>
+<h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><p>我们来看看如何利用这种新的功能来做一些有趣的事情——压缩提交。</p>
+<p>假设你的一系列提交信息中有 “oops.”“WIP” 和 “forgot this file”， 聪明的你就能使用 <code>reset</code> 来轻松快速地将它们压缩成单个提交，也显出你的聪明。 （<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/ch00/_squashing">压缩提交</a> 展示了另一种方式，不过在本例中用 <code>reset</code> 更简单。）</p>
+<p>假设你有一个项目，第一次提交中有一个文件，第二次提交增加了一个新的文件并修改了第一个文件，第三次提交再次修改了第一个文件。 由于第二次提交是一个未完成的工作，因此你想要压缩它。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-squash-r1.png" alt="reset squash r1"></p>
+<p>那么可以运行 <code>git reset --soft HEAD~2</code> 来将 HEAD 分支移动到一个旧一点的提交上（即你想要保留的最近的提交）：</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-squash-r2.png" alt="reset squash r2"></p>
+<p>然后只需再次运行 <code>git commit</code>：</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-squash-r3.png" alt="reset squash r3"></p>
+<p>现在你可以查看可到达的历史，即将会推送的历史，现在看起来有个 v1 版 <code>file-a.txt</code> 的提交， 接着第二个提交将 <code>file-a.txt</code> 修改成了 v3 版并增加了 <code>file-b.txt</code>。 包含 v2 版本的文件已经不在历史中了。</p>
+<h2 id="检出"><a href="#检出" class="headerlink" title="检出"></a>检出</h2><p>最后，你大概还想知道 <code>checkout</code> 和 <code>reset</code> 之间的区别。 和 <code>reset</code> 一样，<code>checkout</code> 也操纵三棵树，不过它有一点不同，这取决于你是否传给该命令一个文件路径。</p>
+<h3 id="不带路径"><a href="#不带路径" class="headerlink" title="不带路径"></a>不带路径</h3><p>运行 <code>git checkout [branch]</code> 与运行 <code>git reset --hard [branch]</code> 非常相似，它会更新所有三棵树使其看起来像 <code>[branch]</code>，不过有两点重要的区别。</p>
+<p>首先不同于 <code>reset --hard</code>，<code>checkout</code> 对工作目录是安全的，它会通过检查来确保不会将已更改的文件弄丢。 其实它还更聪明一些。它会在工作目录中先试着简单合并一下，这样所有_还未修改过的_文件都会被更新。 而 <code>reset --hard</code> 则会不做检查就全面地替换所有东西。</p>
+<p>第二个重要的区别是 <code>checkout</code> 如何更新 HEAD。 <code>reset</code> 会移动 HEAD 分支的指向，而 <code>checkout</code> 只会移动 HEAD 自身来指向另一个分支。</p>
+<p>例如，假设我们有 <code>master</code> 和 <code>develop</code> 分支，它们分别指向不同的提交；我们现在在 <code>develop</code> 上（所以 HEAD 指向它）。 如果我们运行 <code>git reset master</code>，那么 <code>develop</code> 自身现在会和 <code>master</code> 指向同一个提交。 而如果我们运行 <code>git checkout master</code> 的话，<code>develop</code> 不会移动，HEAD 自身会移动。 现在 HEAD 将会指向 <code>master</code>。</p>
+<p>所以，虽然在这两种情况下我们都移动 HEAD 使其指向了提交 A，但_做法_是非常不同的。 <code>reset</code> 会移动 HEAD 分支的指向，而 <code>checkout</code> 则移动 HEAD 自身。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/reset-checkout.png" alt="reset checkout"></p>
+<h3 id="带路径"><a href="#带路径" class="headerlink" title="带路径"></a>带路径</h3><p>运行 <code>checkout</code> 的另一种方式就是指定一个文件路径，这会像 <code>reset</code> 一样不会移动 HEAD。 它就像 <code>git reset [branch] file</code> 那样用该次提交中的那个文件来更新索引，但是它也会覆盖工作目录中对应的文件。 它就像是 <code>git reset --hard [branch] file</code>（如果 <code>reset</code> 允许你这样运行的话）， 这样对工作目录并不安全，它也不会移动 HEAD。</p>
+<p>此外，同 <code>git reset</code> 和 <code>git add</code> 一样，<code>checkout</code> 也接受一个 <code>--patch</code> 选项，允许你根据选择一块一块地恢复文件内容。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>希望你现在熟悉并理解了 <code>reset</code> 命令，不过关于它和 <code>checkout</code> 之间的区别，你可能还是会有点困惑，毕竟不太可能记住不同调用的所有规则。</p>
+<p>下面的速查表列出了命令对树的影响。 “HEAD” 一列中的 “REF” 表示该命令移动了 HEAD 指向的分支引用，而 “HEAD” 则表示只移动了 HEAD 自身。 特别注意 <em>WD Safe?</em> 一列——如果它标记为 <strong>NO</strong>，那么运行该命令之前请考虑一下。</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">HEAD</th>
+<th align="left">Index</th>
+<th align="left">Workdir</th>
+<th align="left">WD Safe?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Commit Level</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>reset --soft [commit]</code></td>
+<td align="left">REF</td>
+<td align="left">NO</td>
+<td align="left">NO</td>
+<td align="left">YES</td>
+</tr>
+<tr>
+<td align="left"><code>reset [commit]</code></td>
+<td align="left">REF</td>
+<td align="left">YES</td>
+<td align="left">NO</td>
+<td align="left">YES</td>
+</tr>
+<tr>
+<td align="left"><code>reset --hard [commit]</code></td>
+<td align="left">REF</td>
+<td align="left">YES</td>
+<td align="left">YES</td>
+<td align="left"><strong>NO</strong></td>
+</tr>
+<tr>
+<td align="left"><code>checkout &lt;commit&gt;</code></td>
+<td align="left">HEAD</td>
+<td align="left">YES</td>
+<td align="left">YES</td>
+<td align="left">YES</td>
+</tr>
+<tr>
+<td align="left"><strong>File Level</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>reset [commit] &lt;paths&gt;</code></td>
+<td align="left">NO</td>
+<td align="left">YES</td>
+<td align="left">NO</td>
+<td align="left">YES</td>
+</tr>
+<tr>
+<td align="left"><code>checkout [commit] &lt;paths&gt;</code></td>
+<td align="left">NO</td>
+<td align="left">YES</td>
+<td align="left">YES</td>
+<td align="left"><strong>NO</strong></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/1832fe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/1832fe/" class="post-title-link" itemprop="url">Git工具-重写历史</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-18 17:43:57" itemprop="dateCreated datePublished" datetime="2020-11-18T17:43:57+08:00">2020-11-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AGit%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《Git》学习笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>许多时候，在使用 Git 时，你可能想要修订提交历史。 Git 很棒的一点是它允许你在最后时刻做决定。 你可以在将暂存区内容提交前决定哪些文件进入提交，可以通过 <code>git stash</code> 来决定不与某些内容工作， 也可以重写已经发生的提交就像它们以另一种方式发生的一样。 这可能涉及改变提交的顺序，改变提交中的信息或修改文件，将提交压缩或是拆分， 或完全地移除提交——在将你的工作成果与他人共享之前。</p>
+<p>在本节中，你可以学到如何完成这些工作，这样在与他人分享你的工作成果时你的提交历史将如你所愿地展示出来。</p>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>在满意之前不要推送你的工作Git 的基本原则之一是，由于克隆中有很多工作是本地的，因此你可以 <strong>在本地</strong> 随便重写历史记录。 然而一旦推送了你的工作，那就完全是另一回事了，除非你有充分的理由进行更改，否则应该将推送的工作视为最终结果。 简而言之，在对它感到满意并准备与他人分享之前，应当避免推送你的工作。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="修改最后一次提交"><a href="#修改最后一次提交" class="headerlink" title="修改最后一次提交"></a>修改最后一次提交</h2><p>修改你最近一次提交可能是所有修改历史提交的操作中最常见的一个。 对于你的最近一次提交，你往往想做两件事情：简单地修改提交信息， 或者通过添加、移除或修改文件来更改提交实际的内容。</p>
+<h3 id="修改提交信息"><a href="#修改提交信息" class="headerlink" title="修改提交信息"></a>修改提交信息</h3><p>如果，你只是想修改最近一次提交的提交信息，那么很简单：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend</span><br></pre></td></tr></table></figure>
+
+<p>上面这条命令会将最后一次的提交信息载入到编辑器中供你修改。 当保存并关闭编辑器后，编辑器会将更新后的提交信息写入新提交中，它会成为新的最后一次提交。</p>
+<h3 id="修改实际内容"><a href="#修改实际内容" class="headerlink" title="修改实际内容"></a>修改实际内容</h3><p>另一方面，如果你想要修改最后一次提交的实际内容，那么流程很相似：首先作出你想要补上的修改， 暂存它们，然后用 <code>git commit --amend</code> 以新的改进后的提交来 <strong>替换</strong> 掉旧有的最后一次提交，</p>
+<p>使用这个技巧的时候需要小心，因为修正会改变提交的 SHA-1 校验和。 它类似于一个小的变基——<strong>如果已经推送了最后一次提交就不要修正它</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>Tip</th>
+<th>修补后的提交可能需要修补提交信息当你在修补一次提交时，可以同时修改提交信息和提交内容。 如果你修补了提交的内容，那么几乎肯定要更新提交消息以反映修改后的内容。另一方面，如果你的修补是琐碎的（如修改了一个笔误或添加了一个忘记暂存的文件）， 那么之前的提交信息不必修改，你只需作出更改，暂存它们，然后通过以下命令避免不必要的编辑器环节即可：<code>$ git commit --amend --no-edit</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="修改多个提交信息"><a href="#修改多个提交信息" class="headerlink" title="修改多个提交信息"></a>修改多个提交信息</h2><p>为了修改在提交历史中较远的提交，必须使用更复杂的工具。 Git 没有一个改变历史工具，但是可以使用变基工具来变基一系列提交，基于它们原来的 HEAD 而不是将其移动到另一个新的上面。 通过交互式变基工具，可以在任何想要修改的提交后停止，然后修改信息、添加文件或做任何想做的事情。 可以通过给 <code>git rebase</code> 增加 <code>-i</code> 选项来交互式地运行变基。 必须指定想要重写多久远的历史，这可以通过告诉命令将要变基到的提交来做到。</p>
+<p>例如，如果想要修改最近三次提交信息，或者那组提交中的任意一个提交信息， 将想要修改的最近一次提交的父提交作为参数传递给 <code>git rebase -i</code> 命令，即 <code>HEAD~2^</code> 或 <code>HEAD~3</code>。 记住 <code>~3</code> 可能比较容易，因为你正尝试修改最后三次提交；但是注意实际上指定了以前的四次提交，即想要修改提交的父提交：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase -i HEAD~3</span><br></pre></td></tr></table></figure>
+
+<p>再次记住这是一个变基命令——在 <code>HEAD~3..HEAD</code> 范围内的每一个修改了提交信息的提交及其 <strong>所有后裔</strong> 都会被重写。 不要涉及任何已经推送到中央服务器的提交——这样做会产生一次变更的两个版本，因而使他人困惑。</p>
+<p>运行这个命令会在文本编辑器上给你一个提交的列表，看起来像下面这样：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">pick f7f3f6d changed my name a bit</span><br><span class="line">pick 310154e updated README formatting and added blame</span><br><span class="line">pick a5f4a0d added cat-file</span><br><span class="line"></span><br><span class="line"><span class="comment"># Rebase 710f0f8..a5f4a0d onto 710f0f8</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Commands:</span></span><br><span class="line"><span class="comment"># p, pick &lt;commit&gt; = use commit</span></span><br><span class="line"><span class="comment"># r, reword &lt;commit&gt; = use commit, but edit the commit message</span></span><br><span class="line"><span class="comment"># e, edit &lt;commit&gt; = use commit, but stop for amending</span></span><br><span class="line"><span class="comment"># s, squash &lt;commit&gt; = use commit, but meld into previous commit</span></span><br><span class="line"><span class="comment"># f, fixup &lt;commit&gt; = like &quot;squash&quot;, but discard this commit&#x27;s log message</span></span><br><span class="line"><span class="comment"># x, exec &lt;command&gt; = run command (the rest of the line) using shell</span></span><br><span class="line"><span class="comment"># b, break = stop here (continue rebase later with &#x27;git rebase --continue&#x27;)</span></span><br><span class="line"><span class="comment"># d, drop &lt;commit&gt; = remove commit</span></span><br><span class="line"><span class="comment"># l, label &lt;label&gt; = label current HEAD with a name</span></span><br><span class="line"><span class="comment"># t, reset &lt;label&gt; = reset HEAD to a label</span></span><br><span class="line"><span class="comment"># m, merge [-C &lt;commit&gt; | -c &lt;commit&gt;] &lt;label&gt; [# &lt;oneline&gt;]</span></span><br><span class="line"><span class="comment"># .       create a merge commit using the original merge commit&#x27;s</span></span><br><span class="line"><span class="comment"># .       message (or the oneline, if no original merge commit was</span></span><br><span class="line"><span class="comment"># .       specified). Use -c &lt;commit&gt; to reword the commit message.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># These lines can be re-ordered; they are executed from top to bottom.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># If you remove a line here THAT COMMIT WILL BE LOST.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># However, if you remove everything, the rebase will be aborted.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Note that empty commits are commented out</span></span><br></pre></td></tr></table></figure>
+
+<p>需要重点注意的是相对于正常使用的 <code>log</code> 命令，这些提交显示的顺序是相反的。 运行一次 <em>log</em> 命令，会看到类似这样的东西：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --pretty=format:<span class="string">&quot;%h %s&quot;</span> HEAD~3..HEAD</span><br><span class="line">a5f4a0d added cat-file</span><br><span class="line">310154e updated README formatting and added blame</span><br><span class="line">f7f3f6d changed my name a bit</span><br></pre></td></tr></table></figure>
+
+<p>注意其中的反序显示。 交互式变基给你一个它将会运行的脚本。 它将会从你在命令行中指定的提交（<code>HEAD~3</code>）开始，从上到下的依次重演每一个提交引入的修改。 它将最旧的而不是最新的列在上面，因为那会是第一个将要重演的。</p>
+<p>你需要修改脚本来让它停留在你想修改的变更上。 要达到这个目的，你只要将你想修改的每一次提交前面的 ‘pick’ 改为 ‘edit’。 例如，只想修改第三次提交信息，可以像下面这样修改文件：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">edit f7f3f6d changed my name a bit</span><br><span class="line">pick 310154e updated README formatting and added blame</span><br><span class="line">pick a5f4a0d added cat-file</span><br></pre></td></tr></table></figure>
+
+<p>当保存并退出编辑器时，Git 将你带回到列表中的最后一次提交，把你送回命令行并提示以下信息：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase -i HEAD~3</span><br><span class="line">Stopped at f7f3f6d... changed my name a bit</span><br><span class="line">You can amend the commit now, with</span><br><span class="line"></span><br><span class="line">       git commit --amend</span><br><span class="line"></span><br><span class="line">Once you<span class="string">&#x27;re satisfied with your changes, run</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       git rebase --continue</span></span><br></pre></td></tr></table></figure>
+
+<p>这些指令准确地告诉你该做什么。 输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend</span><br></pre></td></tr></table></figure>
+
+<p>修改提交信息，然后退出编辑器。 然后，运行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure>
+
+<p>这个命令将会自动地应用另外两个提交，然后就完成了。 如果需要将不止一处的 pick 改为 edit，需要在每一个修改为 edit 的提交上重复这些步骤。 每一次，Git 将会停止，让你修正提交，然后继续直到完成。</p>
+<h2 id="重新排序提交"><a href="#重新排序提交" class="headerlink" title="重新排序提交"></a>重新排序提交</h2><p>也可以使用交互式变基来重新排序或完全移除提交。 如果想要移除 “added cat-file” 提交然后修改另外两个提交引入的顺序，可以将变基脚本从这样：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pick f7f3f6d changed my name a bit</span><br><span class="line">pick 310154e updated README formatting and added blame</span><br><span class="line">pick a5f4a0d added cat-file</span><br></pre></td></tr></table></figure>
+
+<p>改为这样：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pick 310154e updated README formatting and added blame</span><br><span class="line">pick f7f3f6d changed my name a bit</span><br></pre></td></tr></table></figure>
+
+<p>当保存并退出编辑器时，Git 将你的分支带回这些提交的父提交，应用 <code>310154e</code> 然后应用 <code>f7f3f6d</code>，最后停止。 事实修改了那些提交的顺序并完全地移除了 “added cat-file” 提交。</p>
+<h2 id="压缩提交"><a href="#压缩提交" class="headerlink" title="压缩提交"></a>压缩提交</h2><p>通过交互式变基工具，也可以将一连串提交压缩成一个单独的提交。 在变基信息中脚本给出了有用的指令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Commands:</span></span><br><span class="line"><span class="comment"># p, pick &lt;commit&gt; = use commit</span></span><br><span class="line"><span class="comment"># r, reword &lt;commit&gt; = use commit, but edit the commit message</span></span><br><span class="line"><span class="comment"># e, edit &lt;commit&gt; = use commit, but stop for amending</span></span><br><span class="line"><span class="comment"># s, squash &lt;commit&gt; = use commit, but meld into previous commit</span></span><br><span class="line"><span class="comment"># f, fixup &lt;commit&gt; = like &quot;squash&quot;, but discard this commit&#x27;s log message</span></span><br><span class="line"><span class="comment"># x, exec &lt;command&gt; = run command (the rest of the line) using shell</span></span><br><span class="line"><span class="comment"># b, break = stop here (continue rebase later with &#x27;git rebase --continue&#x27;)</span></span><br><span class="line"><span class="comment"># d, drop &lt;commit&gt; = remove commit</span></span><br><span class="line"><span class="comment"># l, label &lt;label&gt; = label current HEAD with a name</span></span><br><span class="line"><span class="comment"># t, reset &lt;label&gt; = reset HEAD to a label</span></span><br><span class="line"><span class="comment"># m, merge [-C &lt;commit&gt; | -c &lt;commit&gt;] &lt;label&gt; [# &lt;oneline&gt;]</span></span><br><span class="line"><span class="comment"># .       create a merge commit using the original merge commit&#x27;s</span></span><br><span class="line"><span class="comment"># .       message (or the oneline, if no original merge commit was</span></span><br><span class="line"><span class="comment"># .       specified). Use -c &lt;commit&gt; to reword the commit message.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># These lines can be re-ordered; they are executed from top to bottom.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># If you remove a line here THAT COMMIT WILL BE LOST.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># However, if you remove everything, the rebase will be aborted.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Note that empty commits are commented out</span></span><br></pre></td></tr></table></figure>
+
+<p>如果，指定 “squash” 而不是 “pick” 或 “edit”，Git 将应用两者的修改并合并提交信息在一起。 所以，如果想要这三次提交变为一个提交，可以这样修改脚本：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pick f7f3f6d changed my name a bit</span><br><span class="line">squash 310154e updated README formatting and added blame</span><br><span class="line">squash a5f4a0d added cat-file</span><br></pre></td></tr></table></figure>
+
+<p>当保存并退出编辑器时，Git 应用所有的三次修改然后将你放到编辑器中来合并三次提交信息：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># This is a combination of 3 commits.</span></span><br><span class="line"><span class="comment"># The first commit&#x27;s message is:</span></span><br><span class="line">changed my name a bit</span><br><span class="line"></span><br><span class="line"><span class="comment"># This is the 2nd commit message:</span></span><br><span class="line"></span><br><span class="line">updated README formatting and added blame</span><br><span class="line"></span><br><span class="line"><span class="comment"># This is the 3rd commit message:</span></span><br><span class="line"></span><br><span class="line">added cat-file</span><br></pre></td></tr></table></figure>
+
+<p>当你保存之后，你就拥有了一个包含前三次提交的全部变更的提交。</p>
+<h2 id="拆分提交"><a href="#拆分提交" class="headerlink" title="拆分提交"></a>拆分提交</h2><p>拆分一个提交会撤消这个提交，然后多次地部分地暂存与提交直到完成你所需次数的提交。 例如，假设想要拆分三次提交的中间那次提交。 想要将它拆分为两次提交：第一个 “updated README formatting”，第二个 “added blame” 来代替原来的 “updated README formatting and added blame”。 可以通过修改 <code>rebase -i</code> 的脚本来做到这点，将要拆分的提交的指令修改为 “edit”：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pick f7f3f6d changed my name a bit</span><br><span class="line">edit 310154e updated README formatting and added blame</span><br><span class="line">pick a5f4a0d added cat-file</span><br></pre></td></tr></table></figure>
+
+<p>然后，当脚本带你进入到命令行时，重置那个提交，拿到被重置的修改，从中创建几次提交。 当保存并退出编辑器时，Git 带你到列表中第一个提交的父提交，应用第一个提交（<code>f7f3f6d</code>）， 应用第二个提交（<code>310154e</code>），然后让你进入命令行。 那里，可以通过 <code>git reset HEAD^</code> 做一次针对那个提交的混合重置，实际上将会撤消那次提交并将修改的文件取消暂存。 现在可以暂存并提交文件直到有几个提交，然后当完成时运行 <code>git rebase --continue</code>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD^</span><br><span class="line">$ git add README</span><br><span class="line">$ git commit -m <span class="string">&#x27;updated README formatting&#x27;</span></span><br><span class="line">$ git add lib/simplegit.rb</span><br><span class="line">$ git commit -m <span class="string">&#x27;added blame&#x27;</span></span><br><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure>
+
+<p>Git 在脚本中应用最后一次提交（<code>a5f4a0d</code>），历史记录看起来像这样：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> -4 --pretty=format:<span class="string">&quot;%h %s&quot;</span></span><br><span class="line">1c002dd added cat-file</span><br><span class="line">9b29157 added blame</span><br><span class="line">35cfb2b updated README formatting</span><br><span class="line">f3cc40e changed my name a bit</span><br></pre></td></tr></table></figure>
+
+<p>再次强调，这些改动了所有在列表中的提交的 SHA-1 校验和，所以要确保列表中的提交还没有推送到共享仓库中。</p>
+<h2 id="核武器级选项：filter-branch"><a href="#核武器级选项：filter-branch" class="headerlink" title="核武器级选项：filter-branch"></a>核武器级选项：filter-branch</h2><p>有另一个历史改写的选项，如果想要通过脚本的方式改写大量提交的话可以使用它——例如，全局修改你的邮箱地址或从每一个提交中移除一个文件。 这个命令是 <code>filter-branch</code>，它可以改写历史中大量的提交，除非你的项目还没有公开并且其他人没有基于要改写的工作的提交做的工作，否则你不应当使用它。 然而，它可以很有用。 你将会学习到几个常用的用途，这样就得到了它适合使用地方的想法。</p>
+<table>
+<thead>
+<tr>
+<th>Caution</th>
+<th><code>git filter-branch</code> 有很多陷阱，不再推荐使用它来重写历史。 请考虑使用 <code>git-filter-repo</code>，它是一个 Python 脚本，相比大多数使用 <code>filter-branch</code> 的应用来说，它做得要更好。它的文档和源码可访问 <a target="_blank" rel="noopener" href="https://github.com/newren/git-filter-repo">https://github.com/newren/git-filter-repo</a> 获取。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="从每一个提交中移除一个文件"><a href="#从每一个提交中移除一个文件" class="headerlink" title="从每一个提交中移除一个文件"></a>从每一个提交中移除一个文件</h3><p>这经常发生。 有人粗心地通过 <code>git add .</code> 提交了一个巨大的二进制文件，你想要从所有地方删除。 可能偶然地提交了一个包括一个密码的文件，然而你想要开源项目。 <code>filter-branch</code> 是一个可能会用来擦洗整个提交历史的工具。 为了从整个提交历史中移除一个叫做 <code>passwords.txt</code> 的文件，可以使用 <code>--tree-filter</code> 选项给 <code>filter-branch</code>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --tree-filter <span class="string">&#x27;rm -f passwords.txt&#x27;</span> HEAD</span><br><span class="line">Rewrite 6b9b3cf04e7c5686a9cb838c3f36a8cb6a0fc2bd (21/21)</span><br><span class="line">Ref <span class="string">&#x27;refs/heads/master&#x27;</span> was rewritten</span><br></pre></td></tr></table></figure>
+
+<p><code>--tree-filter</code> 选项在检出项目的每一个提交后运行指定的命令然后重新提交结果。 在本例中，你从每一个快照中移除了一个叫作 <code>passwords.txt</code> 的文件，无论它是否存在。 如果想要移除所有偶然提交的编辑器备份文件，可以运行类似 <code>git filter-branch --tree-filter &#39;rm -f *~&#39; HEAD</code> 的命令。</p>
+<p>最后将可以看到 Git 重写树与提交然后移动分支指针。 通常一个好的想法是在一个测试分支中做这件事，然后当你决定最终结果是真正想要的，可以硬重置 <code>master</code> 分支。 为了让 <code>filter-branch</code> 在所有分支上运行，可以给命令传递 <code>--all</code> 选项。</p>
+<h3 id="使一个子目录做为新的根目录"><a href="#使一个子目录做为新的根目录" class="headerlink" title="使一个子目录做为新的根目录"></a>使一个子目录做为新的根目录</h3><p>假设已经从另一个源代码控制系统中导入，并且有几个没意义的子目录（<code>trunk</code>、<code>tags</code> 等等）。 如果想要让 <code>trunk</code> 子目录作为每一个提交的新的项目根目录，<code>filter-branch</code> 也可以帮助你那么做：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --subdirectory-filter trunk HEAD</span><br><span class="line">Rewrite 856f0bf61e41a27326cdae8f09fe708d679f596f (12/12)</span><br><span class="line">Ref <span class="string">&#x27;refs/heads/master&#x27;</span> was rewritten</span><br></pre></td></tr></table></figure>
+
+<p>现在新项目根目录是 <code>trunk</code> 子目录了。 Git 会自动移除所有不影响子目录的提交。</p>
+<h3 id="全局修改邮箱地址"><a href="#全局修改邮箱地址" class="headerlink" title="全局修改邮箱地址"></a>全局修改邮箱地址</h3><p>另一个常见的情形是在你开始工作时忘记运行 <code>git config</code> 来设置你的名字与邮箱地址， 或者你想要开源一个项目并且修改所有你的工作邮箱地址为你的个人邮箱地址。 任何情形下，你也可以通过 <code>filter-branch</code> 来一次性修改多个提交中的邮箱地址。 需要小心的是只修改你自己的邮箱地址，所以你使用 <code>--commit-filter</code>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter <span class="string">&#x27;</span></span><br><span class="line"><span class="string">        if [ &quot;$GIT_AUTHOR_EMAIL&quot; = &quot;schacon@localhost&quot; ];</span></span><br><span class="line"><span class="string">        then</span></span><br><span class="line"><span class="string">                GIT_AUTHOR_NAME=&quot;Scott Chacon&quot;;</span></span><br><span class="line"><span class="string">                GIT_AUTHOR_EMAIL=&quot;schacon@example.com&quot;;</span></span><br><span class="line"><span class="string">                git commit-tree &quot;$@&quot;;</span></span><br><span class="line"><span class="string">        else</span></span><br><span class="line"><span class="string">                git commit-tree &quot;$@&quot;;</span></span><br><span class="line"><span class="string">        fi&#x27;</span> HEAD</span><br></pre></td></tr></table></figure>
+
+<p>这会遍历并重写每一个提交来包含你的新邮箱地址。 因为提交包含了它们父提交的 SHA-1 校验和，这个命令会修改你的历史中的每一个提交的 SHA-1 校验和， 而不仅仅只是那些匹配邮箱地址的提交。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">true</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

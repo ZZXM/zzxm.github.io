@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zzxm.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat","show_result":true},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:type" content="website">
+<meta property="og:title" content="庄生晓梦">
+<meta property="og:url" content="https://zzxm.github.io/page/2/">
+<meta property="og:site_name" content="庄生晓梦">
+<meta property="og:description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="zzxm">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zzxm.github.io/page/2/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>庄生晓梦</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="搜索" role="button">
+      <i class="fa fa-search fa-fw fa-lg"></i>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">庄生晓梦</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Web 前端技术博客，积跬步以至千里</p>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="切换导航栏" role="button">
+      <i class="fa fa-ellipsis fa-fw fa-lg"></i>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  
+  <template id="search-popup-template"><div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div></template>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zzxm</p>
+  <div class="site-description" itemprop="description">前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">222</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/4c13b9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/4c13b9/" class="post-title-link" itemprop="url">Hook概述</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-31 11:30:03" itemprop="dateCreated datePublished" datetime="2021-03-31T11:30:03+08:00">2021-03-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/Hook/" itemprop="url" rel="index"><span itemprop="name">Hook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="01-Hook概述"><a href="#01-Hook概述" class="headerlink" title="01. Hook概述"></a>01. Hook概述</h1><p>Hook可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。</p>
+<h2 id="什么是-Hook"><a href="#什么是-Hook" class="headerlink" title="什么是 Hook?"></a>什么是 Hook?</h2><p>Hook 是一个特殊的函数，可以让你在函数组件里“钩入” React <strong>state</strong> 及 <strong>生命周期</strong>  等特性的函数。</p>
+<blockquote>
+<ol>
+<li><p>Hook 不能在 class 组件中使用 —— 这使得你不使用 class 也能使用 React。</p>
+</li>
+<li><p>React 内置了一些像 <code>useState</code> 这样的 Hook。你也可以创建你自己的 Hook 来复用不同组件之间的状态逻辑。我们会先介绍这些内置的 Hook。</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="useState（状态钩子）"><a href="#useState（状态钩子）" class="headerlink" title="useState（状态钩子）"></a>useState（状态钩子）</h2><p><strong>模式：</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [&lt;取值&gt;, &lt;设值&gt;] = <span class="title function_">useState</span>(&lt;初始值&gt;)</span><br></pre></td></tr></table></figure>
+
+<p>上面的三个值均可自定义名称，分别是：</p>
+<ul>
+<li>state取值变量名 </li>
+<li>state设值方法名</li>
+<li>初始值<ul>
+<li>初始值可以是数字、字符串、对象、数组等</li>
+</ul>
+</li>
+</ul>
+<p><strong>例子：</strong></p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 声明一个新的叫做 “count” 的 state 变量</span></span><br><span class="line">  <span class="keyword">const</span> [count, setCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>You clicked &#123;count&#125; times<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> setCount(count + 1)&#125;&gt;</span></span><br><span class="line"><span class="language-xml">        Click me</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="声明多个-state-变量"><a href="#声明多个-state-变量" class="headerlink" title="声明多个 state 变量"></a>声明多个 state 变量</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">ExampleWithManyStates</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 声明多个 state 变量！</span></span><br><span class="line">  <span class="keyword">const</span> [age, setAge] = <span class="title function_">useState</span>(<span class="number">42</span>);</span><br><span class="line">  <span class="keyword">const</span> [fruit, setFruit] = <span class="title function_">useState</span>(<span class="string">&#x27;banana&#x27;</span>);</span><br><span class="line">  <span class="keyword">const</span> [todos, setTodos] = <span class="title function_">useState</span>([&#123; <span class="attr">text</span>: <span class="string">&#x27;Learn Hooks&#x27;</span> &#125;]);</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Effect-Hook-副作用钩子"><a href="#Effect-Hook-副作用钩子" class="headerlink" title="Effect Hook (副作用钩子)"></a>Effect Hook (副作用钩子)</h2><p>你之前可能已经在 React 组件中执行过<strong>数据获取、订阅 或 者手动修改 DOM</strong>。我们统一把这些操作称为“<strong>副作用</strong>”，或者简称为“作用”。</p>
+<h3 id="useEffect（生命周期钩子）"><a href="#useEffect（生命周期钩子）" class="headerlink" title="useEffect（生命周期钩子）"></a>useEffect（生命周期钩子）</h3><p><code>useEffect</code> 就是一个 Effect Hook，<strong>给函数组件增加了操作副作用的能力</strong>。它跟 class 组件中的 <code>componentDidMount</code>、<code>componentDidUpdate</code> 和 <code>componentWillUnmount</code> 具有相同的用途，只不过被合并成了一个 API。（我们会在<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-effect.html">使用 Effect Hook</a> 里展示对比 <code>useEffect</code> 和这些方法的例子。）</p>
+<p>例如，下面这个组件在 React 更新 DOM 后会设置一个页面标题：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [count, setCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 相当于 componentDidMount 和 componentDidUpdate:</span></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 第一次渲染DOM以及更新DOM后执行此函数</span></span><br><span class="line">    <span class="comment">// 使用浏览器的 API 更新页面标题</span></span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;count&#125;</span> times`</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>You clicked &#123;count&#125; times<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> setCount(count + 1)&#125;&gt;</span></span><br><span class="line"><span class="language-xml">        Click me</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当你调用 <code>useEffect</code> 时，就是在告诉 React <strong>在完成对 DOM 的更改后运行你的“副作用”函数</strong>。由于副作用函数是在组件内声明的，所以它们可以访问到组件的 props 和 state。默认情况下，React 会在每次渲染后调用副作用函数 —— <strong>包括</strong>第一次渲染的时候。</p>
+<h3 id="“清除”副作用"><a href="#“清除”副作用" class="headerlink" title="“清除”副作用"></a>“清除”副作用</h3><p>副作用函数还可以通过返回一个函数来指定如何“清除”副作用。例如，在下面的组件中使用副作用函数来订阅好友的在线状态，并通过取消订阅来进行清除操作：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">FriendStatus</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [isOnline, setIsOnline] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">    <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123; <span class="comment">// 组件挂载完成和更新完成后执行</span></span><br><span class="line">    <span class="comment">// 创建订阅</span></span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123; <span class="comment">// 组件销毁时执行</span></span><br><span class="line">      <span class="comment">// 取消订阅</span></span><br><span class="line">      <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">if</span> (isOnline === <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;Loading...&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> isOnline ? <span class="string">&#x27;Online&#x27;</span> : <span class="string">&#x27;Offline&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，React 会在组件销毁时取消对 <code>ChatAPI</code> 的订阅，然后在后续渲染时重新执行副作用函数。（如果传给 <code>ChatAPI</code> 的 <code>props.friend.id</code> 没有变化，你也可以<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects">告诉 React 跳过重新订阅</a>。）</p>
+<p>跟 <code>useState</code> 一样，你可以在组件中多次使用 <code>useEffect</code> ：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">FriendStatusWithCounter</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [count, setCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">`You clicked <span class="subst">$&#123;count&#125;</span> times`</span>;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> [isOnline, setIsOnline] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>, handleStatusChange);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">    <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+
+<p>通过使用 Hook，你可以把组件内相关的副作用组织在一起（例如创建订阅及取消订阅），而不要把它们拆分到不同的生命周期函数里。</p>
+<blockquote>
+<p>详细说明</p>
+<p>你可以在这一章节了解更多关于 <code>useEffect</code> 的内容：<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-effect.html">使用 Effect Hook</a></p>
+</blockquote>
+<h2 id="Hook-使用规则"><a href="#Hook-使用规则" class="headerlink" title="Hook 使用规则"></a>Hook 使用规则</h2><p>Hook 就是 JavaScript 函数，但是使用它们会有两个额外的规则：</p>
+<ul>
+<li>只能在<strong>函数最外层</strong>调用 Hook。不要在循环、条件判断或者子函数中调用。</li>
+<li>只能在 <strong>React 的函数组件</strong>中调用 Hook。不要在其他 JavaScript 函数中调用。（还有一个地方可以调用 Hook —— 就是自定义的 Hook 中，我们稍后会学习到。）</li>
+</ul>
+<p>同时，我们提供了 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/eslint-plugin-react-hooks">linter 插件</a>来自动执行这些规则。这些规则乍看起来会有一些限制和令人困惑，但是要让 Hook 正常工作，它们至关重要。</p>
+<blockquote>
+<p>详细说明</p>
+<p>你可以在这章节了解更多关于这些规则的内容：<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-rules.html">Hook 使用规则</a>。</p>
+</blockquote>
+<h2 id="自定义-Hook-（Hook的使用逻辑封装）"><a href="#自定义-Hook-（Hook的使用逻辑封装）" class="headerlink" title="自定义 Hook （Hook的使用逻辑封装）"></a>自定义 Hook （Hook的使用逻辑封装）</h2><p>有时候我们会想要在组件之间重用一些状态逻辑。目前为止，有两种主流方案来解决这个问题：<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/higher-order-components.html">高阶组件</a>和 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/render-props.html">render props</a>。自定义 Hook 可以让你在不增加组件的情况下达到同样的目的。</p>
+<p>前面，我们介绍了一个叫 <code>FriendStatus</code> 的组件，它通过调用 <code>useState</code> 和 <code>useEffect</code> 的 Hook 来订阅一个好友的在线状态。假设我们想在另一个组件里重用这个订阅逻辑。</p>
+<p>首先，我们把这个逻辑抽取到一个叫做 <code>useFriendStatus</code> 的自定义 Hook 里：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState, useEffect &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 逻辑抽取，方便复用</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">useFriendStatus</span>(<span class="params">friendID</span>) &#123;</span><br><span class="line">  <span class="comment">// 每次调用时的state都是独立的</span></span><br><span class="line">  <span class="keyword">const</span> [isOnline, setIsOnline] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleStatusChange</span>(<span class="params">status</span>) &#123;</span><br><span class="line">    <span class="title function_">setIsOnline</span>(status.<span class="property">isOnline</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title class_">ChatAPI</span>.<span class="title function_">subscribeToFriendStatus</span>(friendID, handleStatusChange);</span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title class_">ChatAPI</span>.<span class="title function_">unsubscribeFromFriendStatus</span>(friendID, handleStatusChange);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> isOnline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>它将 <code>friendID</code> 作为参数，并返回该好友是否在线：</p>
+<p>现在我们可以在两个组件中使用它：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">FriendStatus</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> isOnline = <span class="title function_">useFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>);</span><br><span class="line">  <span class="keyword">if</span> (isOnline === <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;Loading...&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> isOnline ? <span class="string">&#x27;Online&#x27;</span> : <span class="string">&#x27;Offline&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">FriendListItem</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> isOnline = <span class="title function_">useFriendStatus</span>(props.<span class="property">friend</span>.<span class="property">id</span>);</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">&#123;&#123;</span> <span class="attr">color:</span> <span class="attr">isOnline</span> ? &#x27;<span class="attr">green</span>&#x27; <span class="attr">:</span> &#x27;<span class="attr">black</span>&#x27; &#125;&#125;&gt;</span></span></span><br><span class="line"><span class="language-xml">      &#123;props.friend.name&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>每个组件间的 state 是完全独立的。Hook 是一种复用<em>状态逻辑</em>的方式，它不复用 state 本身</strong>。事实上 Hook 的每次<em>调用</em>都有一个完全独立的 state —— 因此你可以在单个组件中多次调用同一个自定义 Hook。</p>
+<p>自定义 Hook 更像是一种约定而不是功能。<strong>如果函数的名字以 “<code>use</code>” 开头并调用其他 Hook，我们就说这是一个自定义 Hook</strong>。 <code>useSomething</code> 的命名约定可以让我们的 linter 插件在使用 Hook 的代码中找到 bug。</p>
+<p>你可以创建涵盖各种场景的自定义 Hook，如表单处理、动画、订阅声明、计时器，甚至可能还有更多我们没想到的场景。我们很期待看到 React 社区会出现什么样的自定义 Hook。</p>
+<blockquote>
+<p>详细说明</p>
+<p>我们会在这一章节介绍更多关于自定义 Hook 的内容： <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-custom.html">创建你自己的 Hook</a>。</p>
+</blockquote>
+<h2 id="其他-Hook"><a href="#其他-Hook" class="headerlink" title="其他 Hook"></a>其他 Hook</h2><p>除此之外，还有一些使用频率较低的但是很有用的 Hook。比如，<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-reference.html#usecontext"><code>useContext</code></a> 让你不使用组件嵌套就可以订阅 React 的 Context。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> locale = <span class="title function_">useContext</span>(<span class="title class_">LocaleContext</span>);</span><br><span class="line">  <span class="keyword">const</span> theme = <span class="title function_">useContext</span>(<span class="title class_">ThemeContext</span>);</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>另外 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-reference.html#usereducer"><code>useReducer</code></a> 可以让你通过 reducer 来管理组件本地的复杂 state。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Todos</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [todos, dispatch] = <span class="title function_">useReducer</span>(todosReducer);  <span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>详细说明</p>
+<p>你可以在这一章节了解更多关于所有内置 Hook 的内容：<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/hooks-reference.html">Hook API 索引</a>。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/87146f/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/87146f/" class="post-title-link" itemprop="url">案例演示</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-27 15:04:09" itemprop="dateCreated datePublished" datetime="2021-03-27T15:04:09+08:00">2021-03-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A1%88%E4%BE%8B%E6%BC%94%E7%A4%BA/" itemprop="url" rel="index"><span itemprop="name">案例演示</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>本节内容根据官方文档的 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/tutorial/tutorial.html">教程</a> 编写。</p>
+<p><a target="_blank" rel="noopener" href="https://codepen.io/gaearon/pen/gWWZgR?editors=0010">在线demo</a></p>
+<h2 id="案例代码"><a href="#案例代码" class="headerlink" title="案例代码"></a>案例代码</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ReactDOM</span> <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 正方形格子 (没有state时可以使用函数组件)</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Square</span> (<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="comment">// return 返回一个React元素</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="comment">// &lt;button&gt; 是内置组件，onClick属性是内置组件内规定的点击方法</span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">className</span>=<span class="string">&quot;square&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">onClick</span>=<span class="string">&#123;props.onClick&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">    &gt;</span></span></span><br><span class="line"><span class="language-xml">      &#123;props.value&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// `棋盘`组件（格子集合）</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Board</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">renderSquare</span> (i) &#123;</span><br><span class="line">    <span class="comment">// 加小括号是防止自动添加分号而破坏结构</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="comment">// 向Square组件传递了两个参数 value 和 onClick</span></span><br><span class="line">      <span class="comment">// 注意：这里的onClick是传参，而不是直接绑定点击事件</span></span><br><span class="line">      <span class="comment">// 事件命名规范：on[Event]=&#123; this.handle[Event] &#125;</span></span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">Square</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">value</span>=<span class="string">&#123;this.props.squares[i]&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> this.props.onClick(i)&#125;</span></span><br><span class="line"><span class="language-xml">      /&gt;</span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// render 方法描述你想在屏幕看到的内容</span></span><br><span class="line">  <span class="title function_">render</span> () &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;board-row&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(0)&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(1)&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(2)&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;board-row&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(3)&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(4)&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(5)&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;board-row&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(6)&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(7)&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;this.renderSquare(8)&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// `棋盘游戏`组件（最外层）</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Game</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="comment">// JavaScript class 继承中的构造函数内必需以super开头</span></span><br><span class="line">    <span class="variable language_">super</span>(props)</span><br><span class="line">    <span class="comment">// state 是当前组件私有的</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;</span><br><span class="line">      <span class="attr">history</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">squares</span>: <span class="title class_">Array</span>(<span class="number">9</span>).<span class="title function_">fill</span>(<span class="literal">null</span>)</span><br><span class="line">        &#125;</span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">stepNumber</span>: <span class="number">0</span>, <span class="comment">// 当前正在查看的历史记录</span></span><br><span class="line">      <span class="attr">xIsNext</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 处理格子点击（由子组件触发）</span></span><br><span class="line">  <span class="title function_">handleClick</span> (i) &#123;</span><br><span class="line">    <span class="comment">// 这里的slice方法在`回到过去`时，会在副本中把`未来`历史记录丢弃掉，当setState时会抹去原来的`未来`记录。</span></span><br><span class="line">    <span class="keyword">const</span> history = <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">history</span>.<span class="title function_">slice</span>(<span class="number">0</span>, <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">stepNumber</span> + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">const</span> current = history[history.<span class="property">length</span> - <span class="number">1</span>]</span><br><span class="line">    <span class="keyword">const</span> squares = current.<span class="property">squares</span>.<span class="title function_">slice</span>() <span class="comment">// slice() 取数组副本</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="title function_">calculateWinner</span>(squares) || squares[i]) &#123; <span class="comment">// 当有获胜者 或 当前格子已落棋</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    squares[i] = <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">xIsNext</span> ? <span class="string">&#x27;X&#x27;</span> : <span class="string">&#x27;O&#x27;</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;</span><br><span class="line">      <span class="comment">// concat不会改变原数组，而push会改变原数组</span></span><br><span class="line">      <span class="attr">history</span>: history.<span class="title function_">concat</span>([&#123;</span><br><span class="line">        squares</span><br><span class="line">      &#125;]),</span><br><span class="line">      <span class="attr">stepNumber</span>: history.<span class="property">length</span>,</span><br><span class="line">      <span class="attr">xIsNext</span>: !<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">xIsNext</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 跳转历史步骤</span></span><br><span class="line">  <span class="title function_">jumpTo</span> (step) &#123;</span><br><span class="line">    <span class="comment">// 这里并未修改history</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;</span><br><span class="line">      <span class="attr">stepNumber</span>: step,</span><br><span class="line">      <span class="attr">xIsNext</span>: (step % <span class="number">2</span>) === <span class="number">0</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span> () &#123;</span><br><span class="line">    <span class="keyword">const</span> history = <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">history</span></span><br><span class="line">    <span class="keyword">const</span> current = history[<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">stepNumber</span>]</span><br><span class="line">    <span class="keyword">const</span> winner = <span class="title function_">calculateWinner</span>(current.<span class="property">squares</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 历史步骤 （map方法把原数组映射为另一个数组）</span></span><br><span class="line">    <span class="keyword">const</span> moves = history.<span class="title function_">map</span>(<span class="function">(<span class="params">step, move</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> desc = move ?</span><br><span class="line">        <span class="string">&#x27;Go to move #&#x27;</span> + move :</span><br><span class="line">        <span class="string">&#x27;Go to game start&#x27;</span>;</span><br><span class="line">      <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">li</span> <span class="attr">key</span>=<span class="string">&#123;move&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> this.jumpTo(move)&#125;&gt;&#123;desc&#125;<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line">      )</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> status</span><br><span class="line">    <span class="keyword">if</span> (winner) &#123;</span><br><span class="line">      status = <span class="string">&#x27;获胜者: &#x27;</span> + winner;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      status = <span class="string">&#x27;下一步玩家: &#x27;</span> + (<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">xIsNext</span> ? <span class="string">&#x27;X&#x27;</span> : <span class="string">&#x27;O&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 注意：这里的onClick是传参，而不是直接绑定点击事件</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;game&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;game-board&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">Board</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">squares</span>=<span class="string">&#123;current.squares&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">onClick</span>=<span class="string">&#123;(i)</span> =&gt;</span> this.handleClick(i)&#125;</span></span><br><span class="line"><span class="language-xml">          /&gt;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;game-info&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;status&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">ol</span>&gt;</span>&#123;moves&#125;<span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">Game</span> /&gt;</span></span>,</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 计算获胜者</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">calculateWinner</span> (<span class="params">squares</span>) &#123;</span><br><span class="line">  <span class="comment">// 获胜条件的排列方式</span></span><br><span class="line">  <span class="keyword">const</span> lines = [</span><br><span class="line">    [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>],</span><br><span class="line">    [<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">3</span>, <span class="number">6</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">4</span>, <span class="number">7</span>],</span><br><span class="line">    [<span class="number">2</span>, <span class="number">5</span>, <span class="number">8</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">4</span>, <span class="number">8</span>],</span><br><span class="line">    [<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>],</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 判断某个排列方式中的值是相同的即获胜，并返回获胜者</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; lines.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">const</span> [a, b, c] = lines[i];</span><br><span class="line">    <span class="keyword">if</span> (squares[a] &amp;&amp; squares[a] === squares[b] &amp;&amp; squares[a] === squares[c]) &#123;</span><br><span class="line">      <span class="keyword">return</span> squares[a];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="为什么不可变性在-React-中非常重要"><a href="#为什么不可变性在-React-中非常重要" class="headerlink" title="为什么不可变性在 React 中非常重要"></a>为什么不可变性在 React 中非常重要</h2><p>案例中，在修改<code>state</code>时并非直接修改对象属性内的某个直，而是先使用<code>.slice()</code> 方法创建了数组的一个副本。然后在通过<code>setState()</code>方法，替换掉整个数组。</p>
+<p>一般来说，有两种改变数据的方式。第一种方式是直接<em>修改</em>变量的值，第二种方式是使用新的一份数据替换旧数据。</p>
+<h3 id="直接修改数据"><a href="#直接修改数据" class="headerlink" title="直接修改数据"></a>直接修改数据</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> player = &#123;<span class="attr">score</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&#x27;Jeff&#x27;</span>&#125;;</span><br><span class="line">player.<span class="property">score</span> = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// player 修改后的值为 &#123;score: 2, name: &#x27;Jeff&#x27;&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="新数据替换旧数据"><a href="#新数据替换旧数据" class="headerlink" title="新数据替换旧数据"></a>新数据替换旧数据</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> player = &#123;<span class="attr">score</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&#x27;Jeff&#x27;</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> newPlayer = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, player, &#123;<span class="attr">score</span>: <span class="number">2</span>&#125;);</span><br><span class="line"><span class="comment">// player 的值没有改变, 但是 newPlayer 的值是 &#123;score: 2, name: &#x27;Jeff&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用对象展开语法，就可以写成：</span></span><br><span class="line"><span class="comment">// var newPlayer = &#123;...player, score: 2&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<p>不直接修改（或改变底层数据）这种方式和前一种方式的结果是一样的，这种方式有以下几点好处：</p>
+<h3 id="简化复杂的功能"><a href="#简化复杂的功能" class="headerlink" title="简化复杂的功能"></a>简化复杂的功能</h3><p><strong>不可变性使得复杂的特性更容易实现</strong>。在后面的章节里，我们会实现一种叫做“时间旅行”的功能。“时间旅行”可以使我们回顾井字棋的历史步骤，并且可以“跳回”之前的步骤。这个功能并不是只有游戏才会用到——撤销和恢复功能在开发中是一个很常见的需求。<strong>不直接在数据上修改可以让我们追溯并复用游戏的历史记录</strong>。</p>
+<h3 id="跟踪数据的改变"><a href="#跟踪数据的改变" class="headerlink" title="跟踪数据的改变"></a>跟踪数据的改变</h3><p>如果直接修改数据，那么就很难跟踪到数据的改变。跟踪数据的改变需要可变对象可以与改变之前的版本进行对比，这样整个对象树都需要被遍历一次。</p>
+<p>**跟踪不可变数据的变化相对来说就容易多了。**如果发现对象变成了一个新对象，那么我们就可以说对象发生改变了。</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h3 id="确定在-React-中何时重新渲染"><a href="#确定在-React-中何时重新渲染" class="headerlink" title="确定在 React 中何时重新渲染"></a>确定在 React 中何时重新渲染</h3><p>不可变性最主要的优势在于它可以帮助我们在 React 中创建 <em>pure components</em>。我们可以很轻松的确定不可变数据是否发生了改变，从而确定何时对组件进行重新渲染。</p>
+<p>查阅<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/optimizing-performance.html#examples">性能优化</a>章节，以了解更多有关 <code>shouldComponentUpdate()</code> 函数及如何构建 <em>pure components</em> 的内容。</p>
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/c689bf/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/c689bf/" class="post-title-link" itemprop="url">React哲学</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-26 17:56:40" itemprop="dateCreated datePublished" datetime="2021-03-26T17:56:40+08:00">2021-03-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">核心概念</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="11-React哲学（编写一个复杂组件的原则）"><a href="#11-React哲学（编写一个复杂组件的原则）" class="headerlink" title="11.React哲学（编写一个复杂组件的原则）"></a>11.React哲学（编写一个复杂组件的原则）</h1><p>React 最棒的部分之一是引导我们思考如何构建一个应用。在这篇文档中，我们将会通过 React 构建一个可搜索的产品数据表格来更深刻地领会 React 哲学。</p>
+<h2 id="从设计稿开始"><a href="#从设计稿开始" class="headerlink" title="从设计稿开始"></a>从设计稿开始</h2><p><img src="https://zh-hans.reactjs.org/static/1071fbcc9eed01fddc115b41e193ec11/d4770/thinking-in-react-mock.png" alt="Mockup"></p>
+<h3 id="第一步：将设计好的-UI-划分为组件层级"><a href="#第一步：将设计好的-UI-划分为组件层级" class="headerlink" title="第一步：将设计好的 UI 划分为组件层级"></a>第一步：将设计好的 UI 划分为组件层级</h3><p><strong>首先，你需要在设计稿上用方框圈出每一个组件（包括它们的子组件）</strong></p>
+<p><img src="https://zh-hans.reactjs.org/static/eb8bda25806a89ebdc838813bdfa3601/6b2ea/thinking-in-react-components.png" alt="Component diagram"></p>
+<p>你会看到我们的应用中包含五个组件。我们已经将每个组件展示的数据标注为了斜体。</p>
+<ol>
+<li><strong><code>FilterableProductTable</code> (橙色):</strong> 是整个示例应用的整体</li>
+<li><strong><code>SearchBar</code> (蓝色):</strong> 接受所有的<em>用户输入</em></li>
+<li><strong><code>ProductTable</code> (绿色):</strong> 展示<em>数据内容</em>并根据<em>用户输入</em>筛选结果</li>
+<li><strong><code>ProductCategoryRow</code> (天蓝色):</strong> 为每一个<em>产品类别</em>展示标题</li>
+<li><strong><code>ProductRow</code> (红色):</strong> 每一行展示一个<em>产品</em></li>
+</ol>
+<p>你可能注意到，<code>ProductTable</code> 的表头（包含 “Name” 和 “Price” 的那一部分）并未单独成为一个组件。这仅仅是一种偏好选择，如何处理这一问题也一直存在争论。（简单的可以不用单独分一个组件，复杂的作为一个独立的组件就有必要了）</p>
+<p>组件层级：</p>
+<ul>
+<li><code>FilterableProductTable</code><ul>
+<li><code>SearchBar</code></li>
+<li><code>ProductTable</code><ul>
+<li><code>ProductCategoryRow</code></li>
+<li><code>ProductRow</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="第二步：用-React-创建一个静态版本"><a href="#第二步：用-React-创建一个静态版本" class="headerlink" title="第二步：用 React 创建一个静态版本"></a>第二步：用 React 创建一个静态版本</h3><p>先用已有的数据模型渲染一个不包含交互功能的 UI。最好将渲染 UI 和添加交互这两个过程分开。</p>
+<p>这是因为，编写一个应用的静态版本时，往往要编写大量代码，而不需要考虑太多交互细节；添加交互功能时则要考虑大量细节，而不需要编写太多代码。</p>
+<p>在构建应用的静态版本时，我们需要创建一些会重用其他组件的组件，然后通过 <em>props</em> 传入所需的数据。<em>props</em> 是父组件向子组件传递数据的方式。即使你已经熟悉了 <em>state</em> 的概念，也<strong>完全不应该使用 state</strong> 构建静态版本。state 代表了随时间会产生变化的数据。</p>
+<p>你可以自上而下或者自下而上构建应用：自上而下意味着首先编写层级较高的组件（比如 <code>FilterableProductTable</code>），自下而上意味着从最基本的组件开始编写（比如 <code>ProductRow</code>）。<strong>当你的应用比较简单时，使用自上而下的方式更方便；对于较为大型的项目来说，自下而上地构建，并同时为低层组件编写测试是更加简单的方式。</strong></p>
+<p>React <strong>单向数据流</strong>（也叫<em>单向绑定</em>）的思想使得组件模块化，易于快速开发。</p>
+<p>在 React 中，<strong>有两类“模型”数据：props 和 state</strong>。清楚地理解两者的区别是十分重要的</p>
+<h3 id="第三步：确定-UI-state-的最小（且完整）表示"><a href="#第三步：确定-UI-state-的最小（且完整）表示" class="headerlink" title="第三步：确定 UI state 的最小（且完整）表示"></a>第三步：确定 UI state 的最小（且完整）表示</h3><p><strong>只保留应用所需的可变 state 的最小集合，其他数据均由它们计算产生。</strong></p>
+<p><strong>可以由state计算产生的数据就没必要另外保存一个state！</strong></p>
+<p>对于使用props还是state，通过问自己以下三个问题，你可以逐个检查相应数据是否属于 state：</p>
+<ol>
+<li>该数据是否是由父组件通过 props 传递而来的？如果是，那它应该不是 state。</li>
+<li>该数据是否随时间的推移而保持不变？如果是，那它应该也不是 state。</li>
+<li>你能否根据其他 state 或 props 计算出该数据的值？如果是，那它也不是 state。</li>
+</ol>
+<blockquote>
+<p><strong>非state的数据</strong>： </p>
+<ol>
+<li>由父组件传来的</li>
+<li>不会随时间推移而改变的</li>
+<li>能根据其他stete或props计算而来的</li>
+</ol>
+</blockquote>
+<h3 id="第四步：确定-state-放置的位置"><a href="#第四步：确定-state-放置的位置" class="headerlink" title="第四步：确定 state 放置的位置"></a>第四步：确定 state 放置的位置</h3><p>我们需要确定哪个组件能够改变这些 state，或者说<em>拥有</em>这些 state。</p>
+<p><strong>注意：React 中的数据流是单向的，并顺着组件层级从上往下传递。</strong></p>
+<p>对于应用中的每一个 state：</p>
+<ul>
+<li>找到根据这个 state 进行渲染的所有组件。</li>
+<li>找到他们的共同所有者（common owner）组件（在组件层级上高于所有需要该 state 的组件）。</li>
+<li>该共同所有者组件或者比它层级更高的组件应该拥有该 state。</li>
+<li>如果你找不到一个合适的位置来存放该 state，就可以直接创建一个新的组件来存放该 state，并将这一新组件置于高于共同所有者组件层级的位置</li>
+</ul>
+<h3 id="第五步：添加反向数据流"><a href="#第五步：添加反向数据流" class="headerlink" title="第五步：添加反向数据流"></a>第五步：添加反向数据流</h3><p>让<strong>数据反向传递：处于较低层级的表单组件更新较高层级组件的state</strong></p>
+<p>实现方式：</p>
+<ol>
+<li><p>父组件有一个能够修改state改变的回调函数，并传递给子组件</p>
+</li>
+<li><p>子组件的input修改值，使用<code>onChange</code>事件监听，并执行父组件传入的回调函数。</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/9ae8e8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/9ae8e8/" class="post-title-link" itemprop="url">组合vs继承</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-26 12:56:40" itemprop="dateCreated datePublished" datetime="2021-03-26T12:56:40+08:00">2021-03-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">核心概念</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="10-组合vs继承"><a href="#10-组合vs继承" class="headerlink" title="10.组合vs继承"></a>10.组合vs继承</h1><p>React 有十分强大的组合模式。我们<strong>推荐使用组合而非继承来实现组件间的代码重用</strong>。</p>
+<h2 id="包含关系-组件组合"><a href="#包含关系-组件组合" class="headerlink" title="包含关系 (组件组合)"></a>包含关系 (组件组合)</h2><p>有些组件无法提前知晓它们子组件的具体内容。在 <code>Sidebar</code>（侧边栏）和 <code>Dialog</code>（对话框）等展现通用容器（box）的组件中特别容易遇到这种情况。</p>
+<h3 id="props的children属性（类似vue的插槽）"><a href="#props的children属性（类似vue的插槽）" class="headerlink" title="props的children属性（类似vue的插槽）"></a>props的children属性（类似vue的插槽）</h3><p>我们建议这些组件使用一个<strong>特殊的 <code>children</code> prop 来将他们的子组件传递到渲染结果中</strong>：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">FancyBorder</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&#123;</span>&#x27;<span class="attr">FancyBorder</span> <span class="attr">FancyBorder-</span>&#x27; + <span class="attr">props.color</span>&#125;&gt;</span></span></span><br><span class="line"><span class="language-xml">      // children 是特殊的prop，在父组件中没有显式声明</span></span><br><span class="line"><span class="language-xml">      &#123;props.children&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">WelcomeDialog</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">FancyBorder</span> <span class="attr">color</span>=<span class="string">&quot;blue&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      // 子组件标签之间的内容被当做 props.children 传入</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">h1</span> <span class="attr">className</span>=<span class="string">&quot;Dialog-title&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        Welcome</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">className</span>=<span class="string">&quot;Dialog-message&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        Thank you for visiting our spacecraft!</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">FancyBorder</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>类似于vue中的插槽</p>
+<h3 id="props传入组件（类似vue命名插槽）"><a href="#props传入组件（类似vue命名插槽）" class="headerlink" title="props传入组件（类似vue命名插槽）"></a>props传入组件（类似vue命名插槽）</h3><p>少数情况下，你可能需要在一个组件中预留出几个“洞”。这种情况下，我们可以不使用 <code>children</code>，而是自行约定：将所需内容传入 props，并使用相应的 prop。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">SplitPane</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;SplitPane&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;SplitPane-left&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;props.left&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;SplitPane-right&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;props.right&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// props传入组件</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">SplitPane</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">left</span>=<span class="string">&#123;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        &lt;<span class="attr">Contacts</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">      &#125;</span></span><br><span class="line"><span class="language-xml">      right=&#123;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">Chat</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">      &#125; /&gt;</span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;Contacts /&gt;</code> 和 <code>&lt;Chat /&gt;</code> 之类的 React 元素本质就是对象（object），所以你可以把它们当作 props，像其他数据一样传递。<strong>你可以将任何格式的数据作为 props 进行传递。</strong></p>
+<p>类似于vue中的命名插槽</p>
+<h2 id="特例关系（字符串与组件组合）"><a href="#特例关系（字符串与组件组合）" class="headerlink" title="特例关系（字符串与组件组合）"></a>特例关系（字符串与组件组合）</h2><p>有些时候，我们会把一些组件看作是其他组件的特殊实例，比如 <code>WelcomeDialog</code> 可以说是 <code>Dialog</code> 的特殊实例。</p>
+<p>在 React 中，我们也可以通过组合来实现这一点。“特殊”组件可以通过 props 定制并渲染“一般”组件：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Dialog</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">FancyBorder</span> <span class="attr">color</span>=<span class="string">&quot;blue&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">h1</span> <span class="attr">className</span>=<span class="string">&quot;Dialog-title&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        // 这里props.title非组件对象，而是字符串</span></span><br><span class="line"><span class="language-xml">        &#123;props.title&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">className</span>=<span class="string">&quot;Dialog-message&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;props.message&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">FancyBorder</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">WelcomeDialog</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">Dialog</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">title</span>=<span class="string">&quot;Welcome&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">message</span>=<span class="string">&quot;Thank you for visiting our spacecraft!&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      /&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="class方式的组件组合"><a href="#class方式的组件组合" class="headerlink" title="class方式的组件组合"></a>class方式的组件组合</h2><p>组合也同样适用于以 class 形式定义的组件。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Dialog</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">FancyBorder</span> <span class="attr">color</span>=<span class="string">&quot;blue&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">h1</span> <span class="attr">className</span>=<span class="string">&quot;Dialog-title&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;props.title&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">className</span>=<span class="string">&quot;Dialog-message&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;props.message&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      &#123;props.children&#125;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">FancyBorder</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SignUpDialog</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleChange</span> = <span class="variable language_">this</span>.<span class="property">handleChange</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleSignUp</span> = <span class="variable language_">this</span>.<span class="property">handleSignUp</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;<span class="attr">login</span>: <span class="string">&#x27;&#x27;</span>&#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">Dialog</span> <span class="attr">title</span>=<span class="string">&quot;Mars Exploration Program&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">              <span class="attr">message</span>=<span class="string">&quot;How should we refer to you?&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">value</span>=<span class="string">&#123;this.state.login&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">onChange</span>=<span class="string">&#123;this.handleChange&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleSignUp&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          Sign Me Up!</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">Dialog</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">handleChange</span>(<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;<span class="attr">login</span>: e.<span class="property">target</span>.<span class="property">value</span>&#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">handleSignUp</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">`Welcome aboard, <span class="subst">$&#123;<span class="variable language_">this</span>.state.login&#125;</span>!`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="那么继承呢？（不推荐）"><a href="#那么继承呢？（不推荐）" class="headerlink" title="那么继承呢？（不推荐）"></a>那么继承呢？（不推荐）</h2><p>在 Facebook，我们在成百上千个组件中使用 React。我们并没有发现需要使用继承来构建组件层次的情况。</p>
+<p>Props 和组合为你提供了清晰而安全地定制组件外观和行为的灵活方式。<strong>注意：组件可以接受任意 props，包括基本数据类型，React 元素以及函数</strong>。</p>
+<p>如果你想要在组件间复用非 UI 的功能，我们建议将其提取为一个单独的 JavaScript 模块，如函数、对象或者类。组件可以直接引入（import）而<strong>无需通过 extend 继承它们</strong>。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/f0e3d2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/f0e3d2/" class="post-title-link" itemprop="url">状态提升 (共享状态)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-26 09:56:40" itemprop="dateCreated datePublished" datetime="2021-03-26T09:56:40+08:00">2021-03-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">核心概念</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="09-状态提升-共享状态"><a href="#09-状态提升-共享状态" class="headerlink" title="09. 状态提升 (共享状态)"></a>09. 状态提升 (共享状态)</h1><p>通常，<strong>多个组件需要反映相同的变化数据，这时我们建议将共享状态提升到最近的共同父组件中去</strong>。</p>
+<p>在 React 中，<strong>将多个组件中需要共享的 state 向上移动到它们的最近共同父组件中，便可实现共享 state。这就是所谓的“状态提升”</strong></p>
+<p>两个输入框共享数据的例子：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> scaleNames = &#123;</span><br><span class="line">  <span class="attr">c</span>: <span class="string">&#x27;摄氏度&#x27;</span>,</span><br><span class="line">  <span class="attr">f</span>: <span class="string">&#x27;华氏度&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 转摄氏度</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">toCelsius</span>(<span class="params">fahrenheit</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (fahrenheit - <span class="number">32</span>) * <span class="number">5</span> / <span class="number">9</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 转华氏度</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">toFahrenheit</span>(<span class="params">celsius</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (celsius * <span class="number">9</span> / <span class="number">5</span>) + <span class="number">32</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 转换，为空时返回空，否则返回保留三位小数的浮点数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">tryConvert</span>(<span class="params">temperature, convert</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> input = <span class="built_in">parseFloat</span>(temperature);</span><br><span class="line">  <span class="keyword">if</span> (<span class="title class_">Number</span>.<span class="built_in">isNaN</span>(input)) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> output = <span class="title function_">convert</span>(input);</span><br><span class="line">  <span class="comment">// Math.round返回一个数字四舍五入后的整数</span></span><br><span class="line">  <span class="keyword">const</span> rounded = <span class="title class_">Math</span>.<span class="title function_">round</span>(output * <span class="number">1000</span>) / <span class="number">1000</span>;</span><br><span class="line">  <span class="keyword">return</span> rounded.<span class="title function_">toString</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 水是否会沸腾</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">BoilingVerdict</span>(<span class="params">props</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (props.<span class="property">celsius</span> &gt;= <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>水会沸腾.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>水不会沸腾.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 子组件 - 输入框</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TemperatureInput</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props); <span class="comment">// 接收父组件传入props</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleChange</span> = <span class="variable language_">this</span>.<span class="property">handleChange</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>); <span class="comment">// 绑定回调函数，并修正this</span></span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">// 处理change</span></span><br><span class="line">  <span class="title function_">handleChange</span>(<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="comment">// e是合成事件对象，通过e.target.value 取值</span></span><br><span class="line">    <span class="comment">// 调用父组件传入的onTemperatureChange函数，并传值</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">props</span>.<span class="title function_">onTemperatureChange</span>(e.<span class="property">target</span>.<span class="property">value</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 当子组件输入框值改变时调用父组件的onTemperatureChange方法，并传出值。</span></span><br><span class="line">    <span class="comment">// 另外，onTemperatureChange命名方式：`在&lt;子组件&gt;变更`</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 接收父组件传入的温度值</span></span><br><span class="line">    <span class="keyword">const</span> temperature = <span class="variable language_">this</span>.<span class="property">props</span>.<span class="property">temperature</span>;</span><br><span class="line">    <span class="comment">// 接收父组件传入的衡量方式</span></span><br><span class="line">    <span class="keyword">const</span> scale = <span class="variable language_">this</span>.<span class="property">props</span>.<span class="property">scale</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">legend</span>&gt;</span>输入温度-&#123;scaleNames[scale]&#125;:<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">value</span>=<span class="string">&#123;temperature&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">               <span class="attr">onChange</span>=<span class="string">&#123;this.handleChange&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 父组件 - 计算器</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Calculator</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props); <span class="comment">// 接收父组件传入props</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 绑定事件回调，并修正this</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleCelsiusChange</span> = <span class="variable language_">this</span>.<span class="property">handleCelsiusChange</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleFahrenheitChange</span> = <span class="variable language_">this</span>.<span class="property">handleFahrenheitChange</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="comment">// 创建初始状态值</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;<span class="attr">temperature</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">scale</span>: <span class="string">&#x27;c&#x27;</span>&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">// 处理`摄氏度`变更</span></span><br><span class="line">  <span class="title function_">handleCelsiusChange</span>(<span class="params">temperature</span>) &#123;</span><br><span class="line">    <span class="comment">// temperature接收到子组件传来的参数，并通过setState修改状态</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;<span class="attr">scale</span>: <span class="string">&#x27;c&#x27;</span>, temperature&#125;);</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">// 处理`华氏度`变更</span></span><br><span class="line">  <span class="title function_">handleFahrenheitChange</span>(<span class="params">temperature</span>) &#123;</span><br><span class="line">    <span class="comment">// temperature接收到子组件传来的参数，并通过setState修改状态</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;<span class="attr">scale</span>: <span class="string">&#x27;f&#x27;</span>, temperature&#125;);</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">// 渲染函数（每当state改变都会调用）</span></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 取得当前state下的值</span></span><br><span class="line">    <span class="keyword">const</span> scale = <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">scale</span>;</span><br><span class="line">    <span class="keyword">const</span> temperature = <span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">temperature</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 根据scale值取得相应的温度数据</span></span><br><span class="line">    <span class="keyword">const</span> celsius = scale === <span class="string">&#x27;f&#x27;</span> ? <span class="title function_">tryConvert</span>(temperature, toCelsius) : temperature;</span><br><span class="line">    <span class="keyword">const</span> fahrenheit = scale === <span class="string">&#x27;c&#x27;</span> ? <span class="title function_">tryConvert</span>(temperature, toFahrenheit) : temperature;</span><br><span class="line">		</span><br><span class="line">    <span class="comment">// 返回渲染的元素</span></span><br><span class="line">    <span class="comment">// 插入子组件TemperatureInput传入相应的参数，onTemperatureChange指定为当前组件的回调函数</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">TemperatureInput</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">scale</span>=<span class="string">&quot;c&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">temperature</span>=<span class="string">&#123;celsius&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">onTemperatureChange</span>=<span class="string">&#123;this.handleCelsiusChange&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">TemperatureInput</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">scale</span>=<span class="string">&quot;f&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">temperature</span>=<span class="string">&#123;fahrenheit&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">onTemperatureChange</span>=<span class="string">&#123;this.handleFahrenheitChange&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">BoilingVerdict</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">celsius</span>=<span class="string">&#123;parseFloat(celsius)&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 渲染DOM</span></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">Calculator</span> /&gt;</span></span>,</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://codepen.io/gaearon/pen/WZpxpz?editors=0010"><strong>在 CodePen 上尝试</strong></a></p>
+<ol>
+<li>父组件给所有子组件传入state的值</li>
+<li>子组件修改值时调用父组件的方法并把值传出</li>
+<li>父组件接收到值之后修改state</li>
+<li>state被修改之后重新执行render函数，并回到第1步</li>
+</ol>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ul>
+<li><p>任何可变数据应当只有一个相对应的唯一“数据源”</p>
+<ul>
+<li>通常，state 都是首先添加到需要渲染数据的组件中去</li>
+<li>然后，如果其他组件也需要这个 state，那么你可以将它提升至这些组件的最近共同父组件中</li>
+<li>你应当依靠<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down">自上而下的数据流</a>，而不是尝试在不同组件间同步 state。</li>
+</ul>
+</li>
+<li><p>“存在”于组件中的任何 state，仅有组件自己能够修改它</p>
+</li>
+<li><p>如果某些数据可以由 props 或 state 推导得出，那么它就不应该存在于 state 中。（如上例中，经过tryConvert方法转换的后的值。）</p>
+</li>
+</ul>
+<h3 id="React开发者工具（debug）"><a href="#React开发者工具（debug）" class="headerlink" title="React开发者工具（debug）"></a>React开发者工具（debug）</h3><p>当你在 UI 中发现错误时，可以使用 <a target="_blank" rel="noopener" href="https://github.com/facebook/react/tree/master/packages/react-devtools">React 开发者工具</a> 来检查问题组件的 props，并且按照组件树结构逐级向上搜寻，直到定位到负责更新 state 的那个组件。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/note/react/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/note/react/" class="post-title-link" itemprop="url">《React》笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-25 19:50:12" itemprop="dateCreated datePublished" datetime="2021-03-25T19:50:12+08:00">2021-03-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/b7ec27/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/b7ec27/" class="post-title-link" itemprop="url">高级指引</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-25 19:46:01" itemprop="dateCreated datePublished" datetime="2021-03-25T19:46:01+08:00">2021-03-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E9%AB%98%E7%BA%A7%E6%8C%87%E5%BC%95/" itemprop="url" rel="index"><span itemprop="name">高级指引</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="01-高级指引"><a href="#01-高级指引" class="headerlink" title="01.高级指引"></a>01.高级指引</h1>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/5df969/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/5df969/" class="post-title-link" itemprop="url">JSX简介</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-24 17:56:40" itemprop="dateCreated datePublished" datetime="2021-03-24T17:56:40+08:00">2021-03-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">核心概念</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="01-JSX简介"><a href="#01-JSX简介" class="headerlink" title="01. JSX简介"></a>01. JSX简介</h1><h2 id="什么是JSX？"><a href="#什么是JSX？" class="headerlink" title="什么是JSX？"></a>什么是JSX？</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>以类似模板语法的方式描述UI的一种语法。它是JS的<strong>语法糖</strong>，<strong>本质上也是JS</strong>。可以在其中使用<strong>变量或表达式、函数等</strong>。</p>
+<h2 id="为什么使用JSX？"><a href="#为什么使用JSX？" class="headerlink" title="为什么使用JSX？"></a>为什么使用JSX？</h2><p>将<em>标记与逻辑</em> 共同存放在称之为“组件”的松散耦合单元之中，来实现<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Separation_of_concerns"><em>关注点分离</em></a>。</p>
+<p>React不强制使用JSX，但在 JavaScript 代码中将 JSX 和 UI 放在一起时，会在<strong>视觉上有辅助作用</strong>。</p>
+<h2 id="在-JSX-中嵌入表达式"><a href="#在-JSX-中嵌入表达式" class="headerlink" title="在 JSX 中嵌入表达式"></a>在 JSX 中嵌入表达式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;2+2&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>在 JSX 语法中，你可以在大括号内放置任何有效的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions">JavaScript 表达式</a>。</p>
+<h2 id="JSX-也是一个表达式"><a href="#JSX-也是一个表达式" class="headerlink" title="JSX 也是一个表达式"></a>JSX 也是一个表达式</h2><p>在编译之后，JSX 表达式会被转为普通 JavaScript 函数调用，并且对其取值后<strong>得到 JavaScript 对象</strong></p>
+<blockquote>
+<p>可以把JSX当初一个对象来对待，可以使用它赋值给变量、当参数输入函数、返回JSX等。</p>
+</blockquote>
+<h2 id="JSX-特定属性"><a href="#JSX-特定属性" class="headerlink" title="JSX 特定属性"></a>JSX 特定属性</h2><p>通过使用引号，来将属性值指定为字符串字面量：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">tabIndex</span>=<span class="string">&quot;0&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>JSX中的属性名使用camelCase(小驼峰)命名。如上面例子中的<code>tabIndex</code></p>
+</blockquote>
+<p>使用大括号，来在属性值中插入一个 JavaScript 表达式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = <span class="language-xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&#123;user.avatarUrl&#125;</span>&gt;</span><span class="tag">&lt;/<span class="name">img</span>&gt;</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-JSX-指定子元素"><a href="#使用-JSX-指定子元素" class="headerlink" title="使用 JSX 指定子元素"></a>使用 JSX 指定子元素</h2><p>JSX 标签里能够包含很多子元素:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = (</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>Good to see you here.<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="JSX-防止注入攻击"><a href="#JSX-防止注入攻击" class="headerlink" title="JSX 防止注入攻击"></a>JSX 防止注入攻击</h2><p>React DOM 在渲染所有输入内容之前，默认会进行<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html">转义</a>。它可以确保在你的应用中，<strong>永远不会注入那些并非自己明确编写的内容</strong>。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS（cross-site-scripting, 跨站脚本）</a>攻击。</p>
+<h2 id="JSX-表示对象"><a href="#JSX-表示对象" class="headerlink" title="JSX 表示对象"></a>JSX 表示对象</h2><p>Babel 会把 JSX 转译成一个名为 <code>React.createElement()</code> 函数调用。</p>
+<p>以下两种示例代码完全等效：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> element = (</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">className</span>=<span class="string">&quot;greeting&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    Hello, world!</span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> element = <span class="title class_">React</span>.<span class="title function_">createElement</span>(</span><br><span class="line">  <span class="string">&#x27;h1&#x27;</span>, <span class="comment">// 标签名</span></span><br><span class="line">  &#123;<span class="attr">className</span>: <span class="string">&#x27;greeting&#x27;</span>&#125;, <span class="comment">// 属性对象</span></span><br><span class="line">  <span class="string">&#x27;Hello, world!&#x27;</span> <span class="comment">// 内容</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/1e3ca2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/1e3ca2/" class="post-title-link" itemprop="url">State&生命周期</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-24 17:56:40" itemprop="dateCreated datePublished" datetime="2021-03-24T17:56:40+08:00">2021-03-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">核心概念</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="04-State-生命周期"><a href="#04-State-生命周期" class="headerlink" title="04. State &amp; 生命周期"></a>04. State &amp; 生命周期</h1><p>State 与 props 类似，但是 <strong>state 是私有的，并且完全受控于当前组件.</strong></p>
+<blockquote>
+<p>State类似于vue中的data选项</p>
+</blockquote>
+<h2 id="将函数组件转换成-class-组件"><a href="#将函数组件转换成-class-组件" class="headerlink" title="将函数组件转换成 class 组件"></a>将函数组件转换成 class 组件</h2><blockquote>
+<p>在没有useState钩子函数之前，是通过class组件管理State ？</p>
+</blockquote>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Clock</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">    	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, world<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>It is &#123;this.props.date.toLocalTimeString()&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>每次组件更新时 <code>render</code> 方法都会被调用，但只要在相同的 DOM 节点中渲染 <code>&lt;Clock /&gt;</code> ，就<strong>仅有一个 <code>Clock</code> 组件的 class 实例被创建使用</strong>。这就使得我们可以使用如 state 或生命周期方法等很多其他特性。</p>
+<blockquote>
+<p>单例模式？</p>
+</blockquote>
+<h2 id="向-class-组件中添加局部的-state"><a href="#向-class-组件中添加局部的-state" class="headerlink" title="向 class 组件中添加局部的 state"></a>向 class 组件中添加局部的 state</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Clock</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="comment">// 第二步：添加构造函数，并给 this.state 赋初始值</span></span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props) <span class="comment">// 通过super将props传递到父类构造函数中</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;<span class="attr">date</span>: <span class="keyword">new</span> <span class="title class_">Date</span>()&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 第一步：render 方法内，将 this.props 替换成 this.state</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">    	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, world<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>It is &#123;this.state.date.toLocalTimeString()&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">Clock</span> /&gt;</span></span>,</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="将生命周期方法添加到-Class-中"><a href="#将生命周期方法添加到-Class-中" class="headerlink" title="将生命周期方法添加到 Class 中"></a>将生命周期方法添加到 Class 中</h2><p>在具有许多组件的应用程序中，当组件被销毁时释放所占用的资源是非常重要的。</p>
+<p>当 <code>Clock</code> 组件第一次被渲染到 DOM 中的时候，就为其<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval">设置一个计时器</a>。这在 React 中被称为“<strong>挂载（mount）</strong>”。</p>
+<p>同时，当 DOM 中 <code>Clock</code> 组件被删除的时候，应该<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval">清除计时器</a>。这在 React 中被称为“<strong>卸载（unmount）</strong>”。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Clock</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;<span class="attr">date</span>: <span class="keyword">new</span> <span class="title class_">Date</span>()&#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 挂载 - 挂载完成后执行</span></span><br><span class="line">  <span class="title function_">componentDidMount</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 组件挂载后开启定时器</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">timerID</span> = <span class="title function_">serInterval</span>( <span class="comment">// 可以向this添加任意属性字段</span></span><br><span class="line">    	<span class="function">() =&gt;</span> <span class="variable language_">this</span>.<span class="title function_">tick</span>(), <span class="number">1000</span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 卸载</span></span><br><span class="line">  <span class="title function_">componentWillUnmount</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 组件卸载后清除定时器，释放内存</span></span><br><span class="line">    <span class="built_in">clearInterval</span>(<span class="variable language_">this</span>.<span class="property">timerID</span>)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">tick</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;</span><br><span class="line">      <span class="attr">date</span>: <span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>It is &#123;this.state.date.toLocaleTimeString()&#125;.<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">Clock</span> /&gt;</span></span>,</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="正确地使用-State"><a href="#正确地使用-State" class="headerlink" title="正确地使用 State"></a>正确地使用 State</h2><p>关于 <code>setState()</code> 你应该了解三件事：</p>
+<h3 id="不要直接修改-State"><a href="#不要直接修改-State" class="headerlink" title="不要直接修改 State"></a>不要直接修改 State</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// Wrong 不要直接修改state</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">comment</span> = <span class="string">&#x27;Hello&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Correct 应使用 setState() 方法</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;<span class="attr">comment</span>: <span class="string">&#x27;Hello&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>构造函数是唯一可以给 <code>this.state</code> 直接赋值的地方</strong></p>
+<blockquote>
+<p>setState是React内部方法，使state更新具有响应式？</p>
+</blockquote>
+<h3 id="State-的更新可能是异步的"><a href="#State-的更新可能是异步的" class="headerlink" title="State 的更新可能是异步的"></a>State 的更新可能是异步的</h3><p>出于性能考虑，React 可能会把多个 <code>setState()</code> 调用合并成一个调用。</p>
+<p>因为 <code>this.props</code> 和 <code>this.state</code> 可能会异步更新，所以你<strong>不要依赖他们的值来更新下一个状态</strong>。</p>
+<p>要<strong>解决这个问题，可以让 <code>setState()</code> 接收一个函数而不是一个对象</strong>。这个函数用上一个 state 作为第一个参数，将此次更新被应用时的 props 做为第二个参数：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Correct</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="title function_">setState</span>(<span class="function">(<span class="params">state, props</span>) =&gt;</span> (&#123;</span><br><span class="line">  <span class="attr">counter</span>: state.<span class="property">counter</span> + props.<span class="property">increment</span></span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+
+<h3 id="State-的更新会被合并"><a href="#State-的更新会被合并" class="headerlink" title="State 的更新会被合并"></a>State 的更新会被合并</h3><p>当你调用 <code>setState()</code> 的时候，React 会把你提供的对象合并到当前的 state</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(props);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;</span><br><span class="line">      <span class="attr">posts</span>: [],</span><br><span class="line">      <span class="attr">comments</span>: []</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 分别调用setState单独更新state下的属性</span></span><br><span class="line"> <span class="title function_">componentDidMount</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">fetchPosts</span>().<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;</span><br><span class="line">        <span class="attr">posts</span>: response.<span class="property">posts</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="title function_">fetchComments</span>().<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;</span><br><span class="line">        <span class="attr">comments</span>: response.<span class="property">comments</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里的合并是浅合并，所以 <code>this.setState({comments})</code> 完整保留了 <code>this.state.posts</code>， 但是完全替换了 <code>this.state.comments</code>。</p>
+<h2 id="数据是向下流动的（单向数据流）"><a href="#数据是向下流动的（单向数据流）" class="headerlink" title="数据是向下流动的（单向数据流）"></a>数据是向下流动的（单向数据流）</h2><p>不管是父组件或是子组件都无法知道某个组件是有状态的还是无状态的，并且它们也并不关心它是函数组件还是 class 组件。</p>
+<p>这就是为什么称 <strong>state 为局部的</strong>或是封装的的原因。除了拥有并设置了它的组件，<strong>其他组件都无法访问</strong>。</p>
+<p>组件可以选择把它的 state 作为 props 向下传递到它的子组件中：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="title class_">FormattedDate</span> date=&#123;<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">date</span>&#125; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>FormattedDate</code> 组件会在其 props 中接收参数 <code>date</code>，但是<strong>组件本身无法知道它是来自于 <code>Clock</code> 的 state，或是 <code>Clock</code> 的 props，还是手动输入的</strong>。</p>
+<p>这通常会被叫做“自上而下”或是**“单向”的数据流**。任何的 <strong>state 总是所属于特定的组件</strong>，而且从该 state 派生的任何数据或 UI 只能影响树中“低于”它们的组件。</p>
+<p>如果你把一个以组件构成的树想象成一个 props 的数据瀑布的话，那么每一个组件的 state 就像是在任意一点上给瀑布增加额外的水源，但是它只能向下流动。</p>
+<h4 id="每个组件都是真正独立的。"><a href="#每个组件都是真正独立的。" class="headerlink" title="每个组件都是真正独立的。"></a>每个组件都是真正独立的。</h4>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zzxm.github.io/pages/f27775/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zzxm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="庄生晓梦">
+      <meta itemprop="description" content="前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 庄生晓梦">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/pages/f27775/" class="post-title-link" itemprop="url">事件处理</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-24 17:56:40" itemprop="dateCreated datePublished" datetime="2021-03-24T17:56:40+08:00">2021-03-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-11-02 15:32:28" itemprop="dateModified" datetime="2026-11-02T15:32:28+08:00">2026-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">《React》笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E3%80%8AReact%E3%80%8B%E7%AC%94%E8%AE%B0/%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/" itemprop="url" rel="index"><span itemprop="name">核心概念</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="05-事件处理"><a href="#05-事件处理" class="headerlink" title="05. 事件处理"></a>05. 事件处理</h1><h2 id="与传统HTML绑定事件的区别"><a href="#与传统HTML绑定事件的区别" class="headerlink" title="与传统HTML绑定事件的区别"></a>与传统HTML绑定事件的区别</h2><p>传统的 HTML：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;activateLasers()&quot;</span>&gt;</span></span><br><span class="line">  Activate Lasers</span><br><span class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在 React 中略微不同：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.事件名为小驼峰； 2.传入函数以大括号包裹函数名形式</span></span><br><span class="line">&lt;button onClick=&#123;activateLasers&#125;&gt;</span><br><span class="line">  <span class="title class_">Activate</span> <span class="title class_">Lasers</span></span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>React 事件的命名采用小驼峰式（camelCase），而不是纯小写。</li>
+<li>使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串。</li>
+</ul>
+<h3 id="阻止默认事件-合成事件对象"><a href="#阻止默认事件-合成事件对象" class="headerlink" title="阻止默认事件 (合成事件对象)"></a>阻止默认事件 (合成事件对象)</h3><p>在 React 中，你需要这样阻止默认事件：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">ActionLink</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleClick</span>(<span class="params">e</span>) &#123;</span><br><span class="line">    e.<span class="title function_">preventDefault</span>();</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;The link was clicked.&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      Click me</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在这里，<code>e</code> 是一个<strong>合成事件</strong>。React 根据 <a target="_blank" rel="noopener" href="https://www.w3.org/TR/DOM-Level-3-Events/">W3C 规范</a>来定义这些合成事件，所以你不需要担心跨浏览器的兼容性问题。React 事件与原生事件不完全相同。如果想了解更多，请查看 <a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/events.html"><code>SyntheticEvent</code></a> 参考指南。</p>
+<h2 id="绑定事件的方式"><a href="#绑定事件的方式" class="headerlink" title="绑定事件的方式"></a>绑定事件的方式</h2><p>使用 React 时，你一般不需要使用 <code>addEventListener</code> 为已创建的 DOM 元素添加监听器。事实上，你只需要在该元素初始渲染的时候添加监听器即可。</p>
+<p>当你使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes">ES6 class</a> 语法定义一个组件的时候，通常的做法是将事件处理函数声明为 class 中的方法。例如，下面的 <code>Toggle</code> 组件会渲染一个让用户切换开关状态的按钮：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Toggle</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">props</span>)&#123;</span><br><span class="line">    <span class="variable language_">super</span>(props)</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">state</span> = &#123;<span class="attr">isToggleOn</span>: <span class="literal">true</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 为了在回调中使用 `this`，这个绑定是必不可少的</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">handleClick</span> = <span class="variable language_">this</span>.<span class="property">handleClick</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>)；</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">hadleClick</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">setState</span>(<span class="function"><span class="params">state</span> =&gt;</span> (&#123;</span><br><span class="line">      <span class="attr">isToggleOn</span>: !state.<span class="property">isToggleOn</span></span><br><span class="line">    &#125;));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">return</span>(</span><br><span class="line">      <span class="comment">// 为了能在这里使用 this.handleClick调用方法，因此需要在构造函数内添加handleChick属性指向回调方法 ？</span></span><br><span class="line">    	<span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        &#123;this.state.isToggleOn ? &#x27;ON&#x27; : &#x27;OFF&#x27;&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">	<span class="language-xml"><span class="tag">&lt;<span class="name">Toggle</span> /&gt;</span></span>,</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>你必须谨慎对待 JSX 回调函数中的 <code>this</code>，在 JavaScript 中，class 的方法默认不会<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind">绑定</a> <code>this</code>。如果你忘记绑定 <code>this.handleClick</code> 并把它传入了 <code>onClick</code>，当你调用这个函数的时候 <code>this</code> 的值为 <code>undefined</code>。</p>
+<p>这并不是 React 特有的行为；这其实与 <a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/">JavaScript 函数工作原理</a>有关。通常情况下，如果你没有在方法后面添加 <code>()</code>，例如 <code>onClick={this.handleClick}</code>，你应该<strong>为这个方法绑定 <code>this</code></strong>。</p>
+<p>如果觉得使用 <code>bind</code> 很麻烦，这里有两种方式可以解决。如果你正在使用实验性的 <a target="_blank" rel="noopener" href="https://babeljs.io/docs/plugins/transform-class-properties/">public class fields 语法</a>，你可以使用 class fields 正确的绑定回调函数：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LoggingButton</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="comment">// 此语法确保 `handleClick` 内的 `this` 已被绑定。</span></span><br><span class="line">  <span class="comment">// 注意: 这是 *实验性* 语法。</span></span><br><span class="line">  handleClick = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;this is:&#x27;</span>, <span class="variable language_">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        Click me</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/facebookincubator/create-react-app">Create React App</a> 默认启用此语法。</p>
+<p>如果你没有使用 class fields 语法，你可以在回调中使用<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions">箭头函数</a>：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LoggingButton</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span> &#123;</span><br><span class="line">  <span class="title function_">handleClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;this is:&#x27;</span>, <span class="variable language_">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 此语法确保 `handleClick` 内的 `this` 已被绑定。</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> this.handleClick()&#125;&gt;</span></span><br><span class="line"><span class="language-xml">        Click me</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此语法问题在于每次渲染 <code>LoggingButton</code> 时都会创建不同的回调函数。在大多数情况下，这没什么问题，但如果该回调函数作为 prop 传入子组件时，这些组件可能会进行额外的重新渲染。<strong>我们通常建议在构造器中绑定或使用 class fields 语法来避免这类性能问题</strong>。</p>
+<h3 id="事件命名规范"><a href="#事件命名规范" class="headerlink" title="事件命名规范"></a>事件命名规范</h3><p>在 React 中，有一个命名规范，通常会将代表事件的监听 prop 命名为 <code>on[Event]</code>，将处理事件的监听方法命名为 <code>handle[Event]</code> 这样的格式。</p>
+<h2 id="向事件处理程序传递参数"><a href="#向事件处理程序传递参数" class="headerlink" title="向事件处理程序传递参数"></a>向事件处理程序传递参数</h2><p>在循环中，通常我们会为事件处理函数传递额外的参数。例如，若 <code>id</code> 是你要删除那一行的 ID，以下两种方式都可以向事件处理函数传递参数：</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onClick=&#123;<span class="function">(<span class="params">e</span>) =&gt;</span> <span class="variable language_">this</span>.<span class="title function_">deleteRow</span>(id, e)&#125;&gt;<span class="title class_">Delete</span> <span class="title class_">Row</span>&lt;/button&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.deleteRow.bind(this,</span> <span class="attr">id</span>)&#125;&gt;</span>Delete Row<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>上述两种方式是等价的，分别通过<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">箭头函数</a>和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind"><code>Function.prototype.bind</code></a> 来实现。</p>
+<p>在这两种情况下，<strong>React 的事件对象 <code>e</code> 会被作为第二个参数传递</strong>。如果通过箭头函数的方式，事件对象必须显式的进行传递，而通过 <code>bind</code> 的方式，事件对象以及更多的参数将会被隐式的进行传递。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">true</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
