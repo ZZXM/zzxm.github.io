@@ -1,0 +1,98 @@
+# Hexo 主配置
+# 文档：https://hexo.io/zh-cn/docs/configuration
+
+# ---------- 站点 ----------
+title: 庄生晓梦
+subtitle: 'Web 前端技术博客，积跬步以至千里'
+description: '前端笔记与随手记录：JavaScript、Vue、React、TypeScript、CSS 与工具'
+keywords:
+author: zzxm
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# ---------- 网址 ----------
+# 情况一：仓库名为 <你的 GitHub 用户名>.github.io  → url 填站点根，root 填 /
+# 情况二：仓库名为 blog 之类的普通名字          → url 要带仓库名，root 也要带
+#   例：url: https://zzxm.github.io/blog
+#       root: /blog/
+# 改完记得同时改 .github/workflows/pages.yml 之外不用动，Actions 会自动识别。
+url: https://zzxm.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+# ---------- 目录 ----------
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# ---------- 写作 ----------
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+# ---------- 首页 / 分页 ----------
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# ---------- 日期 / 时间 ----------
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# ---------- 分页 ----------
+per_page: 10
+pagination_dir: page
+
+# ---------- 扩展 ----------
+theme: next
+
+# 本地搜索索引（配合 NexT 的 local_search）
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# ---------- 部署 ----------
+# 优先用 GitHub Actions 部署（推荐，见 .github/workflows/pages.yml）。
+# 如果你想本地 hexo deploy 直接推到 gh-pages 分支，取消下面注释并改地址：
+# deploy:
+#   type: git
+#   repo: https://github.com/zzxm/zzxm.github.io.git
+#   branch: gh-pages
+
+# ---------- Markdown ----------
+marked:
+  prependRoot: true
+  postAsset: true
+  modifyAnchors: 0
+  autolink: true
+  mangle: true
+  smartypants: false

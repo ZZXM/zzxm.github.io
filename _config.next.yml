@@ -1,0 +1,103 @@
+# NexT 主题配置（覆盖主题默认值，只写需要改的项）
+# 完整选项见 node_modules/hexo-theme-next/_config.yml
+
+# ---------- 外观 ----------
+scheme: Gemini
+darkmode: true
+# 可选方案：Muse / Mist / Pisces / Gemini
+
+# ---------- 菜单 ----------
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  about: /about/ || fa fa-user
+
+sidebar:
+  position: left
+  display: always
+  padding: 18
+  offset: 12
+
+avatar:
+  # 放一张图到 blog/source/images/avatar.png 再把下面这行改成 /images/avatar.png
+  # 也可以直接用 GitHub 头像地址：https://github.com/<用户名>.png
+  url:
+  rounded: true
+  rotated: false
+  opacity: 1
+
+# ---------- 站点统计 ----------
+footer:
+  since: 2026
+  icon:
+    animated: false
+    color: '#808080'
+    name: 'fa fa-heart'
+  powered: true
+  copyright: true
+
+# ---------- 文章 ----------
+post_meta:
+  created_at: true
+  updated_at:
+    enable: true
+    another_day: true
+  categories: true
+  tags: true
+
+toc:
+  enable: true
+  number: true
+  wrap: true
+  expand_all: false
+  max_depth: 3
+
+excerpt_description: true
+auto_excerpt:
+  enable: false
+read_more_btn: true
+
+# ---------- 代码块 ----------
+codeblock:
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  copy_button:
+    enable: true
+    show_result: true
+    style: flat
+
+# ---------- 搜索（本地搜索，无需第三方服务） ----------
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+# ---------- 动效 ----------
+motion:
+  enable: true
+  async: false
+  transition:
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    sidebar: fadeInUp
+
+# ---------- 其他 ----------
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+github_banner:
+  enable: false
+  permalink: 'https://github.com/zzxm'
+
+# 页面底部访客统计可以后续接 busuanzi：
+# busuanzi_count:
+#   enable: true
