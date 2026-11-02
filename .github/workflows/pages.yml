@@ -1,21 +1,21 @@
-name: Deploy Hexo to GitHub Pages
+name: Build and deploy Hexo site
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
+# 只为把构建产物推到 gh-pages 分支；Pages 仍按「从分支发布 gh-pages」工作，
+# 所以不需要去 Settings 里改成 GitHub Actions，也不会碰到 github-pages 环境的保护规则。
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: pages-build
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,21 +33,14 @@ jobs:
       - name: Build
         run: npx hexo generate
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./public
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          commit_message: "Site updated: ${{ github.event.head_commit.message }}"
+          user_name: zzxm
+          user_email: 1059621960@qq.com
+          # 旧站点带的自定义域名 b.xugaoyi.com 不再使用，所以不传 cname
+          enable_jekyll: false

@@ -44,9 +44,14 @@ git commit -m "post: 文章标题"
 git push origin main
 ```
 
-推送后到仓库 **Actions** 标签页看进度，约 1 分钟完成，站点即更新在 https://zzxm.github.io/ 。
+推送后 GitHub Actions 自动执行：`npm install` → `hexo generate` → 把 `public/` 推到 **gh-pages** 分支；Pages 本来就从 `gh-pages` 分支发布，所以会自动更新，**不需要去 Settings 里改任何东西**。进度看仓库 **Actions** 标签页。
 
-首次需要确认一次（只需做一次）：仓库 **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
+备用方式（本机有 Git 凭据时，手动直推）：
+
+```powershell
+npm run clean
+npm run deploy      # hexo deploy → 推 gh-pages
+```
 
 ## 写新文章
 

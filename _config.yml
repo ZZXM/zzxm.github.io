@@ -81,12 +81,13 @@ search:
   format: html
 
 # ---------- 部署 ----------
-# 优先用 GitHub Actions 部署（推荐，见 .github/workflows/pages.yml）。
-# 如果你想本地 hexo deploy 直接推到 gh-pages 分支，取消下面注释并改地址：
-# deploy:
-#   type: git
-#   repo: https://github.com/zzxm/zzxm.github.io.git
-#   branch: gh-pages
+# 主路径：push 到 main → GitHub Actions 构建 → 推到 gh-pages 分支 → Pages（从 gh-pages 分支发布）。
+# 备用：本地 `npm run deploy` 直推 gh-pages（需要本机有 GitHub 凭据）。
+deploy:
+  type: git
+  repo: https://github.com/ZZXM/zzxm.github.io.git
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 # ---------- Markdown ----------
 marked:
